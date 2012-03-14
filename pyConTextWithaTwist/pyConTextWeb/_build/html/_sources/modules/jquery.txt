@@ -1,0 +1,5 @@
+jquery
+==========================
+
+.. automodule:: templates.media.jquery
+    :members:

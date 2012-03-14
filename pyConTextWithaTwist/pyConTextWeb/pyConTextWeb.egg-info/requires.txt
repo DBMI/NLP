@@ -1,0 +1,4 @@
+zope.interface
+pyConTextNLP
+twisted
+django

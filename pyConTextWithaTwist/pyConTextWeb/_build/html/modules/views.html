@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pyConTextKit Views &mdash; pyConTextKit v1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="pyConTextKit v1.0 documentation" href="../index.html" />
+    <link rel="prev" title="pyConTextKit Forms" href="forms.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="forms.html" title="pyConTextKit Forms"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">pyConTextKit v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="module-pyConTextKit.views">
+<span id="pycontextkit-views"></span><h1>pyConTextKit Views<a class="headerlink" href="#module-pyConTextKit.views" title="Permalink to this headline">¶</a></h1>
+<p>This module contains the views that are used in the pyConTextKit application.</p>
+<dl class="function">
+<dt id="pyConTextKit.views.complete">
+<tt class="descclassname">pyConTextKit.views.</tt><tt class="descname">complete</tt><big>(</big><em>request</em><big>)</big><a class="headerlink" href="#pyConTextKit.views.complete" title="Permalink to this definition">¶</a></dt>
+<dd><p>This page is rendered by the run view when the Annotate feature is finished.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyConTextKit.views.index">
+<tt class="descclassname">pyConTextKit.views.</tt><tt class="descname">index</tt><big>(</big><em>request</em><big>)</big><a class="headerlink" href="#pyConTextKit.views.index" title="Permalink to this definition">¶</a></dt>
+<dd><p>This in the index page.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyConTextKit.views.itemData_edit">
+<tt class="descclassname">pyConTextKit.views.</tt><tt class="descname">itemData_edit</tt><big>(</big><em>request</em>, <em>itemData_id=None</em><big>)</big><a class="headerlink" href="#pyConTextKit.views.itemData_edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method takes an itemDatum ID as an argument and renders a form for the
+user to edit the specified extraction criterion.  If no argument is supplied,
+a blank form is rendered, which the user can use to enter a new criterion.</p>
+<p>Note: A useful addition to this would be examples that the user can use as
+a reference.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyConTextKit.views.itemData_filter">
+<tt class="descclassname">pyConTextKit.views.</tt><tt class="descname">itemData_filter</tt><big>(</big><em>request</em>, <em>supercat</em><big>)</big><a class="headerlink" href="#pyConTextKit.views.itemData_filter" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method takes a supercategory name as an argument and renders a view of
+the criteria in this supercategory.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyConTextKit.views.itemData_view">
+<tt class="descclassname">pyConTextKit.views.</tt><tt class="descname">itemData_view</tt><big>(</big><em>request</em><big>)</big><a class="headerlink" href="#pyConTextKit.views.itemData_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>This provides an overview of all the extraction criteria.  It also provides a
+search box that the user can use to search for relevant search terms.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyConTextKit.views.logout_view">
+<tt class="descclassname">pyConTextKit.views.</tt><tt class="descname">logout_view</tt><big>(</big><em>request</em><big>)</big><a class="headerlink" href="#pyConTextKit.views.logout_view" title="Permalink to this definition">¶</a></dt>
+<dd><p>This logs the user out of the application.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pyConTextKit.views.run">
+<tt class="descclassname">pyConTextKit.views.</tt><tt class="descname">run</tt><big>(</big><em>request</em><big>)</big><a class="headerlink" href="#pyConTextKit.views.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>This executes the Annotate feature.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="forms.html"
+                        title="previous chapter">pyConTextKit Forms</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/modules/views.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="forms.html" title="pyConTextKit Forms"
+             >previous</a> |</li>
+        <li><a href="../index.html">pyConTextKit v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Annie T. Chen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

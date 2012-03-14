@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block pagetitle %}Analysis Results{% endblock %}
+
+{% block content %}
+
+<p>These are the results. You can also <a href="/pyConTextKit/output_results/">output them to a CSV file</a>.
+
+<table>
+<tr>
+<th>id</th>
+<th>reportid</th>
+<th>category</th>
+<th>disease</th>
+<th>uncertainty</th>
+<th>historical</th>
+<th>literal</th>
+</tr>   
+</tr>   
+{% for i in result.all %}
+<tr class="{% if forloop.counter|divisibleby:2 %}even{% else %}odd{% endif %}">
+<td>{{ i.id }}</td>
+<td><a href="/pyConTextKit/report/{{i.reportid}}/">{{ i.reportid }}</a></td>
+<td>{{ i.category }}</td>
+<td>{{ i.disease }}</td>
+<td>{{ i.uncertainty }}</td>
+<td>{{ i.historical }}</td>
+<td>{{ i.literal }}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

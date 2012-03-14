@@ -1,0 +1,309 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>pyConTextKit pyConTextGraphV2 &mdash; pyConTextKit v1.0 documentation</title>
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="pyConTextKit v1.0 documentation" href="../index.html" />
+    <link rel="prev" title="pyConTextKit criticalFinderGraph" href="criticalFinderGraph.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="criticalFinderGraph.html" title="pyConTextKit criticalFinderGraph"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">pyConTextKit v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="pycontextkit-pycontextgraphv2">
+<h1>pyConTextKit pyConTextGraphV2<a class="headerlink" href="#pycontextkit-pycontextgraphv2" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-pyConTextGraphV2.pyConTextGraphV2"></span><p>This module contains three class definitions that are used in the pyConText
+algorithm. The pyConText algorithm relies on regular expressions to identify
+sub-texts of interest</p>
+<ol class="arabic simple">
+<li>termObject: a class that describes terms of interest within the text</li>
+<li>tagObject: a class inherited from termObject that describes modifiers</li>
+<li>pyConText: a class that implements the context algorithm</li>
+</ol>
+<dl class="class">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText">
+<em class="property">class </em><tt class="descclassname">pyConTextGraphV2.pyConTextGraphV2.</tt><tt class="descname">pyConText</tt><big>(</big><em>txt=''</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText" title="Permalink to this definition">¶</a></dt>
+<dd><p>base class for context.
+build around markedTargets a list of termObjects representing desired terms
+found in text and markedModifiers, tagObjects found in the text</p>
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.applyModifiers">
+<tt class="descname">applyModifiers</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.applyModifiers" title="Permalink to this definition">¶</a></dt>
+<dd><p>If the scope has not yet been updated, do this first.</p>
+<p>Loop through the marked targets and for each target apply the modifiers</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.commit">
+<tt class="descname">commit</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.commit" title="Permalink to this definition">¶</a></dt>
+<dd><p>takes the values stored in current attributes and copies them to the
+object archive</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.dropMarks">
+<tt class="descname">dropMarks</tt><big>(</big><em>category='exclusion'</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.dropMarks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Drop any targets that have the category equal to category</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.getCleanTxt">
+<tt class="descname">getCleanTxt</tt><big>(</big><em>stripNumbers=False</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.getCleanTxt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Need to rename. applies the regular expression scrubbers to rawTxt</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.getMarkedTargets">
+<tt class="descname">getMarkedTargets</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.getMarkedTargets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the list of marked targets in the current sentence</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.getNumMarkedTargets">
+<tt class="descname">getNumMarkedTargets</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.getNumMarkedTargets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of marked targets in the current sentence</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.isModifiedBy">
+<tt class="descname">isModifiedBy</tt><big>(</big><em>node</em>, <em>modFilter</em>, <em>currentGraph=True</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.isModifiedBy" title="Permalink to this definition">¶</a></dt>
+<dd><p>tests whether self is modified by term. Return modifier if true</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.markItem">
+<tt class="descname">markItem</tt><big>(</big><em>item</em>, <em>ConTextMode='target'</em>, <em>ignoreCase=True</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.markItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>markup the current text with the current item.
+If ignoreCase is True (default), the regular expression is compiled with
+IGNORECASE.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.markItems">
+<tt class="descname">markItems</tt><big>(</big><em>items</em>, <em>mode='target'</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.markItems" title="Permalink to this definition">¶</a></dt>
+<dd><p>tags the sentence for a list of items
+items: a list of contextItems</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.pruneMarks">
+<tt class="descname">pruneMarks</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.pruneMarks" title="Permalink to this definition">¶</a></dt>
+<dd><p>prune Marked objects by deleting any objects that lie within the span of
+another object. Currently modifiers and targets are treated separately</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.pruneModifierRelationships">
+<tt class="descname">pruneModifierRelationships</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.pruneModifierRelationships" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initially modifiers may be applied to multiple targets. This function
+computes the text difference between the modifier and each modified
+target and keeps only the minimum distance relationship</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.reset">
+<tt class="descname">reset</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>deletes all archived values and sets all class attributes to empty or
+zero values</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.setSentence">
+<tt class="descname">setSentence</tt><big>(</big><em>num</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.setSentence" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the current context to sentence num in the archive</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.setTxt">
+<tt class="descname">setTxt</tt><big>(</big><em>txt=''</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.setTxt" title="Permalink to this definition">¶</a></dt>
+<dd><p>sets the current txt to txt and resets the current attributes to empty
+values, but does not modify the object archive</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.pyConText.updateScopes">
+<tt class="descname">updateScopes</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.pyConText.updateScopes" title="Permalink to this definition">¶</a></dt>
+<dd><p>update the scopes of all the marked modifiers in the txt. The scope
+of a modifier is limited by its own span and the and the span of
+modifiers in the same category marked in the text.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject">
+<em class="property">class </em><tt class="descclassname">pyConTextGraphV2.pyConTextGraphV2.</tt><tt class="descname">tagObject</tt><big>(</big><em>item</em>, <em>ConTextCategory</em>, <em>scope=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class that describes terms of interest in the text.
+tagObject is characterized by the following attributes
+1) The contextItem defining the tag
+3) The location of the tag within the text being parsed</p>
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.applyRule">
+<tt class="descname">applyRule</tt><big>(</big><em>term</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.applyRule" title="Permalink to this definition">¶</a></dt>
+<dd><p>applies self&#8217;s rule to term. If the start of term lines within
+the span of self, then term may be modified by self</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.dist">
+<tt class="descname">dist</tt><big>(</big><em>obj</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.dist" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the minimum distance from the current object and obj.
+Distance is measured as current start to object end or current end to object start</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.encompasses">
+<tt class="descname">encompasses</tt><big>(</big><em>other</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.encompasses" title="Permalink to this definition">¶</a></dt>
+<dd><p>tests whether other is completely encompassed with the current object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.getCategory">
+<tt class="descname">getCategory</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.getCategory" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the category (e.g. CONJUNCTION) for this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.getLiteral">
+<tt class="descname">getLiteral</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.getLiteral" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the term defining this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.getPhrase">
+<tt class="descname">getPhrase</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.getPhrase" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the actual matched phrase used to generate this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.getSpan">
+<tt class="descname">getSpan</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.getSpan" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the span within the associated text for this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.limitScope">
+<tt class="descname">limitScope</tt><big>(</big><em>obj</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.limitScope" title="Permalink to this definition">¶</a></dt>
+<dd><p>If self and obj are of the same category or if obj has a rule of
+&#8216;terminate&#8217;, use the span of obj to
+update the scope of self</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.parseRule">
+<tt class="descname">parseRule</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.parseRule" title="Permalink to this definition">¶</a></dt>
+<dd><p>parse the rule for the associated</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.setPhrase">
+<tt class="descname">setPhrase</tt><big>(</big><em>phrase</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.setPhrase" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the actual matched phrase used to generate this object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.setScope">
+<tt class="descname">setScope</tt><big>(</big><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.setScope" title="Permalink to this definition">¶</a></dt>
+<dd><p>applies the objects own rule and span to modify the object&#8217;s scope
+Currently only &#8220;forward&#8221; and &#8220;backward&#8221; rules are implemented</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="pyConTextGraphV2.pyConTextGraphV2.tagObject.setSpan">
+<tt class="descname">setSpan</tt><big>(</big><em>span</em><big>)</big><a class="headerlink" href="#pyConTextGraphV2.pyConTextGraphV2.tagObject.setSpan" title="Permalink to this definition">¶</a></dt>
+<dd><p>set the span within the associated text for this object</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="criticalFinderGraph.html"
+                        title="previous chapter">pyConTextKit criticalFinderGraph</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/modules/pyConTextGraphV2.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="criticalFinderGraph.html" title="pyConTextKit criticalFinderGraph"
+             >previous</a> |</li>
+        <li><a href="../index.html">pyConTextKit v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2011, Annie T. Chen.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

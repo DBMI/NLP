@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block pagetitle %}Report Analysis Interface{% endblock %}
+
+{% block content %}
+        
+<p>This form will allow you to screen radiology reports using the criteria stored in Item datum.
+
+<form action="/pyConTextKit/run/" method="post">
+{% csrf_token %}
+<!--<input type="radio" name="choice" id="choice" value="CARDIO" />-->
+<table>     
+{% for field in form %}
+        <tr>
+                <td>{{ field.label_tag }}</td>
+                <td>{{ field }}</td>
+        </tr>
+{% endfor %}
+</table>
+<input type="submit" value="Run" />
+</form>
+
+{% endblock %}
