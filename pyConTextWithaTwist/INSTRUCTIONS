@@ -3,12 +3,15 @@ To run pyConTextWeb execute the following command:
 	twistd -ny server.py
 
 A web browser will appear with the url of http://localhost:8095/. 
-NOTE:
-	Django's urls.py error message will appear, prompting the user that the current page does not exist. This will occur until the issue with server.py on line 49 is  resolved.
+
+NOTE --
+	Django's urls.py error message will appear, prompting the user that the current page does not 
+	exist. This will occur until the issue with server.py on line 49 is  resolved.
 
 Navigate your web browser to http://localhost:8095/pyConTextKit, and provide correct details for login.
 
-If you do not have an account you can create one by executing the following serires of commands in the directory pyConTextWeb:
+If you do not have an account you can create one by executing the following serires of commands in the 
+directory pyConTextWeb:
 
 	python manage.py shell
 	>> from django.contrib.auth.models import User
