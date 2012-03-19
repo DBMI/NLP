@@ -404,13 +404,13 @@ class pyConText(object):
 #            print "call updateScopes"
         targets = self.getConTextModeNodes("target")
         modifiers = self.getConTextModeNodes("modifier")
-        print "************************"
+        #print "************************"
         for target in targets:
             for modifier in modifiers:
                 if( modifier.applyRule(target) ):
                     self.__graph.add_edge(modifier, target)
-                    print modifier,"modifies", target
-        print "########################"
+                    #print modifier,"modifies", target
+        #print "########################"
     def getMarkedTargets(self):
         """
         Return the list of marked targets in the current sentence
