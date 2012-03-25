@@ -1,6 +1,6 @@
 To run pyConTextWeb execute the following command:
 
-	twistd -ny server.py
+	sudo twistd -ny server.py
 
 A web browser will appear with the url of http://localhost:8095/. 
 
