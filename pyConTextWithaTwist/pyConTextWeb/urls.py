@@ -25,7 +25,6 @@ urlpatterns = patterns('',
     (r'^pyConTextKit/logout/$', 'pyConTextKit.views.logout_view'),
     url(r'^pyConTextKit/ajax_user_search/$', 'pyConTextKit.views.ajax_user_search', name = 'demo_user_search' ),
     (r'^pyConTextKit/report_text/(?P<reportid>\d+)/$', 'pyConTextKit.views.report_text'),
-    (r'^pyConTextKit/edititem/', 'pyConTextKit.views.editItem'),
     (r'^pyConTextKit/$', 'pyConTextKit.views.index'),    
     (r'^pyConTextKit/admin/', include(admin.site.urls)),
     (r'^pyConTextKit/accounts/login/$', 'django.contrib.auth.views.login')
