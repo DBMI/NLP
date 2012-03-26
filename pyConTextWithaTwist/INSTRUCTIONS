@@ -7,6 +7,10 @@ A web browser will appear with the url of http://localhost:8095/.
 NOTE --
 	Django's urls.py error message will appear, prompting the user that the current page does not 
 	exist. This will occur until the issue with server.py on line 49 is  resolved.
+	
+	If your media (e.g. CSS stylesheets or images, etc...) are not loading refer to the MEDIA_URL 
+	variable in settings.py and change the port to 8095 for running the project in twisted and to
+	port 8000 for running the project in Django's build in webserver.
 
 Navigate your web browser to http://localhost:8095/pyConTextKit, and provide correct details for login.
 
