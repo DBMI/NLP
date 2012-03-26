@@ -48,6 +48,30 @@ def index(request):
     #    j.save()
     return render_to_response('pyConTextKit/index.html',context_instance=RequestContext(request))
 
+def editItem(request, itemData_id=None):
+    """
+    This method takes an itemDatum ID as an argument and renders a form for the
+    user to edit the specified extraction criterion.  If no argument is supplied,
+    a blank form is rendered, which the user can use to enter a new criterion.
+    
+    Note: A useful addition to this would be examples that the user can use as
+    a reference.
+    """
+    intro="""<p>This application employs Python regular expressions. Refer to the key below
+    for guidance on how to create regular expressions.<p><b>\s:</b> space<br><b>|:</b> or<br>
+    <b>\w:</b> alphanumeric character or underscore (equivalent to [a-zA-Z0-9_])<br>
+    <b>*:</b> match one or more repetitions of the preceding regular expression<br>
+    <b>?:</b> matches 0 or 1 of the preceding regular expressions<br>
+    You can learn more about Python regular expressions at:
+    <a href="http://docs.python.org/library/re.html">http://docs.python.org/library/re.html</a>"""
+  
+    iform = itemForm(request.POST or None,instance=itemData_id and itemDatum.objects.get(id=itemData_id))
+    if request.method == "POST" and iform.is_valid:
+        iform.save()
+        return HttpResponseRedirect(reverse('pyConTextKit.views.itemData_complete'))
+        
+    return render_to_response('pyConTextKit/editItem.html', {'form': iform, 'intro': intro}, context_instance=RequestContext(request))
+    
 def logout_view(request):
     """
     This logs the user out of the application.

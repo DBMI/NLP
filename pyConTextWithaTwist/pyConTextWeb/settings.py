@@ -58,7 +58,10 @@ MEDIA_ROOT = os.path.join(pyConTextWebHome, 'templates', 'media')#'templates', '
 # trailing slash.
 # Examples: "http://media.lawrence.com/media/", "http://example.com/media/"
 #MEDIA_URL = 'http://quiil.ucsd.edu/media/pyConTextKit/'
-MEDIA_URL = 'http://localhost:8095/pyConTextKit/media/'
+
+#--- Below is for testing in Django's own server ---
+MEDIA_URL = 'http://localhost:8000/pyConTextKit/media/'
+#MEDIA_URL = 'http://localhost:8095/pyConTextKit/media/'
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.

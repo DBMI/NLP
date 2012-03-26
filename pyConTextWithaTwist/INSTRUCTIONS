@@ -10,7 +10,7 @@ NOTE --
 
 Navigate your web browser to http://localhost:8095/pyConTextKit, and provide correct details for login.
 
-If you do not have an account you can create one by executing the following serires of commands in the 
+If you do not have an account you can create one by executing the following series of commands in the 
 directory pyConTextWeb:
 
 	python manage.py shell
