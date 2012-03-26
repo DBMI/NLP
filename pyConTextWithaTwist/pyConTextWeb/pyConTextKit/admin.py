@@ -29,9 +29,8 @@ class itemDatumAdmin(admin.ModelAdmin):
     )
 
 class ReportAdmin(admin.ModelAdmin):
-    fields = ['dataset','hbid','reportid','reportType','report','impression']
-    list_display = ('dataset','reportid','reportType','impression')    
-    search_fields = ['impression']    
+    fields = ['dataset','reportid','reportType']
+    list_display = ('dataset','reportid','reportType')        
     
 class AlertAdmin(admin.ModelAdmin):
     fields = ['reportid','category','alert','report']

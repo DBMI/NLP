@@ -1,0 +1,4 @@
+Modify the database value in the settings.py file.
+Modify the MEDIA_URL variable to reflect the correct port:
+Django webserver	-> 8000
+Twisted webserver	-> 8095

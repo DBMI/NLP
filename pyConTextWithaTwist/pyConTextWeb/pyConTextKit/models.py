@@ -1,4 +1,5 @@
-#Copyright 2010 Annie T. Chen
+#Copyright 2010-2012 Brian E. Chapman, Annie T. Chen, Glenn Dayton IV,
+# Rutu Mulkar-Mehta
 #
 #Licensed under the Apache License, Version 2.0 (the "License");
 #you may not use this file except in compliance with the License.
@@ -31,33 +32,61 @@ Note: The get_all_fields method is redundant. A model should be defined for this
 application, and then have the other models inherit from it.
 """
 from django.db import models
+from django.contrib.auth.models import User
 
+class creator(models.Model):
+    """Valid creators for itemDatum"""
+    name = models.CharField(max_length=250)
+    """
+    If we decide to base the creator off of the currently logged in user:
+    Precondition: User must be authenticated
+
+    user = models.ForeignKey(User, unique=True)
+    """
+    def __unicode__(self):
+    	"""return user"""
+        return id # should I also return the id? => Yes, creators could have the same name. -Glenn
+
+class supercategory(models.Model): 
+    name = models.CharField(max_length=250)
+
+class category(models.Model):
+    name = models.CharField(max_length=250)
+
+class itemRule(models.Model):
+    rule = models.CharField(max_length=250)
+
+class collection(models.Model):
+    name = models.CharField(max_length=250)
+    creator = models.ForeignKey(creator)
+    
 class itemDatum(models.Model):
-    supercategory = models.CharField(max_length=250)
+    supercategory = models.ForeignKey(supercategory)
+    category = models.ForeignKey(category)
     literal = models.CharField(max_length=250)
-    category = models.CharField(max_length=250)
     re = models.CharField(max_length=250,blank=True)
     re.help_text='regular expression'
-    rule = models.CharField(max_length=250,blank=True)
-    creator = models.CharField(max_length=16)
-    include = models.BooleanField()
+    rule = models.ForeignKey(itemRule)
+    creator = models.ForeignKey(creator)
+    include = models.BooleanField() # we want to delete include from itemDatum
     def __unicode__(self):
         return self.literal
     
 class itemDatumSet(models.Model):
     setname = models.CharField(max_length=50)
-    itemDatum = models.ForeignKey('itemDatum')
+    itemDatum = models.ForeignKey(itemDatum)
     include = models.BooleanField()
     def __unicode__(self):
         return self.setname
-    
+
+class ReportType(models.Model):
+    name = models.CharField(max_length=250)
+
 class Report(models.Model):
-    dataset = models.TextField()
-    hbid = models.TextField()
+    dataset = models.ForeignKey(collection) 
     reportid = models.TextField()
-    reportType = models.TextField()
+    reportType = models.ForeignKey(ReportType)
     report = models.TextField()
-    impression = models.TextField()
     def __unicode__(self):
         return str(self.reportid)
     def get_all_fields(self):
@@ -87,7 +116,8 @@ class Report(models.Model):
                   }
                 )
         return fields
-
+# Can we generalize the Alert class to be an application class that is built by
+# the user?
 class Alert(models.Model):
     reportid = models.IntegerField()
     category = models.TextField()
@@ -122,7 +152,8 @@ class Alert(models.Model):
                   }
                 )
         return fields
-
+# Don't know that we want to store this back into the database
+# How would we make results general?
 class Result(models.Model):
     reportid = models.IntegerField()
     category = models.TextField()
