@@ -37,7 +37,7 @@ class creator(models.Model):
     """Valid creators for itemDatum"""
     name = models.CharField(max_length=250)
     def __unicode__(self):
-        return name # should I also return the id?
+        return id # should I also return the id? => Yes, creators could have the same name. -Glenn
 
 class supercategory(models.Model): 
     name = models.CharField(max_length=250)
@@ -51,6 +51,7 @@ class itemRule(models.Model):
 class collection(models.Model):
     name = models.CharField(max_length=250)
     creator = models.ForeignKey('creator')
+    
 class itemDatum(models.Model):
     supercategory = models.ForeignKey('supercategory')
     category = models.ForeignKey(category)
@@ -59,7 +60,7 @@ class itemDatum(models.Model):
     re.help_text='regular expression'
     rule = models.ForeignKey('itemRule')
     creator = models.ForeignKey('creator')
-    include = models.BooleanField() # we want to delete include from itemDataum
+    include = models.BooleanField() # we want to delete include from itemDatum
     def __unicode__(self):
         return self.literal
     
@@ -70,13 +71,13 @@ class itemDatumSet(models.Model):
     def __unicode__(self):
         return self.setname
 
-class ReportType(models.model):
+class ReportType(models.Model):
     name = models.CharField(max_length=250)
 
 class Report(models.Model):
     dataset = models.ForeignKey('collection') 
     reportid = models.TextField()
-    reportType = models.ForeingKey('ReportType')
+    reportType = models.ForeignKey('ReportType')
     report = models.TextField()
     def __unicode__(self):
         return str(self.reportid)
