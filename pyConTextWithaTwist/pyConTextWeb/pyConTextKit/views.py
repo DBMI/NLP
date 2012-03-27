@@ -47,7 +47,7 @@ def index(request):
     #    j.include = i.include
     #    j.save()
     return render_to_response('pyConTextKit/index.html',context_instance=RequestContext(request))
-    
+
 def logout_view(request):
     """
     This logs the user out of the application.
@@ -105,13 +105,13 @@ def complete(request):
     return render_to_response('pyConTextKit/complete.html',context_instance=RequestContext(request))
 
 def itemData_view(request):
-    itemFormSet = modelformset_factory(itemDatum, fields=('id','include',), extra=0)
+    itemFormSet = modelformset_factory(itemDatum, fields=('id',), extra=0)
     sform = SearchForm(data = request.POST)
     if request.method == "POST" and sform.is_valid():
-        print "sform is valid"
+        #print "sform is valid" <= Looks like debugging line
         term = sform.cleaned_data['term']
         if term != '':
-            print "non-space"
+            #print "non-space"
             r=itemDatum.objects.filter(literal__contains=term)
             formset = itemFormSet(queryset=r)
             return render_to_response('pyConTextKit/itemdata.html',{'formset': formset, 'form': sform,},context_instance=RequestContext(request))
@@ -129,7 +129,7 @@ def itemData_filter(request, supercat):
     This method takes a supercategory name as an argument and renders a view of
     the criteria in this supercategory.
     """
-    itemFormSet = modelformset_factory(itemDatum, fields=('id','include',), extra=0)
+    itemFormSet = modelformset_factory(itemDatum, fields=('id',), extra=0)
     sform = SearchForm(data = request.POST)
     r=itemDatum.objects.filter(supercategory=supercat)
     formset = itemFormSet(queryset=r)

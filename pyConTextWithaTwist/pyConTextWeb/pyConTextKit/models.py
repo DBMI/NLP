@@ -68,7 +68,7 @@ class itemDatum(models.Model):
     re.help_text='regular expression'
     rule = models.ForeignKey(itemRule)
     creator = models.ForeignKey(creator)
-    include = models.BooleanField() # we want to delete include from itemDatum
+    #include = models.BooleanField() # we want to delete include from itemDatum
     def __unicode__(self):
         return self.literal
     
