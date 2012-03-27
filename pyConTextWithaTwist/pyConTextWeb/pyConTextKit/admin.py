@@ -24,7 +24,7 @@ class itemDatumAdmin(admin.ModelAdmin):
     search_fields = ['literal']
     fieldsets = (
         (None, {
-            'fields': ('supercategory','literal', 'category', 're', 'rule','creator','include'),
+            'fields': ('supercategory','literal', 'category', 're', 'rule','creator'),
             'description': 'This application employs Python regular expressions. Refer to the key below for guidance on how to create regular expressions.<br>\s: space<br>|: or<br>\w: alphanumeric character or underscore (equivalent to [a-zA-Z0-9_])<br>*: match one or more repetitions of the preceding regular expression<br>?: matches 0 or 1 of the preceding regular expressions'}),
     )
 
