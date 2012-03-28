@@ -75,7 +75,7 @@ class itemDatum(models.Model):
 class itemDatumSet(models.Model):
     setname = models.CharField(max_length=50)
     itemDatum = models.ForeignKey(itemDatum)
-    include = models.BooleanField()
+    #include = models.BooleanField()
     def __unicode__(self):
         return self.setname
 

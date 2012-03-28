@@ -58,23 +58,23 @@ class itemRule(models.Model):
 
 class collection(models.Model):
     name = models.CharField(max_length=250)
-    creator = models.ForeignKey('creator')
+    creator = models.ForeignKey(creator)
     
 class itemDatum(models.Model):
-    supercategory = models.ForeignKey('supercategory')
+    supercategory = models.ForeignKey(supercategory)
     category = models.ForeignKey(category)
     literal = models.CharField(max_length=250)
     re = models.CharField(max_length=250,blank=True)
     re.help_text='regular expression'
-    rule = models.ForeignKey('itemRule')
-    creator = models.ForeignKey('creator')
+    rule = models.ForeignKey(itemRule)
+    creator = models.ForeignKey(creator)
     include = models.BooleanField() # we want to delete include from itemDatum
     def __unicode__(self):
         return self.literal
     
 class itemDatumSet(models.Model):
     setname = models.CharField(max_length=50)
-    itemDatum = models.ForeignKey('itemDatum')
+    itemDatum = models.ForeignKey(itemDatum)
     include = models.BooleanField()
     def __unicode__(self):
         return self.setname
@@ -83,9 +83,9 @@ class ReportType(models.Model):
     name = models.CharField(max_length=250)
 
 class Report(models.Model):
-    dataset = models.ForeignKey('collection') 
+    dataset = models.ForeignKey(collection) 
     reportid = models.TextField()
-    reportType = models.ForeignKey('ReportType')
+    reportType = models.ForeignKey(ReportType)
     report = models.TextField()
     def __unicode__(self):
         return str(self.reportid)
