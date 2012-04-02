@@ -1,0 +1,643 @@
+'(wordrule
+
+((ruleid compound0)
+ (match (words ("C0000726" "C0521440" "abdomen" "abdominal" "epigastric")))
+ (result (macro "_ABDOMEN_")))
+ 
+((ruleid compound1)
+ (match (words ("soreness" "achiness" "C0234238")))
+ (result (macro "_ACHE_")))
+
+((ruleid compound2)
+ (match (words ("abnormalities")))
+ (result (macro "_ABNORMALITIES_")))
+ 
+((ruleid compound3)
+ (match (words ("C0497156")))
+ (result (macro "_ADENOPATHY_")))
+ 
+ ((ruleid compound4)
+ (match (words ("C9108529")))
+ (result (macro "_AFEBRILE_")))
+ 
+ ((ruleid compound5)
+ (match (words ("air")))
+ (result (macro "_AIR_")))
+ 
+ ((ruleid compound6)
+ (match (words ("appetite" "food" "eat" "meals")))
+ (result (macro "_APPETITE_")))
+ 
+ ((ruleid compound7)
+ (match (words ("area" "side" "tolerating")))
+ (result (macro "_AREA_")))
+ 
+((ruleid compound8)
+ (match (words ("C0004339")))
+ (result (macro "_AUSCULTATION_")))
+ 
+((ruleid compound9)
+ (match (words ("decreased" "poor" "unable")))
+ (result (macro "_BAD_")))
+ 
+;;((ruleid compound10)
+;; (match (words ("blood" "bloody" "heme-positive")))
+;; (result (macro "_BLOODY_")))
+
+;; By Qi
+((ruleid compound10) (match (words ("blood" "bloody" "heme" "C0018941"))) (result (macro "_BLOODY_")))
+ 
+((ruleid compound11)
+ (match (words ("C0035234" "C0001868")))
+ (result (macro "_BREATH_SOUNDS_")))
+ 
+ ((ruleid compound12)
+ (match (words ("C0035203" "C0521346" "breathing")))
+ (result (macro "_BREATHE_")))
+ 
+ ((ruleid compound13)
+ (match (words ("C9196875" "C0225386")))
+ (result (macro "_BREATH_")))
+ 
+ ((ruleid compound14)
+ (match (words ("C0205064" "C0027530")))
+ (result (macro "_CERVICAL_")))
+ 
+ ((ruleid compound15)
+ (match (words ("C0008035")))
+ (result (macro "_CHEST_WALL_PAIN_")))
+ 
+ ((ruleid compound16)
+ (match (words ("C0205076" "C0497254" "C0521439" "C9287866")))
+ (result (macro "_CHEST_WALL_")))
+ 
+ ((ruleid compound17)
+ (match (words ("C0817096" "C0230132" "C0446469" "C0222601" "C0024764" "C0038293" "C0043356"
+ "C0222771" "C0224677" "C0229620" "C0278421" "C0447789" "C0447790" "C0448167" "C0502419"
+ "C0504220" "C0555815" "C0687097" "C0824588" "C0824589" "C0824591" "C1268182" "C1279580"
+  "C1283680" "C1305760" "C1305915" "C9110778" "C0230174" "C0458098" "C0733944" "C0738479" "C0738480"
+  "C9288402" "C0006141" "C0222600" "C0222601" "C0222603" "C0222604" "rib" "ribs" "rib cage" "thorax"
+  "midchest")))
+ (result (macro "_CHEST_")))
+ 
+ ((ruleid compound18)
+ (match (words ("C9107733")))
+ (result (macro "_CLEAR_")))
+ 
+ ((ruleid compound19)
+ (match (words ("collapse" "collapsed")))
+ (result (macro "_COLLAPSE_")))
+ 
+ ((ruleid compound20)
+ (match (words ("C1310585")))
+ (result (macro "_COMFORTABLY_")))
+ 
+ ((ruleid compound21)
+ (match (words ("C0009758" "conjunctiva" "conjunctivae")))
+ (result (macro "_CONJUNCTIVA_")))
+ 
+ ((ruleid compound22)
+ (match (words ("C0392756" "C0441610" "C0205216" "C0442797" "C0547047" "C0547046" "C0205216"
+ 	"absent" "diminished" "decreased")))
+ (result (macro "_DECREASED_")))
+ 
+ ((ruleid compound23)
+ (match (words ("difficulty" "trouble" "distress" "shortness")))
+ (result (macro "_DIFFICULTY_")))
+ 
+ ((ruleid compound24)
+ (match (words ("diarrhea")))
+ (result (macro "_DIARRHEA_")))
+ 
+ ((ruleid compound25)
+ (match (words ("nonlabored")))
+ (result (macro "_NON-DIFFICULTY_")))
+ 
+ ((ruleid compound26)
+ (match (words ("disease")))
+ (result (macro "_DISEASE_")))
+ 
+ ((ruleid compound27)
+ (match (words ("C0012359" "distended")))
+ (result (macro "_DISTENDED_")))
+ 
+ ((ruleid compound28)
+ (match (words ("C0041834")))
+ (result (macro "_ERYTHEMA_")))
+ 
+ ((ruleid compound29)
+ (match (words ("C0231800")))
+ (result (macro "_EXPIRATION_")))
+ 
+ ((ruleid compound30)
+ (match (words ("C0015967" "C0239574" "C0277799" "temperature")))
+ (result (macro "_FEVER_")))
+ 
+ ((ruleid compound31)
+ (match (words ("gasping" "gasp")))
+ (result (macro "_GASPING_")))
+ 
+ ((ruleid compound32)
+ (match (words ("C0205170" "unchanged")))
+ (result (macro "_GOOD_")))
+ 
+ ((ruleid compound33)
+ (match (words ("hurts")))
+ (result (macro "_HURTS_")))
+ 
+ ((ruleid compound34)
+ (match (words ("C0225386" "C9158334")))
+ (result (macro "_INFILTRATE_")))
+ 
+ ((ruleid compound35)
+ (match (words ("kicked")))
+ (result (macro "_KICKED_")))
+ 
+ ((ruleid compound36)
+ (match (words ("C0225386" "C1261077" "C1261076" "C1261074" "C1261075")))
+ (result (macro "_LOBE_")))
+ 
+ ((ruleid compound37)
+ (match (words ("C9291696" "low grade" "low-grade")))
+ (result (macro "_LOW_GRADE_")))
+ 
+ ((ruleid compound38)
+ (match (words ("C0205251" "C0011581" "low")))
+ (result (macro "_LOW_")))
+ 
+ ((ruleid compound39)
+ (match (words ("lung" "lungs")))
+ (result (macro "_LUNGS_")))
+ 
+ ((ruleid compound40)
+ (match (words ("C0748355" "C0026385" "mass" "masses")))
+ (result (macro "_MASS_")))
+ 
+ ((ruleid compound41)
+ (match (words ("C0025066" "C0442024" "mediastinal" "mediastinum")))
+ (result (macro "_MEDIASTINAL_")))
+ 
+ ((ruleid compound42)
+ (match (words ("_MEDIASTINAL_")))
+ (result (macro "_MEDIASTINUM_")))
+ 
+ ((ruleid compound43)
+ (match (words ("C0497254" "musculoskeletal")))
+ (result (macro "_MUSCULOSKELETAL_")))
+ 
+ ((ruleid compound44)
+ (match (words ("nondistended")))
+ (result (macro "_NONDISTENDED_")))
+ 
+ ((ruleid compound45)
+ (match (words ("nonerythematous")))
+ (result (macro "_NONERYTHEMATOUS_")))
+ 
+ ((ruleid compound46)
+ (match (words ("noninjected")))
+ (result (macro "_NONINJECTED_")))
+ 
+ ((ruleid compound47)
+ (match (words ("C9342180" "C0442816" "normal" "unremarkable")))
+ (result (macro "_NORMAL_")))
+ 
+ ((ruleid compound48)
+ (match (words ("no")))
+ (result (macro "_NO_")))
+ 
+ ((ruleid compound49)
+ (match (words ("C9289461" "pharynx" "epiglottis")))
+ (result (macro "_OROPHARYNX_")))
+ 
+ ((ruleid compound50)
+ (match (words ("C0369768" "C0678572" "C0522534" "C0369768" "C0030054" "C0034108" "oxygen")))
+ (result (macro "_OXYGEN_")))
+ 
+ ((ruleid compound51)
+ (match (words ("C0030193" "C0234215" "C0439816" "C0234224" "C9328268" "C9330270" "cramping" "pain")))
+ (result (macro "_PAIN_")))
+ 
+ ((ruleid compound52)
+ (match (words ("palpation")))
+ (result (macro "_PALPATION_")))
+ 
+ ((ruleid compound53)
+ (match (words ("pink")))
+ (result (macro "_PINK_")))
+ 
+ ((ruleid compound54)
+ (match (words ("C0032231" "pleuritic")))
+ (result (macro "_PLEURITIC_")))
+ 
+ ((ruleid compound55)
+ (match (words ("C9107946" "respiratory rate")))
+ (result (macro "_RESPIRATORY_RATE_")))
+ 
+ ((ruleid compound56)
+ (match (words ("room")))
+ (result (macro "_ROOM_")))
+ 
+ ((ruleid compound57)
+ (match (words ("saturations")))
+ (result (macro "_SATURATIONS_")))
+ 
+ ((ruleid compound58)
+ (match (words ("C0333051" "shift")))
+ (result (macro "_SHIFT_")))
+ 
+ ((ruleid compound59)
+ (match (words ("C9107710" "short" "shortness")))
+ (result (macro "_SHORTNESS_")))
+ 
+ ((ruleid compound60)
+ (match (words ("signs")))
+ (result (macro "_SIGNS_")))
+ 
+ ((ruleid compound61)
+ (match (words ("C0418391" "stabbing")))
+ (result (macro "_STABBING_")))
+ 
+ ((ruleid compound62)
+ (match (words ("C0080194" "strain")))
+ (result (macro "_STRAIN_")))
+ 
+ ((ruleid compound63)
+ (match (words ("C0234233" "C0684239" "C9108041" "C0234233" "C0234234" "tender" "tenderness")))
+ (result (macro "_TENDERNESS_")))
+ 
+ ((ruleid compound64)
+ (match (words ("C0205358" "nontender")))
+ (result (macro "_NONTENDERNESS_")))
+ 
+ ((ruleid compound65)
+ (match (words ("vital")))
+ (result (macro "_VITAL_")))
+ 
+ ((ruleid compound66)
+ (match (words ("C0392746")))
+ (result (macro "_WELL_")))
+ 
+ ((ruleid compound67)
+ (match (words ("without")))
+ (result (macro "_WITHOUT_")))
+ 
+ ((ruleid compound68)
+ (match (words ("widened" "widening")))
+ (result (macro "_WIDENED_")))
+ 
+ ((ruleid compound69)
+ (match (words ("C0039985" "xray" "x-ray" "x ray")))
+ (result (macro "_XRAY_")))
+ 
+ ((ruleid compound70)
+ (match (words ("negative")))
+ (result (macro "_NEGATIVE_")))
+ 
+ ((ruleid compound71)
+ (match (words ("room-air" "room air")))
+ (result (macro "_ROOM_AIR_")))
+ 
+ ((ruleid compound72)
+ (match (words ("stool" "stools")))
+ (result (macro "_STOOL_")))
+ 
+ ((ruleid compound73)
+  (match (words ("tests" "test" "cultures" "culture" "samples" "sample" 
+ 					"studies" "study" "specimens" "specimen")))
+ (result (macro "_ORDER_")))
+ 
+((ruleid compound74)
+ (words ("_BLOODY_") ("_DIARRHEA_"))
+ (ordered false)
+ (result (concept "diarrhea, bloody")))
+ 
+((ruleid compound75)
+ (words("_STOOL_") ("_ORDER_"))
+ (ordered false)
+ (result (concept ""stool order"")))
+ 
+((ruleid compound76)
+ (words("_GOOD_") ("_APPETITE_"))
+ (ordered false)
+ (result (concept "anorexia") 
+         (features (directionality "Negated"))))
+ 
+((ruleid compound77)
+ (words("_BAD_") ("_APPETITE_"))
+ (ordered false)
+ (result (concept "anorexia")))
+ 
+((ruleid compound78)
+ (words("_ABDOMEN_") ("_NONTENDERNESS_"))
+ (ordered false)
+ (result (concept "abdominal tenderness") 
+         (features (directionality "Negated"))))
+ 
+((ruleid compound79)
+ (words("_ABDOMEN_") ("_TENDERNESS_"))
+ (ordered false)
+ (result (concept "abdominal tenderness")))
+ 
+ ;; 3/8/2011
+ ((ruleid compound79_2)
+  (words ("_TENDERNESS_"))
+  (header_contains "abdom")
+  (result (concept "abdominal tenderness")))
+ 
+((ruleid compound80)
+ (words("_ABDOMEN_") ("_DISTENDED_"))
+ (ordered false)
+ (result (concept "abdominal distension")))
+ 
+((ruleid compound81)
+ (words("_ABDOMEN_") ("_NONDISTENDED_"))
+ (ordered false)
+ (result (concept "abdominal distension") 
+         (features (directionality "Negated"))))
+ 
+((ruleid compound82)
+ (words("_BREATH_SOUNDS_") ("_CLEAR_"))
+ (ordered false)
+ (result (concept "rales/crackles")
+         (features (directionality "Negated"))))
+ 
+((ruleid compound83)
+ (words("_BREATH_SOUNDS_") ("_DECREASED_"))
+ (ordered false)
+ (result (concept "breath sounds decreased")))
+ 
+((ruleid compound84)
+ (words("_BREATHE_") ("_COMFORTABLY_"))
+ (ordered false)
+ (result (concept "dyspnea") 
+         (features (directionality "Negated"))))
+ 
+((ruleid compound85)
+ (words("_BREATHE_") ("_DIFFICULTY_"))
+ (ordered false)
+ (result (concept "dyspnea")))
+ 
+((ruleid compound86)
+ (words("_BREATHE_") ("_NON-DIFFICULTY_"))
+ (ordered false)
+ (result (concept "dyspnea")
+         (features (directionality "Negated"))))
+ 
+((ruleid compound87)
+ (words("_CERVICAL_") ("_ADENOPATHY_"))
+ (ordered false)
+ (result (concept "cervical adenopathy")))
+ 
+((ruleid compound88)
+ (words("_CHEST_") ("_AREA_") ("_PAIN_"))
+ (ordered false)
+ (result (concept "chest pain (non-pleuritic)")))
+ 
+((ruleid compound89)
+ (words("_NO_") ("_XRAY_") ("_DISEASE_"))
+ (ordered false)
+ (result (concept "xray_normal")))
+ 
+((ruleid compound90)
+ (words("_CHEST_") ("_PAIN_"))
+ (ordered false)
+ (result (concept "chest pain (non-pleuritic)")))
+ 
+((ruleid compound91)
+ (words("_CHEST_") ("_ACHE_"))
+ (ordered false)
+ (result (concept "musculoskeletal chest pain")))
+ 
+((ruleid compound92)
+ (words("_CHEST_") ("_TENDERNESS_"))
+ (ordered false)
+ (result (concept "chest tenderness")))
+ 
+((ruleid compound93)
+ (words("_CHEST_WALL_") ("_PAIN_"))
+ (ordered false)
+ (result (concept "musculoskeletal chest pain")))
+ 
+((ruleid compound94)
+ (words("_CHEST_WALL_") ("_TENDERNESS_"))
+ (ordered false)
+ (result (concept "chest tenderness")))
+ 
+((ruleid compound95)
+ (words("_CLEAR_") ("_AUSCULTATION_"))
+ (ordered false)
+ (result (concept "clear_to_auscultation")))
+ 
+((ruleid compound96)
+ (words("_COLLAPSE_") ("_LUNGS_" "_LOBE_"))
+ (ordered false)
+ (result (concept "atelectasis")))
+ 
+((ruleid compound97)
+ (words("_CONJUNCTIVA_") ("_NONINJECTED_" "_PINK_"))
+ (ordered false)
+ (result (concept "conjunctivitis")))
+ 
+((ruleid compound98)
+ (words("_EXPIRATION_") ("_GOOD_"))
+ (ordered false)
+ (result (concept "breath sounds decreased")))
+ 
+((ruleid compound99)
+ (words("_GASPING_") ("_AIR_"))
+ (ordered false)
+ (result (concept "dyspnea")))
+ 
+((ruleid compound100)
+ (words("_HURTS_") ("_BREATHE_"))
+ (ordered false)
+ (result (concept "chest pain (pleuritic)")))
+ 
+((ruleid compound101)
+ (words("_KICKED_") ("_CHEST_"))
+ (ordered false)
+ (result (concept "chest trauma")))
+ 
+((ruleid compound102)
+ (words("_LOBE_") ("_INFILTRATE_"))
+ (ordered false)
+ (result (concept "pneumonia dx")))
+ 
+((ruleid compound103)
+ (words("_LOBE_") ("_MASS_"))
+ (ordered false)
+ (result (concept "pulmonary mass")))
+ 
+((ruleid compound104)
+ (words("_LOW_GRADE_") ("_FEVER_"))
+ (ordered false)
+ (result (concept "fever")))
+ 
+((ruleid compound105)
+ (words("_LUNGS_") ("_CLEAR_"))
+ (ordered false)
+ (result (concept "clear_to_auscultation")))
+ 
+((ruleid compound106)
+ (words("_MEDIASTINAL_") ("_SHIFT_"))
+ (ordered false)
+ (result (concept "mediastinal shift")))
+ 
+((ruleid compound107)
+ (words("_MUSCULOSKELETAL_") ("_CHEST_WALL_PAIN_" "_STRAIN_"))
+ (ordered false)
+ (result (concept "musculoskeletal chest pain")))
+ 
+((ruleid compound108)
+ (words("_NO_") ("_ABNORMALITIES_") ("_XRAY_"))
+ (ordered false)
+ (result (concept "xray_normal")))
+ 
+((ruleid compound109)
+ (words("_NO_") ("_DISEASE_") ("_CHEST_"))
+ (ordered false)
+ (result (concept "xray_normal")))
+ 
+((ruleid compound110)
+ (words("_NONERYTHEMATOUS_"))
+ (ordered false)
+ (result (concept "pharyngitis")
+         (features (directionality "Negated"))))
+ 
+((ruleid compound111)
+ (words("_NORMAL_") ("_ROOM_" "_AIR_" "_ROOM_AIR_") ("_SATURATIONS_"))
+ (ordered false)
+ (result (concept "oxygen desaturation")
+         (features (directionality "Negated"))))
+
+((ruleid compound112)
+ (words("_NORMAL_") ("_VITAL_") ("_SIGNS_"))
+ (ordered false)
+ (result (concept "normal_vital_signs")
+ 		 (features (directionality "Negated"))))
+ 
+((ruleid compound113)
+ (words("_OROPHARYNX_") ("_CLEAR_"))
+ (ordered false)
+ (result (concept "pharyngitis")))
+ 
+((ruleid compound114)
+ (words("_OROPHARYNX_") ("_WITHOUT_" "_NO_") ("_ERYTHEMA_"))
+ (ordered false)
+ (result (concept "pharyngitis")
+         (features (directionality "Negated"))))
+ 
+((ruleid compound115)
+ (words("_OROPHARYNX_") ("_NORMAL_"))
+ (ordered false)
+ (result (concept "pharyngitis")
+         (features (directionality "Negated"))))
+ 
+((ruleid compound116)
+ (words("_OXYGEN_") ("_LOW_"))
+ (ordered false)
+ (result (concept "oxygen desaturation")))
+ 
+((ruleid compound117)
+ (words("_OXYGEN_") ("_WELL_" "_GOOD_") ("_OXYGEN_"))
+ (ordered false)
+ (result (concept "oxygen desaturation")
+         (features (directionality "Negated"))))
+ 
+((ruleid compound118)
+ (words("_PAIN_") ("_PALPATION_") ("_CHEST_"))
+ (ordered false)
+ (result (concept "chest tenderness")))
+ 
+((ruleid compound119)
+ (words("_RESPIRATORY_RATE_") ("_DECREASED_" "_LOW_"))
+ (ordered false)
+ (result (concept "tachypnea")
+         (features (directionality "Negated"))))
+ 
+((ruleid compound120)
+ (words("_SHORTNESS_") ("_BREATH_"))
+ (ordered false)
+ (result (concept "dyspnea")))
+ 
+((ruleid compound121)
+ (words("_STABBING_") ("_PAIN_"))
+ (ordered false)
+ (result (concept "chest pain (non-pleuritic)")))
+ 
+((ruleid compound122)
+ (words("_TENDERNESS_") ("_CHEST_"))
+ (ordered false)
+ (result (concept "chest tenderness")))
+ 
+((ruleid compound123)
+ (words("_VITAL_") ("_SIGNS_") ("_NORMAL_"))
+ (ordered false)
+ (result (concept "normal_vital_signs")))
+ 
+((ruleid compound124)
+ (words("_WIDENED_") ("_MEDIASTINUM_"))
+ (ordered false)
+ (result (concept "widened mediastinum")))
+ 
+ ((ruleid compound125)
+ (words("_XRAY_") ("_NO_") ("_ABNORMALITIES_"))
+ (ordered false)
+ (result (concept "xray_normal")))
+ 
+ ((ruleid compound126)
+ (words("_XRAY_") ("_NORMAL_"))
+ (ordered false)
+ (result (concept "xray_normal")))
+ 
+;; Note:  Need to add core concept indexes to sentence annotation hash.
+
+ ((ruleid compound127)
+ (match (words ("chest pain (non-pleuritic)" "musculoskeletal chest pain")))
+ (result (macro "_CPNP_")))
+ 
+((ruleid compound128)
+ (words("_CPNP_") ("pleuritic"))
+ (ordered false)
+ (result (concept "chest pain (pleuritic)")))
+ 
+((ruleid compound129)
+ (words("_CPNP_") ("muscoloskeletal" "musculoskeletal" "chest" "wall" "chest wall"))
+ (ordered false)
+ (result (concept "musculoskeletal chest pain")))
+ 
+((ruleid compound130)
+ (words("_CPNP_") ("atypical" "reproducible" "palpation"))
+ (ordered false)
+ (result (concept "chest tenderness")))
+ 
+ ((ruleid compound131)
+ (match (words ("C0000726" "abdomen")))
+ (result (macro "_ABDOMEN_")))
+ 
+ ((ruleid compound132)
+ (match (words ("C0012359" "distended")))
+ (result (macro "_DISTENDED_")))
+ 
+ ((ruleid compound133)
+ (match (words ("nondistended")))
+ (result (macro "_NONDISTENDED_")))
+ 
+((ruleid compound134)
+ (words("_ABDOMEN_") ("_DISTENDED_"))
+ (ordered false)
+ (result (concept "abdominal distension")))
+ 
+((ruleid compound135)
+ (words ("_ABDOMEN_") ("_NONDISTENDED_"))
+ (ordered false)
+ (result (concept "abdominal distension")
+         (features (directionality "Negated"))))
+
+((ruleid compound137) (match (words ("negative" "-" "neg"))) (result (macro "_NEGATIVE_")))((ruleid compound139) (words ("_BLOODY_") ("_NEGATIVE_")) (ordered false) (result (concept "hemoccult") 	 (features (directionality "Negated"))))
+ 
+;; Unable to implement the "clear_to_auscultation" "xray_normal", "productive_cough", "normal_vital_signs",
+;; "fever_with_chills" rules -- they involve reprocessing other annotations.
+ 
+ )
+ 

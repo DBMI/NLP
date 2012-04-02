@@ -1,0 +1,597 @@
+'(wordrule
+
+((ruleid cc0)
+ (words ("nondyspneic"))
+  (result (concept "dyspnea")
+ 		  (features (directionality "Negated"))))
+ 
+((ruleid cc1)
+ (words ("C0239574" "C9108529" "afebrile"))
+ (result (concept "fever") (features (directionality "Negated"))))
+ 
+((ruleid cc2)
+ (words ("nonproductive"))
+ (result (concept "sputum production") (features (directionality "Negated"))))
+ 
+((ruleid cc3)
+ (words ("C0232188"))
+ (result (concept "tachycardia") (features (directionality "Negated"))))
+ 
+((ruleid cc4)
+ (words ("C0000731" "C0232570" "C0235698" "C0424824" "C0577127" "C0577128" "abdominal distention"))
+ (result (concept "abdominal distension")))
+ 
+((ruleid cc5)
+ (words ("C0027051" "C0948089" "mi" "acute coronary syndrome"))
+ (result (concept "acute coronary syndrome")))
+ 
+((ruleid cc6)
+ (words ("C0003467" "C0027769" "C0030318" "C0231397" "C0231401" "C0231402" "C0233483" "C0424145" 
+	"C0424166" "C0458631" "C0474385" "C0522179" "C0558208" "C0700031" "C0700613" "C0871504" 
+	"C1561361" "C1561362" "C1561363" "C1561364" "C1561365" "anxiety"))
+ (result (concept "anxiety")))
+ 
+((ruleid cc7)
+ (words ("C0004096" "C0004099" "C0038218" "C0155877" "C0155879" "C0155880" "C0155882" 
+	"C0264405" "C0264408" "C0264409" "C0264410" "C0264411" "C0264412" "C0264413" "C0264414" 
+	"C0264423" "C0340067" "C0340070" "C0347950" "C0348819" "C0349790" "C0494660" 
+	"C0582415" "C0684913" "C0694548" "C0729337" "C1563057" "asthma"))
+ (result (concept "asthma")))
+ 
+ ;;
+ 
+((ruleid cc8)
+ (words ("C0004144" "C0026069" "C0040794" "C0264494" "C0264495" "C0264496" "C0264497" "C0264498" 
+"C0264499" "C0340074" "C1290342" "C1290343" "C1557637" "C1557638" "C1557639" "C1557640" 
+"C1557641" "C1628489" "atelectasis"))
+ (result (concept "atelectasis")))
+ 
+((ruleid cc9)
+ (words ("C0238844" "breath sounds decreased"))
+ (result (concept "breath sounds decreased")))
+ 
+((ruleid cc10)
+ (words ("C0006271" "C0006277" "C0008677" "C0023077" "C0040586" "C0149514" "C0152573" 
+"C0264342" "C0264343" "C0264344" "C0264404" "C0264455" "C0275765" "C0276141" "C0339927" 
+"C1260881" "C1319018" "bronchitis"))
+ (result (concept "bronchitis")))
+ 
+((ruleid cc11)
+ (words ("C0007192" "C0007193" "C0007194" "C0007196" "C0007930" "C0027059" "C0033141" 
+"C0036529" "C0151328" "C0264787" "C0264789" "C0264790" "C0264791" "C0264793" "C0264795" 
+"C0264796" "C0264797" "C0264798" "C0264799" "C0264800" "C0264801" "C0264802" "C0264803" 
+"C0264804" "C0264805" "C0264806" "C0264807" "C0264808" "C0264809" "C0264810" "C0264811" 
+"C0264812" "C0264813" "C0264814" "C0264815" "C0264816" "C0264817" "C0264818" "C0264819" 
+"C0264820" "C0264821" "C0264822" "C0264823" "C0264824" "C0264825" "C0264826" "C0264827" 
+"C0264829" "C0264831" "C0264832" "C0264833" "C0264834" "C0264835" "C0264836" "C0264837" 
+"C0264838" "C0264839" "C0264840" "C0264841" "C0264842" "C0264843" "C0264844" "C0264845" 
+"C0264847" "C0264848" "C0264849" "C0264850" "C0269972" "C0340279" "C0340325" "C0340419" 
+"C0340422" "C0340425" "C0340427" "C0340434" "C0348615" "C0348616" "C0348617" "C0349517" 
+"C0349788" "C0543815" "C0543816" "C0553980" "C0685104" "C0694499" "C0878544" "C1689817" 
+"cardiomyopathy"))
+ (result (concept "cardiomyopathy")))
+ 
+ ((ruleid cc12)
+ (words ("chest pain" "thoracic pain"
+	"C0235717" "C0002962" "C0008031" "C0029537" "C0151826" "C0232285" "C0232286" 
+	"C0232288" "C0232289" "C0232290" "C0235710" "C0241243" "C0392685" "C0423633" 
+	"C0423634" "C0423636" "C0423684" "C0438716" "C0522051" "C0541828" "C0558455" 
+	"C0563275" "C0563278" "C0577659" "C0581866" "C1279523" "C1299600" "C9036125" 
+"C0817096" "C0817096" "C0817096" "C1962977" "C1962977" "C0817096" 
+"C0817096" "C2364139" "C2364139" "C0817096"))
+ (result (concept "chest pain")))
+
+((ruleid cc13)
+ (words ("C0239008" "chest tenderness"))
+ (result (concept "chest tenderness")))
+
+
+((ruleid cc14)
+ (words ("C0006272" "C0008677" "C0024117" "C0034067" "C0155883" "C0340044" "C0730604" 
+ "C0730605" "C0730607" "C0740304" "C1277261" "copd" "emphysema"
+ "chronic obstructive pulmonary disease"))
+ (result (concept "chronic obstructive pulmonary disease")))
+
+((ruleid cc15)
+ (words ("C0032781" "C0264273" "C0277919" "C0333233" "C0333234" "C0333236" "C0333237" 
+	"C0333238" "C0475767" "C0522563" "C0522564" "C0700148" "C1260880" "C9047173" 
+	"C9108263" "congestion"))
+ (result (concept "congestion")))
+
+((ruleid cc16)
+ (words ("C0001309" "C0005743" "C0009763" "C0009766" "C0009768" "C0009774" "C0022573" 
+	"C0155141" "C0155144" "C0155145" "C0155148" "C0155152" "C0221384" "C0339159" 
+	"C0348519" "C0497209" "C0521725" "C0521726" "C0521727" "C0854165" "C1274789" 
+	"C1274790" "C1274791" "C1280001" "C1442983" "C1504526" "conjunctivitis"))
+ (result (concept "conjunctivitis")))
+
+((ruleid cc17)
+ (words ("C0010200" "C0010201" "C0151574" "C0231911" "C0231912" "C0231913" "C0231914" 
+	"C0231916" "C0231917" "C0234866" "C0239133" "C0240351" "C0264345" "C0277870" 
+	"C0277872" "C0425496" "C0425502" "C0425509" "C0425510" "C0451597" "C0562483" 
+	"C0567366" "C0574067" "C0577662" "C0577920" "C0581864" "C0586750" "C0850149" 
+	"C1277295" "C1277590" "C1557659" "C1557660" "C1557661" "C1642397" "C1961131" 
+	"C0687152" "cough" "coughed" "coughs" "coughing"))
+ (result (concept "cough")))
+
+((ruleid cc18)
+ (words ("C0010520" "C0235532" "C0235777" "C0332581" "C0521800" "C0578475" "C1367053" 
+	"C9036394" "C0332580" "cyanotic" "cyanosis"))
+ (result (concept "cyanosis")))
+
+((ruleid cc19)
+ (words ("dullness"))
+ (result (concept "dullness")))
+
+((ruleid cc20)
+ (words ("C0001127" "C0001883" "C0004096" "C0013404" "C0013405" "C0018196" 
+	"C0020440" "C0035222" "C0035229" "C0035232" "C0085619" "C0231803" "C0231804" 
+	"C0231805" "C0231806" "C0231807" "C0231848" "C0242676" "C0243025" "C0277855" 
+	"C0277856" "C0344357" "C0392194" "C0398353" "C0425446" "C0425449" "C0425451" 
+	"C0474453" "C0475116" "C0476273" "C0520825" "C0553668" "C0574066" "C0748355" 
+	"C0853326" "C0865850" "C1145670" "C1271933" "C1271936" "C1271937" "C1271938" 
+	"C1271939" "C1301608" "C1319921" "C1368020" "C1368021" "C1368022" "C1557662" 
+	"C1557663" "C1557664" "C1557665" "C1557666" "C2024878" "dyspnoea" "dyspnea" 
+	"shortness of breath" "short of breath" "dyspneic" "dyspneic-"))
+ (result (concept "dyspnea")))
+
+((ruleid cc21)
+ (words ("C0014009" "C0014013" "C0014014" "C0038539" "C0333378" "C0333399" "C0730032" 
+	"C0740253" "empyema"))
+ (result (concept "empyema")))
+
+((ruleid cc22)
+ (words ("C0009952" "C0015967" "C0015970" "C0018843" "C0024591" "C0027849" "C0038992" 
+	"C0150918" "C0231271" "C0235839" "C0277799" "C0392676" "C0410943" "C0424752" 
+	"C0424755" "C0424788" "C0437720" "C0437737" "C0586382" "C0948348" "C0948631" 
+	"C1277295" "C1287517" "C1320835" "febrile" "low grade temps" "low grade temp" "low grade temperature"
+	"low-grade temperature" "low-grade temp" "low-grade temps"
+	"fevers" "fever"))
+ (result (concept "fever")))
+
+((ruleid cc23)
+ (words ("C0085594" "fever with chills"))
+ (result (concept "fever_with_chills")))
+
+((ruleid cc24)
+ (words ("C0231218" "C0392171" "flu symptoms" "flu-like symptoms" "flulike symptoms"))
+ (result (concept "flu symptoms")))
+ 
+((ruleid cc25)
+ (words ("C0004317" "C0011364" "C0018681" "C0027427" "C0028838" "C0032810" 
+ 	"C0032816" "C0037195" "C0042376" "C0149931" "C0231613" "C0239886" "C0393736" 
+ 	"C0393750" "C0393751" "C0393754" "C0393755" "C0420855" "C0423621" "C0423622" 
+ 	"C0423623" "C0439024" "C0458101" "C0474366" "C0522250" "C0522253" "C0522254" 
+ 	"C0581875" "C0581880" "C0877781" "C1268585" "C2096315" "C0018670" "C0018670" "head pain" "head ache" "headache" "head aches" "headaches"))
+ (result (concept "headache")))
+
+((ruleid cc26)
+ (words ("C0455542" "history of pneumonia" "hx pneumonia"))
+ (result (concept "history of pneumonia")))
+
+((ruleid cc27)
+ (words ("C0001175" "C0001857" "C0019682" "C0019693" "C0019704" "C0019707" 
+	"C0085090" "C0206019" "C0237967" "C0276529" "C0276535" "C0276568" 
+	"C0343752" "C0343755" "C0520783" "C0522542" "C0522543" "C0522544" 
+	"C0522545" "C0522546" "C0522547" "C0740832" "C0853906" "C0853910" 
+	"C0853912" "C0853914" "C0853919" "C0853923" "C0853932" "C0856916" 
+	"C0877121" "C0920774" "C1095925" "C1512508" "C1536040" "C1536041" 
+	"C1697744" "C1736129" "hiv aids" "hiv/aids"))
+ (result (concept "hiv/aids")))
+ 
+((ruleid cc28)
+ (words ("C0743482" "hyperinflated lungs"))
+ (result (concept "hyperinflated lungs")))
+
+((ruleid cc29)
+ (words ("C0264576" "mediastinal shift"))
+ (result (concept "mediastinal shift")))
+ 
+((ruleid cc30)
+ (words ("C0008035" "C0026858" "C0040213" "C0231644" "C0262384" "C0264130" 
+	"C0344305" "C0458226" "C0458228" "C0476278" "C0476280" "C0574068" "C0575503" 
+	"C0677061" "musculoskeletal chest pain"))
+ (result (concept "musculoskeletal chest pain")))
+
+((ruleid cc31)
+ (words ("C0242184" "hypoxemic" "oxygen desaturation"))
+ (result (concept "oxygen desaturation")))
+
+((ruleid cc32)
+ (words ("C0001344" "C0027441" "C0031350" "C0040425" "C0042174" "C0155825" 
+	"C0242429" "C0264283" "C0264284" "C0264286" "C0264289" "C0264290" "C0276346" 
+	"C0423630" "C0542430" "C0581379" "C0581382" "C0729771" "C0747555" "C1318559" 
+	"C1527368" "pharyngitis"))
+ (result (concept "pharyngitis")))
+ 
+((ruleid cc33)
+ (words ("C0008733" "C0014013" "C0019123" "C0020303" "C0020312" "C0025184" "C0032227" 
+	"C0080032" "C0264546" "C0264547" "C0264548" "C0264550" "C0264551" "C0267966" 
+	"C0275892" "C0340002" "C0340004" "C0340005" "C0348707" "C0585110" 
+	"pleural effusion"))
+ (result (concept "pleural effusion")))
+ 
+((ruleid cc34)
+ (words ("C0002390" "C0004626" "C0006285" "C0015634" "C0026069" "C0032241" "C0032273" 
+	"C0032285" "C0032290" "C0032298" "C0032300" "C0032305" "C0032310" "C0034068" 
+	"C0036205" "C0041327" "C0085786" "C0153018" "C0153049" "C0153099" "C0206061" 
+	"C0206063" "C0242770" "C0264376" "C0264377" "C0264380" "C0264381" "C0264383" 
+	"C0264384" "C0264458" "C0264464" "C0264506" "C0264507" "C0264508" "C0264509" 
+	"C0264511" "C0264515" "C0264522" "C0276117" "C0276305" "C0276688" "C0339950" 
+	"C0339965" "C0339968" "C0340092" "C0340122" "C0340130" "C0340148" "C0340150" 
+	"C0348806" "C0348821" "C0549493" "C0694549" "C0729704" "C0740766" "C0747690" 
+	"C1112452" "C1142578" "C1275589" "C1279386" "C1290339" "C1290340" "C1290341" 
+	"C1527407" "C1532621" "pneumonia" "pneumonia dx"))
+ (result (concept "pneumonia")))
+
+((ruleid cc35)
+ (words ("infiltrate" "infiltrates" "pneumonia xray"))
+ (result (concept "pneumonia xray")))
+
+((ruleid cc36)
+ (words ("C0019077" "C0020303" "C0029850" "C0032326" "C0149781" "C0152600" 
+	"C0155907" "C0238404" "C0264554" "C0264555" "C0264556" "C0264557" "C0264558" 
+	"C0264559" "C0270159" "C0282015" "C0340007" "C0348708" "C0375336" "C0425651" 
+	"C0546333" "C0546334" "C1557768" "C1557769" "C1557770" "C1557771" "C1557772" 
+	"pneumothorax" "pneumothorax dx"))
+ (result (concept "pneumothorax dx")))
+
+((ruleid cc37)
+ (words ("C0239134" "productive cough"))
+ (result (concept "productive_cough")))
+ 
+((ruleid cc38)
+ (words ("C0007193" "C0013405" "C0013608" "C0018802" "C0034063" "C0035222" 
+ 	"C0155919" "C0264501" "C0264518" "C0264546" "C0264650" "C0264719" "C0264722" 
+ 	"C0340098" "C0340100" "C0340101" "C0347837" "C0475730" "C0685095" "C0919692" 
+ 	"C1321120" "congestive heart failure" "chf" "pulmonary edema"))
+ (result (concept "pulmonary edema dx/chf")))
+
+((ruleid cc39)
+ (words ("C0031238" "C0034065" "C0157540" "C0340533" "C0340535" "C0340536" "C0340537" 
+	"C0340539" "C0342008" "C0349752" "C0404966" "C0494583" "C0494584" "C0520546" 
+	"C0524702" "pulmonary embolus"))
+ (result (concept "pulmonary embolus")))
+
+((ruleid cc40)
+ (words ("C0006915" "C0024121" "C0149726" "C0546483" "C0587052" "C0743497" "pulmonary mass"))
+ (result (concept "pulmonary mass")))
+ 
+((ruleid cc41)
+ (words ("C0034642" "C0231867" "C0231880" "C0277863" "C0425543" "C0425544" 
+	"C0425545" "C0425547" "C0562475" "C0577961" "C0577962" 
+	"rales" "crackles" "rales/crackles" "crackles/rales"))
+ (result (concept "rales/crackles")))
+ 
+((ruleid cc42)
+ (words ("C0035508" "C0231862" "C0231863" "C0436746" "rhonchorous" "rhonchi"))
+ (result (concept "rhonchi")))
+ 
+((ruleid cc43)
+ (words ("sepsis"))
+ (result (concept "sepsis")))
+
+((ruleid cc44)
+ (words ("C0026727" "C0038056" "C0235567" "C0425520" "C0457095" "C0457096" 
+	"C0457097" "C0457099" "C0475809" "C0475810" "C0476276" "C0577982" "C9111179" 
+	"C0241235" "sputum production"))
+ (result (concept "sputum production")))
+ 
+((ruleid cc45)
+ (words ("C0023066" "C0038450" "C0234863" "C0437714" "C0577973" "C0578507" 
+	"C0585348" "C0677600" "stridor"))
+ (result (concept "stridor")))
+
+((ruleid cc46)
+ (words ("C0038990" "C0457014" "C0700590" "C9337385" "C9355043" "sweats"))
+ (result (concept "sweats")))
+
+((ruleid cc47)
+ (words ("C0039231" "C0039236" "C0039240" "C0042514" "C0080203" "C0436762" "C0558452" 
+	"C0085610" "C2029900" "tachycardia"))
+ (result (concept "tachycardia")))
+ 
+((ruleid cc48)
+ (words ("C0158940" "C0231835" "C0425488" "C0475118" "tachypneic" "tachypnea"))
+ (result (concept "tachypnea")))
+
+((ruleid cc49)
+ (words ("C0042740" "C0877203" "viral syndrome"))
+ (result (concept "viral syndrome")))
+
+((ruleid cc50)
+ (words ("C0043144" "C0231874" "C0231875" "C0277864" "C0439035" "wheezing" "wheeze"))
+ (result (concept "wheezing")))
+ 
+((ruleid cc51)
+ (words ("C0746459" "widened mediastinum" "mediastinal widening"))
+ (result (concept "widened mediastinum")))
+ 
+((ruleid cc52)
+ (words ("cervical lymphadenoma" "cervical adenopathy"))
+ (result (concept "cervical lymphadenoma")))
+
+((ruleid cc53)
+ (words ("prostration" "extreme exhaustion" "C0277794" "C0392674" "C0178629"))
+ (result (concept "prostration")))
+ 
+((ruleid cc54)
+ (words ("C0235710" "substernal discomfort" "substernal discomfort and burning" 
+		"substernal discomfort or burning"))
+ (result (concept "substernal discomfort or burning")))
+
+((ruleid cc55)
+ (words ("C0009443" "C0086066" "coryza"))
+ (result (concept "coryza")))
+ 
+((ruleid cc56)
+ (words ("C0028081" "night sweats"))
+ (result (concept "night sweat" )))
+ 
+((ruleid cc57)
+ (words ("ili" "influenza-like-illness" "flu-like" "flulike illness" 
+	"flu like illness" "C0521839"))
+ (result (concept "ili")))
+ 
+((ruleid cc58)
+ (words ("sore throat" "pharyngitis" "sorethroat" "C0242429" "C0031350" "C0001344"))
+ (result (concept "sore throat")))
+ 
+((ruleid cc59)
+ (words ("C0497156" "enlarged lymph nodes"))
+ (result (concept "enlarged lymph nodes")))
+
+
+((ruleid cc60)
+ (words ("loss of appetite" "appetite loss" "C1971624"))
+ (result (concept "loss of appetite")))
+
+((ruleid cc61)
+ (words ("C1971624" "abdominal stress"))
+ (result (concept "abdominal stress")))
+
+((ruleid cc62)
+ (words ("C0085498" "gram positive rods"))
+ (result (concept "gram positive rods")))
+ 
+((ruleid cc63)
+ (words ("C0020649" "hypotension"))
+ (result (concept "hypotension")))
+ 
+((ruleid cc64)
+ (words ("syncope" "fainting" "loss of consciousness" "loc" "C0039070"))
+ (result (concept "syncope")))
+ 
+((ruleid cc65)
+ (words ("C0013604" "subcutaneous edema"))
+ (result (concept "subcutaneous edema")))
+ 
+ ;;
+
+((ruleid cc66)
+ (words ("rectal urgency" "urgent desire for stool" "C0426636"))
+ (result (concept "rectal urgency")))
+ 
+((ruleid cc67)
+ (words ("diarrhea small volume" "C0011991"))
+ (result (concept "diarrhea small volume")))
+ 
+((ruleid cc68)
+ (words ("hematochezia" "C1321898"))
+ (result (concept "hematochezia")))
+ 
+((ruleid cc)
+ (words ("hematochezia" "C1321898"))
+ (result (concept "hematochezia")))
+ 
+((ruleid cc69)
+ (words ("abdominal tenderness" "abdomen tender" "tender abdomen" "C0232498" 
+	"C0000726" "C0234233" "C0234233" "C0000726" "C0000726" "C0234234" "C0234234" "C0000726"))
+ (result (concept "abdominal tenderness")))
+ 
+((ruleid cc70)
+ (words ("abdominal distress" "abdominal stress" "abdomen distress" "C0235295"))
+ (result (concept "abdominal distress")))
+ 
+((ruleid cc71)
+ (words ("abdominal pain" "abdomen pain" "C0000737" "C0000726"))
+ (result (concept "abdominal pain")))
+
+((ruleid cc72)
+ (words ("anorexia" "C0003123" "C0426579" "C1963063"))
+ (result (concept "anorexia")))
+
+((ruleid cc73)
+ (words ("arthralgia" "arthralgias" "C0003862"))
+ (result (concept "arthralgia")))
+ 
+((ruleid cc74)
+ (words ("C0004093" "asthenia"))
+ (result (concept "asthenia")))
+
+((ruleid cc75)
+ (words ("bacteremia" "bacteraemia" "C0004610"))
+ (result (concept "bacteremia")))
+
+((ruleid cc76)
+ (words ("bacteria" "C0004611"))
+ (result (concept "bacteria")))
+ 
+((ruleid cc77)
+ (words ("bacterial gastroenteritis" "C0558348"))
+ (result (concept "bacterial gastroenteritis")))
+
+((ruleid cc78)
+ (words ("confusion" "altered mental state" "confused" "C0009676" "C1963086"))
+ (result (concept "confusion")))
+ 
+((ruleid cc79)
+ (words ("convulsions" "convulsion" "fit" "fits" "seizure" "seizures"
+			"C0009951" "C0036572" "C0234531" "C0234532" "C0036572" "C1959629"))
+ (result (concept "convulsions")))
+ 
+((ruleid cc80)
+ (words ("dehydration" "dehydrated" "dehydrate" "C0011175" "C1963090"))
+ (result (concept "dehydration")))
+ 
+((ruleid cc81)
+ (words ("desquamation" "shedding skin" "skin shedding" "skin shed" "C0237849"))
+ (result (concept "desquamation")))
+ 
+((ruleid cc82)
+ (words ("difficulty swallowing" "difficult swallowing" "hard to swallow" "C0011168"))
+ (result (concept "difficult swallowing"))) 
+
+((ruleid cc83)
+ (words ("encephalitis" "meningoencephalitis" "C0014038" "C0025309" 
+	"C0006104" "C0038999" "C0038999" "C0006104" "C1269537" "C0038999" "C0038999" "C1269537"))
+ (result (concept "encephalitis")))
+ 
+((ruleid cc84)
+ (words ("enlarged lymph node" "enlarged lymph nodes" "C0497156"))
+ (result (concept "enlarged lymph node")))
+ 
+((ruleid cc85)
+ (words ("food poisoning" "C0016479"))
+ (result (concept "food poisoning")))
+ 
+((ruleid cc86)
+ (words ("gastroenteritis" "C0017160"))
+ (result (concept "gastroenteritis")))
+
+((ruleid cc87)
+ (words ("hemoccult" "C0201811"))
+ (result (concept "hemoccult")))
+ 
+((ruleid cc88)
+ (words ("fecal" "feacal") ("occult") ("blood"))
+ (result (concept "hemoccult")))
+
+((ruleid cc89)
+ (words ("hemoptysis" "haemoptysis" "C0151701" "C0473807" "C0476274" "C0555056" "C0577977" "C0019079"))
+ (result (concept "hemoptysis")))
+ 
+((ruleid cc90)
+ (words ("cough" "coughing" "coughs" "expectoration") ("blood"))
+ (result (concept "hemoptysis")))
+ 
+((ruleid cc91)
+ (words ("C0016627" "C0021400" "C0021414" "C0155870" "C0155871" "C0276345" "C0276346" "C0276347" 
+	"C0276349" "C0276351" "C0276352" "C0276353" "C0276354" "C0276357" "C1443245" "influenza" "flu"))
+ (result (concept "influenza")))
+ 
+((ruleid cc92)
+ (words ("C0917801" "insomnia" "cannot sleep" "difficulty sleeping" "unable to sleep"))
+ (result (concept "insomnia")))
+ 
+((ruleid cc93)
+ (words ("C0221200" "koplik spots" "koplik spot" "koplick spot" "koplick spots"))
+ (result (concept "koplik spots")))
+ 
+((ruleid cc94)
+ (words ("lab" "laboratory") ("confirmed") ("flu" "influenza"))
+ (result (concept "lab confirmed influenza")))
+ 
+((ruleid cc95)
+ (words ("C0021400"))
+ (result (concept "lab confirmed influenza")))
+ 
+((ruleid cc96)
+ (words ("lab" "laboratory") ("confirmed") ("shigellosis"))
+ (result (concept "lab confirmed shigellosis")))
+ 
+((ruleid cc97)
+ (words ("C0036953"))
+ (result (concept "lab confirmed shigellosis")))
+
+((ruleid cc98)
+ (words ("C0423791" "C0332573" "C0332563" "C0332563" "C0332573" "maculopapular rash"))
+ (result (concept "maculopapular rash")))
+ 
+((ruleid cc99)
+ (words ("malaise" "lethargy" "decreased energy" "low energy" "tired" "loss of energy" "energy loss"
+		"C0231218" "C0015672" "C0205216" "C0424589" "C0424589" "C0205216" "C0392756" "C0424589" "C0424589" 
+		"C0392756" "C0442797" "C0424589" "C0424589" "C0442797" "C0547047" "C0424589" "C0424589" "C0547047"))
+ (result (concept "malaise")))
+
+((ruleid cc100)
+ (words ("C0025289" "meningitis" "meningitis meningismus"))
+ (result (concept "meningitis")))
+
+((ruleid cc101)
+ (words ("muscle") ("pain"))
+ (ordered false)
+ (result (concept "myalgias")))
+ 
+((ruleid cc102)
+ (words ("C0026845" "C0234238" "C0231528"))
+ (result (concept "myalgias")))
+
+((ruleid cc103)
+ (words ("C0027429" "nasal obstruction"))
+ (result (concept "nasal obstruction")))
+ 
+((ruleid cc104)
+ (words ("C0879240" "C0420679" "lab ordered nasal swab" "nasal swab order" "nasal swab"))
+ (result (concept "nasal swab order")))
+ 
+((ruleid cc105)
+ (words ("C0085636" "C0239430" "pain on eye movement" "eye movement pain" "pain with eye movement"))
+ (result (concept "pain on eye movement")))
+ 
+((ruleid cc106)
+ (words ("C0151205" "C0151205" "C0013604" "C0013604" "C0151205" "C0230064" "C0013604" 
+	"C0013604" "C0230064" "periorbital edema" "periorbital oedema" "dropsy" "hydropsy"))
+ (result (concept "periorbital edema")))
+ 
+((ruleid cc107)
+ (words ("C0085636" "photophobia"))
+ (result (concept "photophobia")))
+ 
+((ruleid cc108)
+ (words ("C0267596" "C1962965" "C0019080" "rectal hemorrhage" "rectum hemorrhage"))
+ (result (concept "rectal hemorrhage")))
+ 
+((ruleid cc109)
+ (words ("C0036082" "saline" "NS"))
+ (result (concept "saline solution")))
+ 
+((ruleid cc110)
+ (words ("shiga" "shigella") ("toxin" "toxins"))
+ (result (concept "shiga toxin")))
+ 
+((ruleid cc111)
+ (words ("C0074447" "C0148323"))
+ (result (concept "shiga toxin")))
+ 
+((ruleid cc112)
+ (words ("C0013371" "C0074447" "C0148323" "C1257869" "shigellosis" "shigella" "shiga"))
+ (result (concept "shigellosis")))
+ 
+((ruleid cc113)
+ (words ("C0020649" "C0036974" "shock" "hypotension"))
+ (result (concept "shock")))
+ 
+((ruleid cc114)
+ (words ("stool") ("order" "culture" "study" "studies"))
+ (result (concept "stool order")))
+ 
+((ruleid cc115)
+ (words ("C0202010"))
+ (result (concept "stool order")))
+ 
+((ruleid cc116)
+ (words ("C0013604" "subcutaneous edema of head and neck"))
+ (result (concept "subcutaneous edema of head and neck")))
+ 
+((ruleid cc117)
+ (words ("suspected" "suspect") ("flu" "influenza"))
+ (ordered false)
+ (result (concept "suspected influenza")))
+ 
+((ruleid cc118)
+ (words ("C0042963" "C0042965" "C0042963" "vomit" "vomiting" "vomited" "emesis"))
+ (result (concept "vomiting")))
+
+
+)

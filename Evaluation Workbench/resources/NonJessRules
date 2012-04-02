@@ -1,0 +1,61 @@
+
+'(
+
+ ((id compound_word_rule_1)
+  (classes "CompoundWordRule" "SentenceAnnotation")
+  (ruleTest ?1 ?2)
+  (constructor "CompoundWordAnnotation" ?1 ?2))
+
+ ((id compound_word_rule_2)
+  (classes "CompoundWordRule" "SentenceAnnotation" "CompoundWordAnnotation")
+  (ruleTest ?1 ?2 ?3)
+  (constructor "CompoundWordAnnotation" ?1 ?2))
+
+ ((id tag_rule_compound_1)
+  (classes "TagRule" "TagAnnotation" "CompoundWordAnnotation")
+  (ruleTest ?1 ?2 ?3)
+  (constructor "TaggedConceptAnnotation" ?1 ?2))
+
+ ((id tag_rule_concept_1)
+  (classes "TagRule" "TagAnnotation" "ConceptAnnotation")
+  (ruleTest ?1 ?2 ?3)
+  (constructor "TaggedConceptAnnotation" ?1 ?2))
+
+ ((id tag_rule_compound_2)
+  (classes "TagRule" "CompoundWordAnnotation" "CompoundWordAnnotation")
+  (ruleTest ?1 ?2 ?3)
+  (constructor "TaggedConceptAnnotation" ?1 ?2))
+
+ ((id tag_rule_concept_2)
+  (classes "TagRule" "CompoundWordAnnotation" "ConceptAnnotation")
+  (ruleTest ?1 ?2 ?3)
+  (constructor "TaggedConceptAnnotation" ?1 ?2))
+
+ ((id  measurement_rule)
+  (classes "MeasurementRule" "TagAnnotation" "NumberAnnotation")
+  (ruleTest ?1 ?2 ?3)
+  (constructor "MeasurementAnnotation" ?1 ?2))
+  
+((id label_rule)
+  (classes "LabelRule" "TagAnnotation")
+  (ruleTest ?1 ?2)
+  (constructor "LabelAnnotation" ?1 ?2))
+
+;; NEW 8/29/2011
+
+  ((id onyx_case_rule)
+  (classes "OnyxCaseRule" "SentenceAnnotation")
+  (ruleTest ?1 ?2)
+  (constructor "OnyxCaseAnnotation" ?1 ?2))
+
+((id onyx_group_rule)
+  (classes "OnyxCaseRule" "SentenceAnnotation" "OnyxCaseAnnotation")
+  (ruleTest ?1 ?2 ?3)
+  (constructor "OnyxCaseAnnotation" ?1 ?2))
+
+((id onyx_concept_rule)
+  (classes "OnyxCaseRule" "SentenceAnnotation" "ConceptAnnotation")
+  (ruleTest ?1 ?2 ?3)
+  (constructor "OnyxCaseAnnotation" ?1 ?2))
+
+)

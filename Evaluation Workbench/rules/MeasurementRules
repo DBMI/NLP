@@ -1,0 +1,49 @@
+'(measurementrule
+  
+ ;; Not sure how to do liter measurements...
+
+
+((ruleid measure0)
+ (words ("pulse" "heart rate" "sinus rhythm"))
+ (cui "C2029900")
+ (concept "tachycardia")
+ (window 4)
+ (highrange (100 200))
+ (lowrange (30 100))
+ (ifhigh (directionality affirmed))
+ (iflow (directionality negated)))
+ 
+((ruleid measure1)
+ (words ("C0005903" "C9029695" "C0039476" "temperature"))
+ (cui "C0015967")
+ (concept "fever")
+ (window 4)
+ (highrange (100 110))
+ (lowrange (90 100))
+ (convert_to_fahrenheit true)
+ (ifhigh (directionality affirmed))
+ (iflow (directionality negated)))
+ 
+((ruleid measure2)
+ (words ("C0521346" "C0035203" "C9107946" "C0282636" "respiratory rate"))
+ (concept "tachypnea")
+ (ordered false)
+ (window 4)
+ (highrange (30 100))
+ (lowrange (0 30))
+ (ifhigh (directionality affirmed))
+ (iflow (directionality negated)))
+
+((ruleid measure3)
+ (words ("C0034108" "C0483415" "C9100355" "C0072632" "C0678572" "room air" "liters"))
+ (concept "oxygen saturation")
+ (ordered false)
+ (window 3)
+ (highrange (95 100))
+ (lowrange (80 94))
+ (ifhigh (directionality affirmed))
+ (iflow (directionality negated)))
+
+;; Can't do blood pressure yet, or the rest of the concepts...
+ 
+)

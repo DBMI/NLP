@@ -1,0 +1,229 @@
+
+* * * * * * * FINAL REPORT* * * * * * *
+
+EMERGENCY DEPARTMENT NOTE
+
+
+**NAME[ZZZ, YYY]
+MRN   822836
+
+ 
+Patient:   **NAME[ZZZ, YYY M]            MRN - **ID-NUM - CHP_MRN **NAME[XXX WWW]
+Age:   **AGE[birth-12] years     Sex:  Male     DOB:  **DATE[May 18 1998]
+Author:   **NAME[VVV]  M.D., **PLACE
+ 
+Basic Information
+Time seen: Date & time **DATE[Oct 22]/2008 10:00.
+History source: Patient, mother.
+Arrival mode: Walking.
+Vital signs: Vital Signs.
+**DATE[Oct 22]/2008 10:33         Pulse                     86 Beats/Minute
+                         Respiratory Rate          24 br/min  
+                         Systolic BP               117 mmHg  
+                         Diastolic BP              74 mmHg  
+                         Mean BP                   91 mmHg  
+                         BP Site                   Left arm   
+                         BP Method                 NIBP/monitor   
+                         SpO2 Bedside Monitor      99   
+                         Oxygen Therapy            Room Air   
+**DATE[Oct 22]/2008 9:29          Temperature               36.9 DegC
+                         Temperature Site          Oral   
+                         Pulse                     72 Beats/Minute  
+                         Pulse Character           Regular   
+                         Pulse Site                NIBP/monitor   
+                         Respiratory Rate          26 br/min  
+                         Systolic BP               128 mmHg  
+                         Diastolic BP              75 mmHg  
+                         BP Site                   Left arm   
+                         BP Method                 NIBP/monitor   
+                         SpO2 Bedside Monitor      99   
+                         Oxygen Therapy            Room Air   
+                         Vital Signs Comments      NSR    
+Medications: Humalog, Lantis, Humalin.
+Allergies: No known medication allergies.
+Immunizations: Up to date.
+History limitation: None.
+ 
+History of Present Illness
+   **AGE[birth-12] yo male with DM1 presenting for abdominal pain, diarrhea, and
+dehydration.  Patient began having stomach pain and diarrhea 3 days prior to
+presentation.  Diarrhea has increased to 15 times per day.  Initially was
+watery but last night began having small amounts of blood mixed with stool.
+NB/NB vomiting as well, unable to keep any food or drink down last 24 hours.
+Last night went to **PLACE ED because of large ketones and dehydration.
+Given fluids and Zofran there and sent home..
+ 
+Review of Systems
+Other significant review of systemsAll other systems reviewed and otherwise
+negative
+ 
+Past Medical/ Family/ Social History
+Medical history: Diabetes: Diabetes mellitus type 1.
+Family history: Not significant.
+Social history: Not significant.
+ 
+Physical Examination
+General appearance:  Mildly ill appearing, non toxic.
+Skin:  Within normal limits.
+Ears, nose, mouth and throat:  Within normal limits
+Heart:  Regular rate and rhythm, normal S1 & S2, no extra heart sounds,
+slightly hyperdynamic on presentation.
+Perfusion:  Within normal limits.
+Respiratory:  Lungs clear to auscultation bilaterally.  Respirations
+nonlabored.
+Abdominal:  Soft.  Non distended.  Epigastric tenderness.
+Genital:  Within normal limits.
+Back:  Within normal limits
+Extremity:  Within normal limits
+Neurological:  Within normal limits.  Alert and oriented times 3.  No focal
+neuro deficits.
+Lymph nodes:  Within normal limits
+ 
+Medical Decision Making
+Differential diagnosis
+Acute gastritis
+Gastroenteritis
+Clinical work-up/Interpretation
+Orders Placed: Medications: Lantus 15 units, Humalog 4 units, IV solutions:
+Bolused 10 cc/kg NS, Started 1.5 MIVF with D5 1/2 NS 20KCl.
+Results: Results.
+**DATE[Oct 22]/2008 11:23         pHv                       7.377
+                         PvCO2                     41.0 mmHg  
+                         PvO2                      28 mmHg  
+                         HCO3v                     24.1 mMol/L  
+                         Base Deficit Venous       1 mMol/L  
+                         Hct, Whole Blood          35.0 %  
+                         Hgb, Calculated           11.9 grams/deciliter  
+                         Total CO2 Calc, Whole Blood               25 mMol/L  
+                         SvO2                      51 %  
+                         Comment                   Bedside Test   
+                         Na, Whole Blood           136 mMol/L  
+                         K, Whole Blood            3.9 mMol/L  
+                         Glucose, Whole Blood      153 Milligrams/deciliter
+High
+                         Ionized Ca, Whole Blood   1.24 mMol/L  
+**DATE[Oct 22]/2008 10:06         Na                        137 mMol/L
+                         K                         4.4 mMol/L  
+                         Cl                        103 mMol/L  
+                         CO2                       20 mMol/L  Low  
+                         BUN                       6 Milligrams/deciliter  
+                         Cr                        0.4 Milligrams/deciliter  
+                         Glomerular Filtration Rate                Glomerular
+Filtration Rate
+                         Glucose                   162 Milligrams/deciliter
+High
+                         Ca                        9.4 Milligrams/deciliter  
+                         WBC                       12.1 X10E+09/L  
+                         RBC                       4.55 X10E+12/L  
+                         Hgb                       13.3 grams/deciliter  
+                         Hct                       37.3 %  
+                         MCV                       82.0 fL  
+                         MCH                       29.3 pg  
+                         MCHC                      35.7 grams/deciliter  
+                         RDW                       12.2 %  
+                         MPV                       9.2 fL  
+                         Platelets                 231 X10E+09/L  
+                         Neutrophils               81 %  High  
+                         Lymphs                    10 %  Low  
+                         Monocytes                 9 %  
+                         Basophils                 0 %  
+                         Eosinophils               0 %  
+                         ABS Neutrophils           9.80 X10E+09/L  High  
+                         ABS Lymphs                1.20 X10E+09/L  Low  
+                         ABS Monocytes             1.00 X10E+09/L  High  
+                         ABS Basophils             0.00 X10E+09/L  
+                         ABS Eosinophils           0.00 X10E+09/L  
+                         Type of Differential      Automated Differential   
+                         Urine Volume              >10 ml  
+                         Appearance                Clear   
+                         Color                     Yellow   
+                         Urine pH                  6.0   
+                         Specific Gravity          1.024   
+                         Bilirubin                 Neg   
+                         Blood                     Neg   
+                         Ketones                   Greater than 4+   
+                         Leukocyte Esterase        Neg   
+                         Nitrite                   Neg   
+                         Urine Protein, Qual       Trace Milligrams/deciliter  
+                         Urine Glucose, Qual       Neg Milligrams/deciliter  
+                         Urine Urobilinogen        Normal   
+                         WBC                       <1 /hpf  
+                         RBC                       2 /hpf  
+                         Squamous Epithelial Cells None /hpf  
+                         Bacteria                  None   
+                         Mucus                     Rare   
+**DATE[Oct 22]/2008 9:46          pHv                       7.450   High
+                         PvCO2                     34.9 mmHg  Low  
+                         PvO2                      63 mmHg  High  
+                         HCO3v                     24.3 mMol/L  
+                         Base Excess, Venous       1 mMol/L  
+                         Hct, Whole Blood          38.0 %  
+                         Hgb, Calculated           12.9 grams/deciliter  
+                         Total CO2 Calc, Whole Blood               25 mMol/L  
+                         SvO2                      93 %  
+                         Comment                   Bedside Test   
+                         Na, Whole Blood           135 mMol/L  Low  
+                         K, Whole Blood            4.4 mMol/L  
+                         Glucose, Whole Blood      175 Milligrams/deciliter
+High
+                         Ionized Ca, Whole Blood   1.24 mMol/L   
+Calls-Consults: Called and spoke to Endocrine Fellow Dr. **NAME[UUU] who
+recommended 10 cc/kg bolus followed by D5 1/2 NS + 20 KCl at 1.5 maintaince.
+Initially gave 15 units of lantis followed by 4 units of humalog.  Zofran 4 mg
+for abdominal pain.  Sent stool studies and C diff toxin for blood in
+diarrhea.  Initial i stat showed ketosis without DKA.  As patient was seen in
+ED at **PLACE and had to return again today, decided best to admit to Endo
+service for continued fluids overnight and close glocuse monitoring..
+ 
+Impression and Plan
+Diagnosis
+Abdominal pain  789.00 (ICD9 789.00, Discharge, Emergency medicine, Medical)
+Gastroenteritis  558.9 (ICD9 558.9, Discharge, Emergency medicine, Medical)
+Dehydration (ICD9 276.51, Working, Medical)
+DIABETES MELLITUS WITHOUT MENTION OF COMPLICATION (ICD9 250.0, Working,
+Medical)
+Discharge plan
+Condition: Stable.
+Admit: To Inpatient Unit (Endocrine Team).
+Counseled: Family.
+ 
+Addendum
+CHP attestation: CHP Attending Physician Attestation: The above documentation
+and note are filed separately and reflect that of the Emergency Department
+resident or clinician: I have personally interviewed, examined and
+participated in the care of this patient.  I have reviewed the documentation,
+discussed and agree with the history, assessment and plan except as noted in
+the following.
+Attending History & Physical: .
+**AGE[birth-12] year old male with IDDM now presents with vomiting and diarrhea.  Stool has
+been noted to contain blood streaks.  On exam, patient is tired-appearing and
+quiet, but in NAD.  Mucous membranes moist.  Neck suple.  Lungs clear.
+Abdomen soft; mildly tender in epigastrium.  Pulses and perfusion normal.
+Results Reviewed-Abnormal: I reviewed the laboratory studies and they are
+abnormal as noted.
+Patient Response to Therapy: I have observed the patient over time in the
+emergency department. The patient responded only partially to treatment and
+will be admitted, Patient remained stable throughout the ED visit.
+Disposition: I am admitting the patient to the hospital.
+Discussion: We have discussed the findings with the family, instructions
+given.
+E&M Coding: CPT-4: Level 5: 99285.
+
+
+
+Processed   **DATE[Oct 24]/2008 22:36:15/pco
+
+pc:
+**NAME[TTT SSS] MD, PCP
+
+This document has been electronically signed by **NAME[BBB M VVV] MD on
+**DATE[Oct 24]/2008 22:36:43.
+
+
+EMERGENCY DEPARTMENT NOTE
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

@@ -1,0 +1,128 @@
+
+Patient seen: 16:40
+Source of history: Both parents and patient.  **AGE[birth-12] year old female
+patient presents with abdominal pain, vomiting and diarrhea.
+Symptoms started 3 days ago with mult episodes NB/NB emesis and
+abdominal pain. Then developed watery diarrhea. C/o abdominal pain
+and low grade temps. Next day felt much better; emesis subsided,
+diarrhea persisted. Last night abdominal pain returned. Today with 2
+episodes of bright red blood in diarrhea--less than one teaspoon per
+stool. No fevers. No prev. h/o blood in stools; city water, no sick
+contacts; no h/o mouth ulcers, joint pain, rashes. On amox two weeks
+ago for suspected strep.
+
+Other family members are ill with abdominal pain.  Father is worried
+that they contracted E.coli from eating at Mc Donalds.
+
+Contact phone numbers pt. may be in transit
+cell phone: **PHONE
+cell phone **PHONE
+home phone in NC **ID-NUM
+
+phone number in PA til Thursday afternoon: **PHONE
+
+Seen at OSH and had neg CBC, BMP, US and an abdominal CT scan which
+showed fluid in pelvis. Transferred to CHP for further eval.
+
+CURRENT MEDICATIONS: None.
+ALLERGIES: Denies known medication allergies.
+PMH:  PMH negative.
+IMMUNIZATIONS: Up to date.
+ROS: as above, all remainder negative or unremarkable.
+
+PE:
+APPEARANCE: Alert.  In no distress.  Nontoxic appearing.
+VS: wt. 25.9kg; p80, r24; BP 102/49
+HEAD: Atraumatic, normocephalic.
+MOUTH  THROAT: No tonsillar enlargement.  Uvula midline.  No
+mucosal abnormalities.
+CHEST: Lungs clear to auscultation.
+CARDIOVASCULAR: Heart rate and rhythm regular.  Without murmurs.
+ABDOMEN: Bowel sounds normal.  Soft.  No masses. No organomegaly;
+mild tenderness in bilat lower quadrants with deep palpation; no
+rebound or guarding.
+EXT: WWP; CR 2s
+MENTAL STATUS: Patient alert and appropriate for age.
+
+TREATMENT  COURSE:
+Labs at OSH:
+WBC 5.4(49N, 36L, 13M); hgb 13.4; hct 38.6; plts 307
+UA--2+bl, 0-5 WBC, 0-5 RBC, tr bact
+Na 141, K 3.9; Cl 105, HCO3 25; BUN 8, Cr 0.6
+
+
+Orders:
+radiology reviewed CT scan and stated there was moderate amt free
+fluid in pelvis; no evidence appendicitis; other abdominal organs
+normal. Ddx inc. gastroenteritis or other inflammatory bowel
+disorder; no evidence of ulcers. No free air.
+25cc/kg  NS IV
+D-stick  80
+Stool culture, c. diff. sent
+Pt. able to tolerate po without difficulty.
+
+DISPOSITION/PLAN:
+
+¿ Discharge patient.
+¿ Plenty of fluids.
+¿ Bland foods, avoid milk, fatty foods.
+¿ Follow up with your doctor unless resolved.
+¿ Seek care if pain worse, changes locations, persistent vomiting,
+persistent blood in stool, signs of dehydration.
+¿ Instruction sheet provided.
+
+DISCHARGE:  The patient was discharged from the ED at .
+
+DIAGNOSIS:
+
+1.  Infectious gastroenteritis.
+
+
+CHP ATTENDING ATTESTATION:
+I have personally interviewed, examined and participated in the care
+of this patient. I have reviewed, discussed, and agree with the
+history, assessment and plan except as otherwise noted. The key
+portions are identified as follows:
+
+
+
+ATTENDING NOTE:Pt. is a 6 yr. female with a 3 day history of
+vomiting that resolved and no has diarrhea.  There has been bright
+red blood in the stool.  She  has had cramping abdominal pain.
+Father is concerned because they had eaten at a Mc Donalds, and  she
+developed diarrhea about 18 hours later.  Other family members were
+also sick with abdominal pain.  She was seen at another hospital and
+because of her abdominalpain was sent here to r/o intsussception.
+I observed her to be active, alert, complaining of abdominal pain
+and stating that she is hungry.
+HEENT were normal to my exam.  The neck was supple and non-tender on
+my examination. The lungs were clear, with no grunting, flaring, or
+retractions on my examination.  RRR normal S1 , S2,  no murmur.
+Abdomen.  Flat hyperactive bowel sounds, No hepatosplenomegally,
+tenderness of the left lower quadrant, mid and right lower abdomen,
+and right lateral abdomen. There was no guarding or rebound.
+Laboratory studies are normal, as indicated above.
+CT scan of the abdomen was reviewed by radiology and revealed fluid
+in the pelvis.  the appendix was not visualized.
+Pt. received IV fluids and took PO here, and felt improved.
+Diagnosis: Gastroenteritis/ mild dehydration
+r/o enteris pathogens.
+Plan: Stool cultures take .
+Stool for Clostridium difficile was negative.
+Father states they will drive home on Thursday. Phone numbers as
+noted above to contact parents.
+
+This chart was faxed to the **INSTITUTION at **PLACE,NC.  It was
+faxed to # **PHONE, attention **NAME[ZZZ YYY].
+
+
+CPT-4:
+Level 4: 99284.
+This document has been electronically signed by:  **NAME[XXX M. WWW],
+DO
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

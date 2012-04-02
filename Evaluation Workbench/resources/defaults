@@ -1,0 +1,50 @@
+'(
+
+;; Meta
+(ruleid string ruleid)
+
+;; Features
+(directionality string affirmed)
+(temporality string acute)
+(experiencer string patient)
+(rule string acute)
+(certainty number 1)
+
+;; Results
+(cui string null)
+(macro string null)
+(concept string null)
+
+;; For word rules
+(words vlist null)
+(tags list null)
+(ordered boolean true)
+(juxtaposed boolean false)
+(window number 6)
+(precedes boolean true)
+(header_strings list null)
+(istag boolean false)
+
+;; Measurement rules
+(ifhigh list null)
+(iflow list null)
+(highrange list null)
+(lowrange list null)
+(convert_to_fahrenheit boolean false)
+
+;; For gazeteers
+(sourcefile string null)
+(context_relation string null)
+(context_value string null)
+(majortype string null)
+(minortype string null)
+(stopword list null)
+(storelist boolean false)
+
+;; For Onyx rules
+ (stype string null)
+ (sinterp vlist null)
+
+
+
+)

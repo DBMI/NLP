@@ -1,0 +1,68 @@
+
+DATE OF SERVICE:                       **DATE[Jul 04 2003]
+
+HISTORY OF PRESENT ILLNESS
+**NAME[ZZZ] is a **AGE[birth-12]-year-old male who comes to the emergency department with his
+family on return from a visit from the islands off of Honduras.  On Thursday,
+the child had nausea, vomiting and diarrhea, which persists.  He has had
+intermittent fevers up to 102.  He has crampy abdominal pain rated as a 4/10 to
+5/10.  He also noted a blister-type lesion on his upper lip.  He had been
+taking Imodium, which was prescribed as a physician on the island, but he
+continues to be nauseated and vomited.  He noted some blood in his stool.  He
+traveled 19 hours today.  He has been drinking some liquids, but not eating
+solid food.
+
+PAST MEDICAL HISTORY
+He has no history of medical problems.
+
+MEDICATIONS
+1.  Bactrim.
+2.  Imodium.
+
+ALLERGIES
+No known drug allergies.
+
+FAMILY HISTORY
+No pertinent family medical history.
+
+REVIEW OF SYSTEMS
+The patient has mild lightheadedness, but no headache, visual symptoms or neck
+pain.  No chest pain or shortness of breath.  He has had crampy abdominal pain
+with diarrhea as previously described.  He has had no numbness, tingling or
+weakness.  The remainder of the review of systems was unremarkable.
+
+PHYSICAL EXAMINATION
+GENERAL: This is a young, somewhat lethargic male in minimal distress.  VITAL
+SIGNS:  His temperature was 99, pulse was 116, respirations were 22, and blood
+pressure was 111/78 mmHg.  Pulse oximetry was 97% on room air.  SKIN: Warm and
+dry without rash, other than some insect bites.  HEENT: Eyes PERRLA.  EOMI.
+Ears showed TMs to be clear and mobile.  Nose and throat were clear.  Mucous
+membranes were moist.  NECK: Supple and nontender.  RESPIRATORY: Lungs were
+essentially clear.  CARDIOVASCULAR: Regular rate and rhythm without murmurs.
+GI: Abdomen was soft and nontender with no rebound, guarding, masses or
+hepatosplenomegaly.  Bowel sounds were present.  MUSCULOSKELETAL: Moves all
+extremities equally well with good strength.  NEUROLOGIC: Alert and is somewhat
+lethargic.  Cranial nerves II through XII were intact.
+
+LABORATORY
+Urinalysis shows +3 ketones, 0-5 white cells, 0-5 red cells and a few bacteria.
+White count was 6.1, hemoglobin and hematocrit were 13.8 and 41.3.  Serum
+sodium was 134, potassium was 4.1, chloride was 96, CO2 was 22, blood sugar was
+86, BUN was 31 and creatinine was 0.6.
+
+TREATMENT/PLAN
+The patient was given 500 cc of IV fluids.  Stool was obtained for white cells,
+O P and enteric pathogens.  Fluids, rest and follow-up with primary care
+physician.  He is to await culture results and return if worsening symptoms.
+
+                                       **NAME[YYY XXX], M.D.
+
+Dict:       **DATE[Jul 05 2003]
+Trans:      **DATE[Jul 06 2003]  8:20 A
+sol/000000/186385
+
+
+**CARBON-COPY
+
+
+E_O_R

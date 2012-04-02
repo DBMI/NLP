@@ -1,0 +1,24 @@
+'
+("DocumentClass"
+  (level "document")
+  (uima "uima.topaz.integration.UTopazIntegrationAnnotation")
+  (workbench "DocumentAnnotation")
+  (classifications 
+      ("DocumentConcept" (uima "uima.topaz.integration.UTopazIntegrationAnnotation:concept") (type "uima.cas.String") (display true))
+      ("DocumentCUI" (uima "uima.topaz.integration.UTopazIntegrationAnnotation:cui") (type "uima.cas.String")))
+  (attributes 
+      ("status" (uima "uima.topaz.integration.UTopazIntegrationAnnotation:status") (type "uima.cas.String")))
+  (relations
+	("some_relation" "uima.topaz.inference.UTopazIntegrationAnnotation" "uima.topaz.inference.UTopazInferenceAnnotation"))
+  (components 
+      ("CoreConcept"
+        (level "snippet")
+        (uima "uima.topaz.inference.UTopazInferenceAnnotation")
+        (workbench "SnippetAnnotation")
+        (classifications 
+            ("SnippetCUI" (uima "uima.topaz.inference.UTopazInferenceAnnotation:cui") (type "uima.cas.String"))
+            ("SnippetConcept" (uima "uima.topaz.inference.UTopazInferenceAnnotation:concept") (type "uima.cas.String") (display true)))
+        (attributes 
+            ("directionality" (uima "uima.topaz.inference.UTopazInferenceAnnotation:directionality") (type "uima.cas.String"))
+            ("temporality" (uima "uima.topaz.inference.UTopazInferenceAnnotation:temporality") (type "uima.cas.String"))
+            ("experiencer" (uima "uima.topaz.inference.UTopazInferenceAnnotation:experiencer") (type "uima.cas.String"))))))

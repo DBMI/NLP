@@ -1,0 +1,52 @@
+
+**INSTITUTION
+of **PLACE, PENNSYLVANIA  **ZIP-CODE
+NAME: **NAME[BBB, CCC M]
+MRUN: **ID-NUM
+DOB: **DATE[Nov 02 1976]
+ADMIT: **DATE[May 21 2007]
+Attending MD: **NAME[ZZZ]
+DISCHARGE: **DATE[May 26 2007]
+SUMMARY OF DISCHARGE
+
+
+CLINICAL RELEVANT DATE **DATE[May 26 2007].
+FINAL DIAGNOSIS ON DISCHARGE:		PREGNANT, DELIVERED.
+History and physical is on the chart without additions or corrections.
+HOSPITAL COURSE:
+The patient was admitted in labor and made good progress to complete
+dilation and then pushed for three hours without descent of the vertex below
++1 station.  The decision was made to attempt a forcep delivery.  This was
+successful and she was delivered of a 7 pound 11 ounce male infant with
+Apgars of 8 and 9.  Please see the delivery note for full details.
+Postpartum she did well until the day of discharge when she began having
+profuse diarrhea.  This was cultured and tested positive for Shiga toxin
+marker for E. coli.  Supportive measures were given for the next two days
+and her symptoms resolved spontaneously.  She was discharged on her fourth
+postpartum day with full instructions.  Her final hemoglobin was 8.2.  She
+was given instructions to continue her prenatal vitamins and to take iron.
+She will be seen in the office in six weeks.
+**NAME[YYY]  M  **NAME[ZZZ], M.D.
+
+
+
+
+Page 1
+**INITIALS
+____
+CHART
+D: **DATE[Jun 12 2007]
+____
+ATTENDING PHYSICIAN
+T: **DATE[Jun 13 2007]
+____
+RESIDENT **NAME[XXX]
+J: 810117
+____
+SUMMARY OF DISCHARGE
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

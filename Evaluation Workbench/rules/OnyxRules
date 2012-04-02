@@ -1,0 +1,23 @@
+'(onyxcaserule
+
+ ((ruleid disease_has_location)
+  (words ("pulmdisease") ("pulmloc"))
+  (stype "pulmdisease")
+  (sinterp (condition_at_location ?0 ?1)))
+
+ ((ruleid disease_has_state)
+  (words ("pulmdisease") ("state"))
+  (stype "pulmdisease")
+  (sinterp (condition_has_state ?0 ?1)))
+
+((ruleid finding_has_location)
+  (words ("pulmfinding") ("pulmloc"))
+  (stype "pulmfinding")
+  (sinterp (condition_at_location ?0 ?1)))
+
+ ((ruleid finding_has_state)
+  (words ("pulmfinding") ("state"))
+  (stype "pulmfinding")
+  (sinterp (condition_has_state ?0 ?1)))
+
+)

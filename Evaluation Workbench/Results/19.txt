@@ -1,0 +1,103 @@
+
+
+HISTORY OF PRESENT ILLNESS:
+
+The chief complaint is abdominal pain and diarrhea.
+
+This is a **AGE[in 20s]-year-old female who comes to the United States from Mexico City. 
+She has lived here for about two years.  She states that she was in Mexico
+City about seven days ago, where she ate a considerable amount of seafood. 
+Subsequently, she returned to the United States and on Monday had some mild
+abdominal discomfort and one episode of emesis and then on Thursday and
+Friday, she began having diarrhea which progressed to be increasingly watery
+and abdominal discomfort when she had diarrhea.  She now is having regular
+episodes of very watery diarrhea with some mucus that started today.  She also
+has episodes of what sound like tenesmus by her description.  She has not had
+fever.  Her temperature was 37 degrees at home.  She also notes that she is
+two weeks late for her menstrual period.
+
+REVIEW OF SYSTEMS:
+
+Constitutional:  No fever, chills, weight loss or gain.  
+
+Pulmonary:  No cough or shortness of breath.
+
+Cardiovascular:  No chest pain.  No palpitations.
+
+GI:  She has diarrhea and abdominal discomfort as noted above, but nausea or
+vomiting at this time.
+
+The remainder of the systems is negative except as noted above.
+
+PAST MEDICAL HISTORY:
+
+Negative.
+
+MEDICATIONS:
+
+None.
+
+ALLERGIES:
+
+PENICILLIN.
+
+SOCIAL HISTORY:
+
+She does not smoke.  She occasionally drinks alcohol.
+
+
+PHYSICAL EXAM:
+
+VITAL SIGNS:  Temperature 35.6, pulse 74, respiratory rate 18, BP 107/33.
+
+GENERAL:  This is a well-developed, well-nourished, Hispanic female in no
+acute distress.
+
+HEENT:  Normocephalic and atraumatic.  Pupils are round and reactive to light.
+
+PULMONARY:  The lungs are clear to auscultation bilaterally.
+
+CARDIOVASCULAR:  Regular rate and rhythm without murmurs, rubs, or gallops.
+
+GI:  The abdomen is soft, nontender, and nondistended. 
+
+EXTREMITIES:  Warm and well perfused without clubbing, cyanosis, or edema.
+
+NEUROLOGIC:  The patient is alert and oriented without deficit.
+
+RECTAL:  There is no stool, but is heme negative.
+
+ED COURSE:
+
+The patient was evaluated by myself and Dr. **NAME[M. M. ZZZ], the attending
+physician.  Based on her symptoms, we had two concerns, first to make sure
+that she was not pregnant given the lateness of her period.  We obtained a
+urine hCG and this was negative.  Secondly, we were concerned for a possible
+infectious source of her diarrhea.  We, therefore, obtained a sample of stool
+to send for white cells and ova/parasites.  The stool smear revealed many
+white blood cells.  We were unable to obtain enough of the sample for
+ova/parasites but given the stool white blood cells, I feel that this enough
+to treat her with Cipro for a suspected traveler's diarrhea.  We, therefore,
+started her on Cipro 500 mg p.o. b.i.d. for five days, as well as Pepto-Bismol
+for symptomatic relief.  She was given instructions regarding traveler's
+diarrhea and she will follow up with her primary care doctor, Dr. **NAME[YYY
+XXX], in five-to-seven days.  We sent stool cultures as well.  The patient
+was advised to return to the Emergency Department for severe pain, nausea,
+vomiting, fever, or any other problems.  At this time, the patient was
+discharged home.
+
+DISCHARGE DIAGNOSIS(ES):
+
+TRAVELER's DIARRHEA.
+
+
+
+**NAME[BBB M. ZZZ], M.D.
+Clinical Instructor
+Department of Emergency Medicine
+
+
+***FOOTER-BLOCK
+
+
+E_O_R

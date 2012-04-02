@@ -1,0 +1,46 @@
+
+**INSTITUTION
+Discharge Summary
+Name: **NAME[BBB, CCC]
+Acct #: **ID-NUM
+MRN: **ID-NUM
+Admitted: 
+Discharged: **DATE[May 28 2008]
+Dict: **NAME[ZZZ, YYY XXX WWW]
+Attend: **NAME[VVV, UUU]
+CONSULTS:  Infectious disease, Dr. **NAME[TTT SSS]/Dr. **NAME[RRR].
+FINAL DIAGNOSIS:  Infectious diarrhea.
+HOSPITAL COURSE:  The patient is a **AGE[in teens]-year-old previously healthy male 
+admitted because of sudden onset of bloody diarrhea on the day of admission 
+after eating 3 peanut butter and jelly sandwiches.  He is from Tennessee and 
+is in **PLACE as part of a youth church group, and was at a camp when this 
+happened.  This is the first episode of bloody diarrhea.  He presented to the 
+emergency room, and was subsequently admitted.  CT scan of the abdomen showed 
+no acute inflammatory process.  Cultures of the blood, stool, and urine were 
+obtained, as well as a culture for C. difficile.  An infectious disease 
+consult was sent at the emergency room, and we were advised not to give him 
+any antibiotics or antidiarrheals until the culture results are available.  
+Hydration was continued.  The patient also had nausea and vomiting initially, 
+but throughout the next hospital day, he was able to tolerate his food.
+Throughout the next hospital days, he still had some bloody diarrhea.  This 
+eventually slowed down on the third hospital day, which was the day of 
+discharge.  Eventually, cultures of the stool did not show any E. coli.  He 
+was negative for C. difficile.  This was a concern because of previous 
+antibiotic use for acne.  He was stable throughout his hospital course.  He 
+was afebrile, and white count went back to normal.  On discharge, the patient 
+was stable.  Diarrhea has been resolved.  He is instructed to follow up with 
+his primary care physician in 2-4 weeks.  Per ID's recommendations, no 
+antibiotics will be given because of the negative cultures and clinical 
+improvement.
+No discharge medications were given.
+______________________________
+**NAME[YYY XXX WWW ZZZ], resident
+HS Job # 442378 / 40968 / 
+SHY # **ID-NUM
+D: **DATE[May 28 2008] 10:36
+T: **DATE[May 29 2008] 07:33
+
+**CARBON-COPY
+
+
+E_O_R

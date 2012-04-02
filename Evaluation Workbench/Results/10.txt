@@ -1,0 +1,111 @@
+
+* * * * * * * FINAL REPORT* * * * * * *
+
+EMERGENCY DEPARTMENT NOTE
+
+
+**NAME[ZZZ, YYY]
+MRN   **ID-NUM
+
+
+Fever, Fever, Teaching physician addendum - brief
+
+Patient:   **NAME[ZZZ, YYY] N            MRN - **ID-NUM - CHP_MRN **NAME[XXX WWW]
+Age:   **AGE[birth-12] years     Sex:  Male     DOB:  **DATE[Jun 8 2005]
+Author:   **NAME[VVV] M.D., **NAME[UUU M]
+
+Basic Information
+Time seen: Date & time 7/27/2008 15:37:00.
+History source: Patient, mother.
+Arrival mode: Walking.
+Vital signs: Vital Signs.
+7/27/2008 14:45          Temperature               36.2 DegC
+                         Pulse                     117 Beats/Minute
+                         Respiratory Rate          24 br/min
+                         Systolic BP               107 mmHg
+                         Diastolic BP              55 mmHg
+Medications: None.
+Allergies: No known medication allergies.
+Immunizations: Up to date.
+
+History of Present Illness
+The patient is a **AGE[birth-12] years old Male who presents with a complaint of fever and
+and diarrhea.  started
+yesterday.  no vomiting.  was at outside hospital yesterday, told to give
+gatoraide, diarrhea worsened today.
+pt also with fevers, tm 102.9 pt with decreased solid intake, good liquid
+intake, decreased energy..
+
+Review of Systems
+Other significant review of systemsAll other systems reviewed and otherwise
+negative
+
+Past Medical/ Family/ Social History
+Medical history: Additional significant medical history: No chronic illnesses,
+or surgeries.
+Family history: Not significant.
+Social history: Not significant (Intact Family).
+
+Physical Examination
+General appearance:  No acute distress, alert, smiling and interactive.
+Skin:  No rash.
+Eye:  Pupils equal, round, and reactive to light.  Extraocular movements
+intact.
+Ears, nose, mouth and throat:  Tm's Normal with no bulging or erythema
+Neck:  Supple.
+Heart:  Regular rate and rhythm, Normal S1 & S2 No gallops rubs or murmurs.
+Respiratory:  Lungs clear to auscultation bilaterally no wheezing or crackles
+noted on exam.  No respiratory
+distress noted.  no grunting nasal flaring or retractions
+Abdominal:  Soft.  Nontender.  Non distended.  No organomegaly.
+Extremity:  Normal range of motion.  No swelling.  No tenderness.
+Neurological:  No focal neuro deficits
+
+Medical Decision Making
+Clinical work-up/Interpretation
+Orders: stool cx and O&P.
+Notes: I discussed with mother my diagnosis of fever, diarrhea diarrhea likely
+exacerbated by gatoriade.  use
+pedilyte with other flavoring.
+
+Impression and Plan
+Diagnosis
+Fever  780.6 (ICD9 780.6, Discharge, Emergency medicine, Medical)
+Discharge plan
+Condition: Stable.
+Dispositioned: To home.
+Patient was given the following educational materials: Diarrhea - CHP (Custom).
+Follow up with: Primary Care Physician, In: as needed.
+Counseled: Family, Regarding diagnosis, Regarding treatment plan, I discussed
+reasons to return to the ED
+I discussed my treatment plan
+I discussed my diagnosis
+Family verbalizes their understanding of the above..
+
+Addendum
+E&M Coding: CPT-4: Level 3: 99283.
+ 
+Perform    by **NAME[VVV] M.D., JONATHA on **DATE[Jun 28]/2008 15:41
+ Sign       by **NAME[VVV] M.D., JONATHA on **DATE[Jun 28]/2008 17:34
+ VERIFY     by **NAME[VVV] M.D., JONATHA on **DATE[Jun 28]/2008 17:34
+ 
+
+
+
+
+Processed   **DATE[Jun 28]/2008 22:35:56/pco
+
+pc:
+Free Format, PCP
+
+This document has been electronically signed by **NAME[UUU M VVV] MD on
+**DATE[Jun 28]/2008 22:36:07.
+
+
+EMERGENCY DEPARTMENT NOTE
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

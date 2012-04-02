@@ -1,0 +1,77 @@
+'(wordrule
+
+;;;;;; NEW, August 1 2011
+
+((ruleid patient_context_rule)
+ (sourceFile "Gazeteers/Terminators_Patient.lst")
+ (macro "_PATIENT_"))
+
+((ruleid recent_context_rule)
+ (sourceFile "Gazeteers/Terminators_Recent.lst")
+ (macro "_RECENT_"))
+
+((ruleid experiencer_context_rule)
+ (sourceFile "Gazeteers/Triggers_Experiencer.lst")
+ (macro "_EXPERIENCER_"))
+
+((ruleid fortheplast_context_rule)
+ (sourceFile "Gazeteers/Triggers_History_fovertheplast.lst")
+ (macro "_HISTORY_FOR_THE_PLAST_"))
+
+((ruleid history_one_word_scope_context_rule)
+ (sourceFile "Gazeteers/Triggers_History_One_Word_Scope.lst")
+ (macro "_HISTORY_ONE_WORD_SCOPE_"))
+
+((ruleid history_context_rule)
+ (sourceFile "Gazeteers/Triggers_History.lst")
+ (macro "_HISTORY_"))
+
+((ruleid hypothetical_context_rule)
+ (sourceFile "Gazeteers/Triggers_Hypothetical.lst")
+ (macro "_HYPOTHETICAL_"))
+
+;;((ruleid abbreviation_context_rule)
+;; (sourceFile "Gazeteers/CaTIES_Abbreviations.lst")
+;; (macro "_ABBREVIATION_"))
+
+;;((ruleid attestation_context_rule)
+;; (sourceFile "Gazeteers/CaTIES_Attestation.lst")
+;; (macro "_ATTESTATION_"))
+
+;;((ruleid irrelavant_context_rule)
+;; (sourceFile "Gazeteers/CaTIES_IrrelevantTerms.lst")
+;; (macro "_IRRELEVANT_TERM_"))
+
+;;((ruleid minor_context_rule)
+;; (sourceFile "Gazeteers/CaTIES_MinorHeadings.lst")
+;; (macro "_MINOR_HEADING_"))
+
+;;((ruleid because_context_rule)
+;; (sourceFile "Gazeteers/Terminators_Because.lst")
+;; (macro "_BECAUSE_"))
+
+;;((ruleid consistent_context_rule)
+;; (sourceFile "Gazeteers/Terminators_Consistent.lst")
+;; (macro "_CONSISTENT_"))
+
+;;((ruleid diagnosis_context_rule)
+;; (sourceFile "Gazeteers/Terminators_Diagnosis.lst")
+;; (macro "_DIAGNOSIS_"))
+
+;;((ruleid ed_context_rule)
+;; (sourceFile "Gazeteers/Terminators_ED.lst")
+;; (macro "_ED_"))
+
+;;((ruleid punctuation_context_rule)
+;; (sourceFile "Gazeteers/Terminators_Punc.lst")
+;; (macro "_PUNCTUATION_"))
+
+;;((ruleid which_context_rule)
+;; (sourceFile "Gazeteers/Terminators_Which.lst")
+;; (macro "_WHICH_"))
+
+;;((ruleid pseudo_context_rule)
+;; (sourceFile "Gazeteers/Triggers_Pseudo.lst")
+;; (macro "_PSEUDO_"))
+
+)

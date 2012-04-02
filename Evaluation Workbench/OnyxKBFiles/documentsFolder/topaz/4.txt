@@ -1,0 +1,84 @@
+
+Patient seen: 11:00 PM
+Source of history: Both parents.  **AGE[birth-12] year old male patient presents
+with persistent diarrhea. Symptoms began 4 days ago with diarrhea,
+fever, and mild emesis. Diarrhea  was occasionally bloody and was
+seen at CHP ED. Had lytes sig for HCO3 16 and CBC with WBC 13.9 (28N,
+39Bd). Given 2h IVF and sent home. No further fevers or bloody
+diarrhea and diarrhea has slowed, but parents concerned that child
+was not drinking enough; Good solid po and activity. Diarrhea now
+green and occuring about 10/d.
+CURRENT MEDICATIONS: None.
+ALLERGIES: Denies known medication allergies.
+PMH:  PMH negative.
+IMMUNIZATIONS: Up to date.
+ROS: as above, all remainder negative or unremarkable.
+
+PE:
+APPEARANCE: Alert.  In no distress.  Nontoxic appearing.
+VS: wt. 12.5; t37; p108; r24; bp100/56
+HEAD: Atraumatic, normocephalic.
+EARS: Canals clear. TMs: Light reflex normal. No retraction or
+perforation.
+MOUTH  THROAT: No tonsillar enlargement.  Uvula midline.  No
+mucosal abnormalities. MMM
+CHEST: Lungs clear to auscultation.
+CARDIOVASCULAR: Heart rate and rhythm regular.  Without murmurs.
+ABDOMEN: Bowel sounds normal.  Soft.  No masses. No organomegaly.
+MENTAL STATUS: Patient alert and appropriate for age.
+
+TREATMENT  COURSE:
+
+Orders:  BUN/creatinine, electrolytes, glucose and normal saline at
+50 cc/kg over 2h.
+Na 135, Cl 104, K 3.3, HCO3 20, BUN 6, Cr. 0.4, gluc 84
+stool culture sent at prev. ED stay; unable to get stool for rota
+
+DISPOSITION/PLAN:
+
+¿ Discharge patient.
+¿ Clear liquids in small amounts offered frequently.
+¿ Instruction sheet given.
+¿ Signs of dehydration reviewed and criteria for returning to ED
+discussed.
+
+DISCHARGE:  The patient was discharged from the ED at 2:00 AM.
+
+DIAGNOSIS:
+
+1.  Dehydration.
+2.  Viral gastroenteritis, other.
+CHP ATTENDING ATTESTATION:
+I have personally interviewed, examined and participated in the care
+of this patient. I have reviewed, discussed, and agree with the
+history, assessment and plan except as otherwise noted. The key
+portions are identified as follows:
+
+ATTENDING NOTE: **AGE[birth-12] yo male , evaluated 2 days ago w/ f/v/d/ r/o
+intussusception, here w/ decreased intake, non-bloody diarrhea that
+has slowed, dec. activity. I observed him to be active, alert, and
+in no distress.  HEENT were normal to my exam, except as noted: o/p:
+dry lips, slightly tacky mm.  The neck was supple and non-tender on
+my examination. The lungs were clear, with no grunting, flaring, or
+retractions on my examination.  Cardiac exam:  RRR, no murmurs,
+pulses full, pink.  GI: Abdomen is soft and nontender, non distended,
+nl active BS, no masses or HSM, no guarding or rebound throughout.
+GU normal: **NAME[ZZZ] 1,  penis normal, testicles descended, no hernias.
+Examination of the skin revealed no rashes, no petechiae or purpura.
+The joint examination : FROM, no tenderness or swelling of any
+extremity.  Laboratory studies are normal, as indicated above. He
+improved with therapy, discharged with close follow-up recommended.
+My diagnosis is gastroenteritis with dehydration.  I am discharging
+him to outpatient follow-up.  We have discussed the findings with
+the family, instructions given.
+
+CPT-4:
+Level 4: 99284.
+This document has been electronically signed by:  **PLACE,
+MD
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

@@ -1,0 +1,72 @@
+
+Patient seen: 01:20
+Patient walked into the emergency department.  Source of history:
+Patient and mother.  **AGE[birth-12] year old female presents with vaginal
+discharge and vaginal pain for one day.  Pt also complains of pain
+with urination.  No frequency or urgency.  No fevers.  Appetite
+somewhat decreased.  No diarrhea or emesis.  No recent antibiotics.
+Pt has congestion and rhinorrhea.  No sore throat.  No bubble baths
+or new exposures.
+CURRENT MEDICATIONS: Griseofulvin to scalp
+ALLERGIES: Denies known allergies.
+PMH:  PMH negative.
+IMMUNIZATIONS: Up to date.
+Family History:  negative or unremarkable.
+SOCIAL HISTORY: Noncontributory.
+ROS: as above, all remainder negative or unremarkable.
+
+PE:
+APPEARANCE: Alert.  In no distress.  Nontoxic appearing.  Active and
+playing.
+VS: BP: 88/45.  T: 36.7 degrees C.  P: 109.  R: 24.  The patient
+weighs 49.5 lbs (22.5 kgs).
+HEENT: NCAT,  PERRL, no hemotympanum, nares clear, no septal
+hematoma, oral pharynx clear.
+NECK: Supple.
+CHEST: Lungs clear to auscultation.
+CARDIOVASCULAR: Normal S1, S2. No rubs, murmurs or gallops.
+ABDOMEN: Bowel sounds normal. Not distended. Soft. No tenderness or
+masses.
+GENITALIA:  **NAME[ZZZ] stage 1.  Vulvar erythema.  White thick discharge
+from vagina.
+MENTAL STATUS: Patient alert and conversant.
+
+TREATMENT & COURSE:
+
+UA: 1.030, 2+ leuk esterase, 5 WBC, 2 RBC rare bacteria
+Rapid strep of vaginal d/c: negative.
+Vaginal culture: Pending.
+
+DISCHARGE:  The patient was discharged from the ED at 2:45 AM.
+
+DISPOSITION/PLAN:
+Patient discharged in good condition.  Follow-up with the physician
+providing primary care PRN.  Seek medical care immediately if
+symptoms worsen or new symptoms develop.  Vaseline to affected area
+for comfort.
+
+Family counseled regarding the patient's condition and situation.
+DIAGNOSIS:
+
+1.  Vulvovaginitis
+CHP ATTENDING ATTESTATION:
+I have personally interviewed, examined and participated in the care
+of this patient. I have reviewed, discussed, and agree with the
+history, assessment and plan except as otherwise noted. The key
+portions are identified as follows:
+
+history of itchy vaginal discharge white in color unable to tell if
+yeast culture obtained u/a neg treat symptomatically discharge to
+home and follow up in amw tih pcp for recheck
+
+CPT-4:
+Level 3: 99283.
+
+
+Electronically signed by: **PLACE Pitetti MD, on **DATE[Aug 28 2004] at 13:13:56
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

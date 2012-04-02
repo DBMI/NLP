@@ -1,0 +1,57 @@
+
+**INSTITUTION
+of **PLACE, PENNSYLVANIA  **ZIP-CODE
+NAME: **NAME[BBB, CCC]
+MRUN: **ID-NUM
+DOB: **DATE[Jul 12 1921]
+Attending MD:  **NAME[ZZZ]
+FLOOR:
+PROGRESS NOTE
+CLINICAL RELEVANT DATE  **DATE[Sep 21 2007]
+SERVICE:                             MEDICAL.
+ADMISSION DATE:                      **DATE[Sep 18 2007].
+EVALUATION DATE:                     **DATE[Sep 21 2007].
+HOSPITAL COURSE:
+An **AGE[in 80s]-year-old male, overnight events reviewed.  Medications and
+laboratories.  Condition stable.  **INSTITUTION, 3200.
+ASSESSMENT:
+#1.  Abdominal pain, diarrhea, dehydration, weight loss.  Etiology unclear.
+Patient testing positive for enterotoxic E. coli with positive Shiga toxin.
+No white cells at this time or a history of bleeding.  Continue IV fluid
+supportive care.  Infectious Disease following.  Renal function stable.  CT
+scan of the abdomen and pelvis revealed low density lesions within the liver
+consistent with ___________.  Indeterminate nodularity of the left adrenal
+gland as well as sigmoid colon wall thickening with surrounding infiltration
+of fat consistent with colon CA, less likely an infectious etiology.  Foci
+L5 vertebral fracture and right iliac bone likely benign, metastasis unable
+to rule out.  CEA levels not elevated.
+#2.  BPH, elevated PSA being followed by Urology.  No flank pain, dysuria,
+or fever.
+#3.  Hypertension, blood pressure controlled.  No neurovascular/
+cardiovascular decompensation.
+#4.  Diabetes mellitus, Accu-Chek sliding scale insulin.  No diabetic foot
+lesions, ketoacidosis, hypoglycemia, or dehydration.
+**NAME[DDD M. ZZZ], M.D.
+
+Page 1
+RB/yp
+____
+CHART
+D: **DATE[Sep 21 2007]
+____
+ATTENDING PHYSICIAN
+T: **DATE[Sep 21 2007]
+____
+RESIDENT **NAME[YYY]
+J: 890507
+____
+PROGRESS NOTE
+Electronically Signed by **NAME[XXX WWW]  for **NAME[DDD ZZZ] **DATE[Oct 08 2007] 02:14:52
+PM
+
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

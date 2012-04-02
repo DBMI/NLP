@@ -1,0 +1,52 @@
+'(labelrule
+
+((ruleid but_label)
+ (sourceFile "Gazeteers/Terminators_But.lst")
+ (macro "_BUT_"))
+ 
+((ruleid presentation_label)
+ (sourceFile "Gazeteers/Terminators_Presentation.lst")
+ (macro "_PRESENTATION_"))
+
+((ruleid and_label)
+ (sourceFile "Gazeteers/Terminators_And.lst")
+ (macro "_AND_"))
+
+((ruleid remain_label)
+ (sourceFile "Gazeteers/Terminators_Remain.lst")
+ (macro "_REMAIN_"))
+
+((ruleid etiology_label)
+ (sourceFile "Gazeteers/Terminators_Etiology.lst")
+ (macro "_ETIOLOGY_"))
+
+((ruleid pseudo_negation_context_label)
+ (sourceFile "Gazeteers/CaTIES_NegExPseudoNegationPhrases.lst")
+ (macro "_PSEUDO_NEGATION_"))
+
+((ruleid negex_stop_word_context_label)
+ (sourceFile "Gazeteers/CaTIES_NegExStopWords.lst")
+ (macro "_NEGATION_STOP_WORD_"))
+
+((ruleid stopword_context_label)
+ (sourceFile "Gazeteers/CaTIES_StopWords.lst")
+ (macro "_STOPWORD_"))
+
+((ruleid pseudo_experiencer_context_label)
+ (sourceFile "Gazeteers/Pseudo_Experiencer.lst")
+ (macro "_PSEUDO_EXPERIENCER_"))
+
+((ruleid pseudo_history_context_label)
+ (sourceFile "Gazeteers/Pseudo_History.lst")
+ (macro "_PSEUDO_HISTORY_"))
+
+((ruleid pseudo_historical_context_label)
+ (sourceFile "Gazeteers/Pseudo_Hypothetical.lst")
+ (macro "_PSEUDO_HISTORICAL_"))
+
+((ruleid pseudo_negation_context_label)
+ (sourceFile "Gazeteers/Pseudo_Negation.lst")
+ (macro "_PSEUDO_NEGATION_"))
+
+
+)

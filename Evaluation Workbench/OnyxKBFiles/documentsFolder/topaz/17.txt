@@ -1,0 +1,187 @@
+
+ 
+**INSTITUTION Of **INSTITUTION                      
+**PLACE, PENNSYLVANIA **ZIP-CODE
+ 
+NAME: **NAME[BBB, CCC]   
+DOB: **DATE[Oct 17 1989]
+MR#: **ID-NUM
+ACCOUNT NUMBER: **ID-NUM
+ADMIT: **DATE[Aug 04]/2008
+DISCHARGE: **DATE[Aug 10]/2008
+ATTENDING MD:  **NAME[ZZZ]  ANAND    
+                                        
+ 
+     SUMMARY OF DISCHARGE
+ 
+PAGE 1
+DISPOSITION:             TO HOME.
+ 
+CONDITION:                    STABLE.
+ 
+ADMITTING DIAGNOSES:          1.   SORE THROAT.
+                         2.   ABDOMINAL PAIN.
+                         3.   DIARRHEA.
+ 
+DISCHARGE DIAGNOSES:          1.   ESCHERICHIA COLI SHIGATOXINS               
+                      DIARRHEA. 
+2. SYSTEMIC LUPUS ERYTHEMATOSUS.
+3. BACTERIAL VAGINOSIS.
+4. VIRAL HEPATITIS.
+ 
+HISTORY OF PRESENT ILLNESS:
+ 
+Ms. **NAME[BBB] is a **AGE[in teens]-year-old African American female who presented to 
+**INSTITUTION Emergency Department on **DATE[Aug 04], 2008 with 
+complaints of abdominal pain with diarrhea and vomiting x1 week.  The patient 
+also reports poor appetite with poor p.o. intake, as well as abdominal pain 
+with cramping.  The patient was seen at **INSTITUTION approximately 2 
+weeks ago for a pharyngitis with throat culture found to be negative.  The 
+patient does complain of fever and chills with a temperature as high as 104 
+two days prior to admission.  The patient also reported urinary symptoms with 
+increase in urinary frequency and burning.  The patient was diagnosed with a 
+UTI one week prior to admission, but did not take antibiotic secondary to 
+inability to keep the medicine down.  The patient denied any chest pain, 
+cough, or shortness of breath.   
+ 
+PAST MEDICAL HISTORY:
+ 
+1. SLE diagnosed in 2004.
+2. Asthma.
+3. Anemia.
+4. ITP.
+5. Genital warts with laser ablation done on **DATE[Aug 06], 2008.
+6. Migraine headaches.
+ 
+ 
+ALLERGIES:
+ 
+1. Bactrim with reaction of hives.
+2. Pineapple with reaction of rash.
+ 
+HOSPITAL COURSE:
+ 
+1.   GI:
+ 
+The patient was admitted with approximately a 2-week history of abdominal 
+pain with diarrhea.  Stool cultures were done that were negative for 
+salmonella, shigella, fibro pseudomonas and staph; however, they were 
+positive for Shigatoxins 1 and 2.  HSV cultures were done that were negative, 
+both from the throat and vagina.  An ID consult was obtained for not only the 
+abdominal pain and diarrhea, but patient also reported mouth ulcerations.  It 
+was infectious disease's opinion given her problem of intermittent vomiting 
+and diarrhea and positive stool cultures for Shigatoxins (It was of note too 
+that other family members also had similar symptoms), the patient was given 
+IV support and symptom management as this did not require any other treatment 
+for that.  The mouth ulcers were felt to be as a result of viral and cultures 
+were taken for herpes that were negative.  A third issue with infectious 
+disease also included an ulceration in the vaginal area that could be either 
+considered posttraumatic related to recent laser wart removal or herpetic 
+ulcer given its painful nature.  Again, cultures for HSV vaginally were 
+negative.   
+ 
+The patient did have an issue with vaginal discharge that was consistent with 
+bacterial vaginosis.  The patient will be given a 7-day course of 
+metronidazole with the recommendation per infectious disease for HIV 
+screening as she is a high risk sexual exposure.   
+ 
+Also, related to infectious disease the patient had a positive urinalysis, 
+but no urine culture and the patient did receive 2 days of ciprofloxacin.  It 
+was infectious disease's recommendation that they discontinue the Cipro due 
+to risk of hemorrhagic colitis, as well as hemolytic syndrome related to use 
+of antibiotics.   
+ 
+By the time of discharge the patient was feeling well and her abdomen was 
+nontender and tolerating p.o. well and diarrhea had subsided.   
+ 
+A GI consult was obtained too and they agreed with the supportive care plan 
+from infectious disease and primary, as well as holding the Cipro antibiotic. 
+ They felt it was very little utility in obtaining an EGD since the pain was 
+all oropharyngeal at this point and the patient's LFTs had normalized at time 
+of discharge. 
+ 
+2.   RHEUMATOLOGY:
+ 
+The patient has a history of SLE and was followed by rheumatology.  The 
+patient currently will be off methotrexate and continued on her Plaquenil.  
+Due to the recent viral hepatitis, rheumatology recommended holding off on 
+any hepatotoxic meds.  The patient's migraines were addressed with her 
+Inderal per rheumatology.  Rheumatology also agreed that it was most likely 
+gastroenteritis from the E. coli and the patient will follow up in the 
+rheumatology clinic. 
+ 
+DIAGNOSTICS:
+ 
+A retroperitoneal ultrasound showed ______ normal kidneys and bladder.  
+Abdominal MRI without contrast was done on **DATE[Aug 07], 2008 that showed no 
+inter or extrahepatic ductal violation.  The gallbladder was within normal 
+limits without stones.  The common duct size was unremarkable and no filling 
+defects seen.   
+ 
+LABORATORIES AT DISCHARGE:
+ 
+Chemistry panel that showed a sodium of 142, potassium 3.9, chloride 104, CO2 
+24.2, BUN 2, creatinine 0.6, glucose 86 and calcium 9.4.  Albumin 3.5, total 
+protein 7.2, total bilirubin 0.2, direct bilirubin 0.1, ALT 229, AST 76, 
+alkaline phos 143.   
+ 
+CBC showed a WBC of 5.9, hemoglobin and hematocrit of 12.5 and 37.7 
+respectively with platelets 287,000.  Red blood cells were 50.4.  Other labs 
+as described above. 
+ 
+DISCHARGE INSTRUCTIONS:
+ 
+1. Diet as tolerated.
+2. Activity as tolerated.
+3. Lab work to be done one week prior to seeing Dr. **NAME[YYY] with lab script 
+given for LFTs. 
+4. Follow up with Dr. **NAME[YYY] in her office in approximately 2 weeks at (**PHONE. 
+5. Follow up with rheumatology at **INSTITUTION.  The patient to keep appointment.  
+Phone #(**PHONE. 
+ 
+DISCHARGE MEDICATIONS:
+ 
+1. Albuterol 2 puffs q.i.d. p.r.n. 
+2. Flexeril 10 mg p.o. t.i.d. p.r.n.  
+3. Pepcid 10 mg p.o. b.i.d. 
+4. Flagyl 500 mg p.o. t.i.d. to stop after last dose on      **DATE[Aug 13], 
+2008. 
+5. Plaquenil 200 mg p.o. b.i.d. 
+6. Inderal 80 mg p.o. daily.
+7. Ibuprofen 600 mg p.o. q.6 hours if needed.
+ 
+CONDITION AT DISCHARGE:
+ 
+The patient's condition today is stable for discharge and she felt well to go 
+home.  Her physical exam was unremarkable and her abdomen was soft and 
+nontender without evidence of guarding. 
+ 
+ 
+ 
+ 
+**NAME[XXX WWW], CRNP
+ 
+ 
+ 
+**NAME[ZZZ YYY], MD
+ 
+ 
+**INITIALS 
+D: **DATE[Aug 10]/2008 13:33:19                                 
+T: **DATE[Aug 12]/2008 06:53:21   
+R: **DATE[Aug 12]/2008 06:53:21/he                          
+J: **ID-NUM/**ID-NUM/**ID-NUM 
+ 
+ 
+      
+ 
+ 
+                                         
+ 
+Authenticated by **NAME[ZZZ YYY] MD On **DATE[Aug 27]/2008 05:01:33 PM 
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

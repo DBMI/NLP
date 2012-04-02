@@ -1,0 +1,31 @@
+'(wordrule
+
+((ruleid section_specific_clear_to_auscultation)
+ (words ("clear"))
+ (header_strings ("lung" "pulmo"))
+ (result (concept "clear_to_auscultation")))
+
+((ruleid section_specific_abdomen_nontender)
+ (words ("soft" "nontender" "C0205358"))
+ (header_strings ("gi" "abdomen" "abdominal"))
+ (result (concept "abdominal tenderness") 
+         (directionality "Negated")))
+
+((ruleid section_specific_abdomen_tender)
+ (words ("C0234233" "C0684239" "C9108041" "C0234233" "C0234234" "tender"))
+ (header_strings ("gi" "abdomen"))
+ (result (concept "abdominal tenderness")))
+
+((ruleid section_specific_abdomen_distention_negated)
+ (words ("nondistended"))
+ (header_strings ("gi" "abdomen"))
+ (result (concept "abdominal distension") 
+         (directionality "Negated")))
+
+((ruleid section_specific_abdomen_distention_affirmed)
+ (words ("distension" "distended"))
+ (header_strings ("gi" "abdomen"))
+ (result (concept "abdominal distension")))
+
+
+)

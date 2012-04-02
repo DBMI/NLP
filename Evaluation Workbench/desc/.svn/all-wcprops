@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repos/rodsonly/!svn/ver/16308/UimaTopaz/desc
+END
+FileSystemCollectionReader.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/rodsonly/!svn/ver/16205/UimaTopaz/desc/FileSystemCollectionReader.xml
+END
+uTopazCTakesAggregate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/rodsonly/!svn/ver/16022/UimaTopaz/desc/uTopazCTakesAggregate.xml
+END
+UTopazDocumentTypes.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/rodsonly/!svn/ver/16205/UimaTopaz/desc/UTopazDocumentTypes.xml
+END
+uTopazDocumentAE.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/rodsonly/!svn/ver/16022/UimaTopaz/desc/uTopazDocumentAE.xml
+END
+uTopazInferenceAE.xml
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/rodsonly/!svn/ver/16273/UimaTopaz/desc/uTopazInferenceAE.xml
+END
+uTopazOnyxAggregate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/rodsonly/!svn/ver/16049/UimaTopaz/desc/uTopazOnyxAggregate.xml
+END
+uTopazIndexFinderAE.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/rodsonly/!svn/ver/16022/UimaTopaz/desc/uTopazIndexFinderAE.xml
+END
+UTopazCPE.xml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/rodsonly/!svn/ver/16273/UimaTopaz/desc/UTopazCPE.xml
+END
+uTopazIntegrationAE.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/rodsonly/!svn/ver/16205/UimaTopaz/desc/uTopazIntegrationAE.xml
+END
+uTopazRuleSystem.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/rodsonly/!svn/ver/16022/UimaTopaz/desc/uTopazRuleSystem.xml
+END

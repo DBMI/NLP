@@ -1,0 +1,99 @@
+
+ 
+DISCHARGE SUMMARY
+**INSTITUTION
+**PLACE, PA **ZIP-CODE
+ 
+**NAME[ZZZ, YYY]
+**ID-NUM
+**ID-NUM
+A3B/337
+ 
+SERVICE OF:    VISH  IYER
+ 
+DATE OF ADMISSION:      **DATE[Jun 14]/2008  
+DATE OF DISCHARGE:      **DATE[Jun 19]/2008
+ 
+ADMITTING DIAGNOSIS 
+Altered mental status.
+ 
+DISCHARGE DIAGNOSES
+1. Exacerbation of chronic obstructive pulmonary disease.
+2. Likely left upper lobe pneumonia.
+3. Urinary tract infection.
+4. Type II diabetes mellitus.
+5. Congestive heart failure with an ejection fraction of 48%.
+6. Hypertension.
+7. Osteoporosis.  
+8. Gastroesophageal reflux disease.
+9. Anemia.
+10. Depression.
+ 
+HOSPITAL COURSE 
+This **AGE[in 80s]-year-old lady who was admitted with shortness of breath, hypoxemia, 
+and altered mental status was admitted and monitored.  She was started on 
+BiPAP and she improved well.  Her white count was 18.6 on admission.  She was 
+started on Cipro for a probable UTI.   
+ 
+The patient improved clinically and her urine revealed Shiga of greater than 
+100,000 colonies and her Cipro was switched over to ceftriaxone and Zithromax 
+for a probable left upper lobe pneumonia.  She was rapidly tapered off of her 
+BiPAP and was placed on oxygen supplementation via nasal cannula.  
+Clinically, she had regular heart sounds and eventually clear lung sounds, 
+even though she had bilateral rhonchi and wheezing initially on admission.  
+Her abdomen was soft.  Extremities were nontender.  Neurologically, she did 
+not have any deficits.   
+ 
+A CT of the chest did not reveal any evidence of PE.  Her blood tests 
+revealed a sodium of 141, potassium 4.7, chloride 101, bicarbonate 40, BUN 
+25, creatinine 0.9, and a glucose of 319.  Her hemoglobin and hematocrit were 
+at 11.6 and 34.7 with a white count of 6.8 and a platelet count of 259.  Her 
+BNP was at 183 and a hemoglobin A1C was at 5.8.   
+ 
+The patient was evaluated by pulmonology and cardiology.  She also had an 
+echocardiogram that revealed an ejection fraction of 48%. 
+ 
+The patient was stable enough clinically to be transferred to a skilled 
+nursing facility at Canterbury for a few more days before she goes back to 
+her personal care home.   
+ 
+Condition at the time of discharge is stable.  
+ 
+DISCHARGE MEDICATIONS 
+1. Tylenol 650 q. 4 p.r.n. 
+2. Advair 250/50 one puff b.i.d. 
+3. DuoNeb nebulizer q. 4 while awake and q. 2 p.r.n. 
+4. Fosamax 70 mg p.o. q. weekly.
+5. Zithromax 500 mg p.o. q. daily x3 more days.
+6. BiPAP 10/5 on at night, off in the morning.
+7. Os-Cal with D 500 mg p.o. b.i.d. 
+8. Colace 100 mg p.o. b.i.d. 
+9. Ferrous sulfate 325 mg p.o. b.i.d. 
+10. Regular insulin on a sliding scale.
+11. Potassium chloride 20 milliequivalents p.o. q. day.
+12. Milk of Magnesia q. daily.
+13. Ranitidine 150 mg p.o. b.i.d. 
+14. Prednisone 30 mg p.o. q. daily x3 days, then 20 mg p.o. q. daily x3 days, 
+then 10 mg p.o. q. daily x3 days, and then stop.   
+ 
+Her laboratory work would include a CBC and a BMP to be drawn on 7/22/08.  
+Follow-up will be with me at the nursing home.  Activities will be as 
+tolerated.  Diet will be a no concentrated sugar diet.   
+ 
+ 
+ 
+___________________
+**NAME[XXX M. WWW], M.D.
+ 
+ 
+Dict:   **DATE[Jun 19]/2008 08:39:13
+Tran:   **DATE[Jun 19]/2008 09:22:40
+**INITIALS
+ 
+R:  **DATE[Jun 19]/2008 09:22:40/ks
+ 
+
+**CARBON-COPY
+
+
+E_O_R

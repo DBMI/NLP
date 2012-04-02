@@ -1,0 +1,91 @@
+
+Patient was carried into the emergency department.  Source of
+history: Both parents.  **AGE[birth-12] year old male presents with worsening
+persistent vomiting for several hours.  There have been He has had
+multiple episodes of emesis, non bilious, non bloody at home, but
+developed coffee ground emesis here.  His stool has been non bloody,
+loose, and he has had 3 episodes thus far.  No fever, no travel, no
+sick contacts, no new foods.  Attacks.  No cough or productive cough.
+No history suggestive of food poisoning.  No recent travel.  No
+recent dietary changes.  Taking liquids poorly.  Decreased urine
+output.
+CURRENT MEDICATIONS: None.
+ALLERGIES: Denies known medication allergies.
+PMH:  PMH negative.
+IMMUNIZATIONS: Up to date.
+
+PE: APPEARANCE: Tired appearing.  In no distress.  Nontoxic
+appearing.
+VS: T: 36.3 degrees C orally.  P: 132 regular.  R: 32.
+Pulse oximetry: 97 on room air.  BP: 103/70.  The patient weighs 29.
+7 lbs (13.5 kgs).
+HEAD: Atraumatic, normocephalic.
+EARS: Canals clear. TMs: Light reflex normal. No retraction or
+perforation.
+MOUTH  THROAT: No tonsillar enlargement.  Uvula midline.  No
+mucosal abnormalities.
+CHEST: Lungs clear to auscultation.
+CARDIOVASCULAR: Heart rate and rhythm regular.  Without murmurs.
+ABDOMEN: Soft.  No tenderness.  No abdominal distention.  No
+guarding.  No hepatomegaly.  No abdominal masses.
+MENTAL STATUS: Responds appropriately to environment.
+
+TREATMENT  COURSE:
+Normal saline 50 ml/kg IV over two hours.
+
+Then changed to D5 1/2 NS at 75 cc/hr (11/2 maintenance) started.
+Pepcid 7 mg IV single dose given.
+
+Abdominal x-ray: Unremarkable.
+
+SMA-7: NA+:  142;  K+:   5.2;  CL-:  107;  HCO3:  19 ;  BUN:  14 ;
+CREAT:  0.4; GLU:  132   Amylase-52, lipase 35
+
+CBC: Hemoglobin: 12.2; Hematocrit: 34.7; WBC:10.2 thousand
+cells/mm3; Differential:  Bands:12%, segs:78%, lymphs:5%, monos:4%
+Platelets: 349 K.
+
+Stool Culture: Sent.
+
+Hemoccult: Positive.   Both stool and emesis
+Discussed with Dr. **NAME[ZZZ YYY] from DRG.
+
+DISPOSITION/PLAN:
+Admitted to pediatric service in improved condition.
+
+DISCHARGE:  The patient was discharged from the ED at 3:45 AM.
+
+DIAGNOSIS:1. dehydration
+2.  Infectious gastroenteritis.
+
+CHP ATTENDING ATTESTATION:
+I have personally interviewed, examined and participated in the care
+of this patient. I have reviewed, discussed, and agree with the
+history, assessment and plan except as otherwise noted. The key
+portions are identified as follows:
+
+
+ATTENDING NOTE:**AGE[birth-12] yr old with severe vomiting and 1 episode of
+diarrhea.  weak. now with some blood in vomitus.  Pt lethargic, not
+co headache.    HEENT were normal to my exam.  The mucous membranes
+are slightly dry.  The neck was supple and non-tender on my
+examination. The lungs were clear, with no grunting, flaring, or
+retractions on my examination.  Heart rate/rhythm regular.  No
+murmurs. Abdomen is soft and nontender throughout.  Normal neuro, no
+meningeal signs The joint examination was normal.  Examination of
+the skin revealed no rashes, no petechiae or purpura.  Serial
+examinations were performed by me during the course of the ED care.
+His laboratory studies were normal except as noted above.  He
+responded only partially to treatment and will be admitted.  I am
+admitting him to pediatric service.
+
+CPT-4:
+Level 4: 99284.
+This document has been electronically signed by:  **PLACE,
+MD
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

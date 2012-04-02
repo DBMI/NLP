@@ -1,0 +1,78 @@
+
+**INSTITUTION
+of **PLACE, PENNSYLVANIA  **ZIP-CODE
+NAME: **NAME[BBB, CCC M]
+MRUN: **ID-NUM
+DOB: **DATE[Jul 03 1975]
+ADMIT: **DATE[Aug 06 2007]
+Attending MD: **NAME[ZZZ]
+DISCHARGE: **DATE[Aug 11 2007]
+SUMMARY OF DISCHARGE
+
+
+CLINICAL RELEVANT DATE **DATE[Aug 11 2007]
+FINAL DIAGNOSIS ON DISCHARGE:		#1.  PREGNANCY, UNDELIVERED.
+						#2.  DIARRHEA.
+HISTORY AND PHYSICAL:
+This is a **AGE[in 30s]-year-old gravida 1, para 0 at 13-1/7 weeks by a last menstrual
+period who presents complaining of a 3-day history of nausea, vomiting and
+diarrhea.  The symptoms began on **DATE[Aug 3 2007] with 7-8 episodes of
+emesis and loose stools x12.  She has had crampy abdominal pain rated at a
+level of 5/10.  This continued until admission.  On the day of admission,
+her stools were grossly bloody with 10-12 bowel movements the day of
+admission and sharp diffuse abdominal pain up to a **DATE[Sep 11].
+She was seen in the emergency room and hydrated, but after 3 liters of fluid
+this had still not cleared her ketones.  She received Zofran and morphine
+for pain and this helped her nausea.  Her maximum temperature had been
+100 degrees at home.  She has had no uterine contractions, loss of fluid or
+vaginal bleeding.  Her antenatal course has been significant for
+hyperemesis.
+PAST MEDICAL HISTORY:
+Significant for irritable bowel syndrome.
+MEDICATIONS:
+Prenatal vitamins and Zofran.
+ALLERGIES:
+Keflex and amoxicillin.
+PHYSICAL EXAM:
+Vital signs revealed a temperature of 99.0, blood pressure 96/67,
+respirations 18 and pulse 106.  HEENT unremarkable.  Neck without masses.
+Lungs are clear.  Heart regular rate and rhythm.  Abdomen is soft and
+diffusely tender, especially in the right lower quadrant.  She has active
+bowel sounds.  No CVA tenderness.  Pelvic exam was deferred.  Extremities
+with no clubbing, cyanosis or edema.  Neurological exam is grossly intact.
+LABORATORY:
+Her white count was 12.0.  Urinalysis was significant for 1+ blood, 2+
+ketones and 3+ glucose.  Electrolytes were significant for a potassium of
+4.7, but this specimen was hemolyzed.  Liver functions were normal.
+HOSPITAL COURSE:
+The patient was admitted with a diagnosis of gastroenteritis.  Stool
+specimen was positive for shiga toxin and diagnostic for E. coli 015787.
+She was given supportive care during her hospitalization including
+intravenous fluids, pain medication and antiemetics.  She was ready for
+discharge on **DATE[Aug 11 2007].  She was given a prescription for Percocet
+#15.  She has a prescription for Zofran at home and she was given
+instructions for followup in the office.
+**NAME[YYY]  M  **NAME[ZZZ], M.D.
+
+
+
+
+Page 1
+**INITIALS
+____
+CHART
+D: **DATE[Aug 27 2007]
+____
+ATTENDING PHYSICIAN
+T: **DATE[Aug 28 2007]
+____
+RESIDENT **NAME[XXX]
+J: 869973
+____
+SUMMARY OF DISCHARGE
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

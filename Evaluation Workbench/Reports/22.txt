@@ -1,0 +1,49 @@
+
+**INSTITUTION
+Discharge Summary
+Name: **NAME[BBB, CCC]
+Acct #: **ID-NUM
+MRN: **ID-NUM
+Admitted: **DATE[Oct 29 2008]
+Discharged: **DATE[Nov 02 2008]
+Dict: KASEER, BAHAA
+Attend: **NAME[ZZZ, YYY]
+PRINCIPAL DIAGNOSIS:  Salmonella colitis.
+SECONDARY DIAGNOSIS:  Hypertension.
+MEDICATIONS:  
+1.  Lisinopril 10 mg by mouth daily.
+2.  Cipro 500 mg by mouth 2 times a day for 3 days.
+3.  Tylenol with Codeine 1 tablet 3-4 times per day as needed for pain.
+PROCEDURES AND TESTS:  Colonoscopy done **DATE[Oct 30 2008], showed normal 
+mucosa in the ileum, erythema, edema, and ulcerations in the left colon.  
+Possible pseudomembrane in the right colon.
+HOSPITAL COURSE:  The patient is a **AGE[in 40s]-year-old gentleman with a history of 
+hypertension, presented with a 1-week history of abdominal pain and diarrhea. 
+The patient had cold symptoms a week after, and he had been taking 
+amoxicillin, totally 5 tablets, 1 a day for 3 days before.  The patient's 
+stool samples had been sent for studies, and then the patient was started on 
+IV metronidazole and p.o. vancomycin, since the patient failed multiple days' 
+treatment of metronidazole.  The patient was also started on IV normal saline 
+and his pain was well controlled with IV Dilaudid p.r.n.  The patient, the 
+next day, clinically improved a little, and he had colonoscopy which showed 
+erythema, edema, and ulcerations in the left colon, and possible 
+pseudomembranes in the right colon.  First, it was suspected that the patient 
+either has Clostridium difficile colitis or inflammatory bowel disease.  The 
+patient's stool studies came back negative for C. difficile, and positive for 
+Salmonella group B, which was sensitive to ciprofloxacin.  The patient was 
+discharged home on **DATE[Nov 2 2008], in very good condition with 
+ciprofloxacin orally for 3 days.
+The patient was discharged to home in very good condition on ciprofloxacin 
+for 3 days.  The patient is to call Dr. **NAME[ZZZ] if his symptoms do not improve 
+in 1 week.
+______________________________
+BAHAA KASEER, Resident
+HS Job # 584838 / 40968 / 
+SHY # **ID-NUM
+D: **DATE[Nov 05 2008] 16:53
+T: **DATE[Nov 07 2008] 06:37
+
+**CARBON-COPY
+
+
+E_O_R

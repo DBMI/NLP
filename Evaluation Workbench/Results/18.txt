@@ -1,0 +1,94 @@
+
+**INSTITUTION
+Discharge Summary
+Name: **NAME[BBB, CCC]
+Acct #: **ID-NUM
+MRN: **ID-NUM
+Admitted: 
+Discharged: **DATE[May 28 2007]
+Dict: ASGHAR, SHEBA
+Attend: **NAME[ZZZ, YYY]
+CONSULTS OBTAINED:  Gastroenterology, Dr. **NAME[XXX].
+PRIMARY DIAGNOSIS:  Diarrhea secondary to colitis.
+SECONDARY DIAGNOSES:  
+1.  Diabetes.
+2.  Hypertension.
+3.  Dyslipidemia.
+4.  Obstructive sleep apnea.
+5.  Arthritis.
+6.  Hemorrhoids.
+The patient is a **AGE[in 60s]-year-old lady who is visiting **PLACE from her home 
+town (_______________) in Massachusetts.  She had longstanding periods of 
+alternating diarrhea and constipation.  She had a colonoscopy done in 
+**DATE[Aug 2006] which per the patient is essentially unremarkable.  The 
+patient now presents to our emergency room with a 4 to 5 days history of 
+worsening diarrhea.  At its worse, on Sunday, she had 7 to 8 loose bowel 
+movements that day, she also had a low-grade temperature at that point in 
+time.  Also, throughout this time, she has been having decreased p.o. intake. 
+At the time of presentation, she had about 6 to 8 green bowel movements with 
+specks of blood identified on the tissue paper.  She said she has a known 
+history of hemorrhoids that sometimes act up with her aggravating diarrhea 
+and at the time of admission, she also complained of lower abdominal 
+discomfort.  In the emergency room when she was evaluated, she was afebrile, 
+and she was orthostatic at that point in time.  Rest of her exam essentially 
+was unremarkable including an abdominal exam which revealed an obese abdomen 
+without any masses, visceromegaly, and tenderness.  Per ED documentation, she 
+was guaiac-negative.  CT scan of the abdomen and pelvis performed showed 
+diffuse thickening of the colon with changes suggestive of colitis, possibly 
+infectious in etiology.  She had degenerating myomas of the uterus, 
+moderate-sized hiatal hernia on CT as well, had some lesions in the liver 
+which per the radiologist were benign consistent with hemangiomas.  No pelvic 
+adenopathy was appreciated.  On exam, her hemoglobin was 12.6, and her white 
+cell count was 6.7.  The patient was admitted with a diagnosis of diarrhea 
+secondary to colitis.  The cause was thought to be most likely bacterial.  
+Also, the patient was hypotensive, and she was adequately fluid resuscitated 
+with boluses of fluid after which she was kept on maintenance fluid.
+HOSPITAL COURSE:  During her hospital stay, the patient was aggressively 
+hydrated.  Gastroenterology was consulted who reviewed the stool studies 
+which was sent, these were stool culture which showed normal bowel flora.  
+There were no white cells in the stools.  A C. difficile toxin was sent which 
+was negative.  Blood cultures were sent.  They also came back negative.  A CT 
+was also reviewed as dictated above.  During her hospital stay, the patient's 
+diarrhea improved.  At the day of discharge, she had 2 bowel movements.  The 
+patient did not complain of any nausea or vomiting, and she was tolerating 
+her meals.  She remained afebrile.  She never had an elevated white cell 
+count during this admission.  Gastroenterology only wanted to scope her if 
+the workup was negative, and the patient's symptoms persisted.  The patient 
+was seen on **DATE[May 28 2007].  At that time, her condition was stable, and it 
+was considered appropriate to discharge her.  We (_______________) the 
+patient that if her symptoms recur that she should return to her PCP or 
+gastroenterologist and we can look into further causes of her diarrhea.  At 
+this point in time, she however, is stable and her symptoms have subsided.
+DISCHARGE DIAGNOSIS:  Diarrhea secondary to colitis, possibly infectious in 
+etiology.  However, it seems that the infection is noninvasive.
+CONDITION:  Stable.
+ACTIVITY:  Ad lib.
+DIET:  Heart healthy diabetic diet.
+MEDICATIONS ON DISCHARGE:  
+1.  Aspirin 81 mg p.o. daily.
+2.  Lipitor 40 mg p.o. daily.
+3.  Os-Cal D one tablet p.o. b.i.d.
+4.  Glucotrol XL 5 mg p.o. daily.
+5.  Glucophage 1000 mg p.o. b.i.d.
+6.  Zoloft 100 mg p.o. daily.
+The patient's atenolol, Diovan, and Norvasc as well as hydrochlorothiazide 
+were held during this admission.  We recommend atenolol 25 mg p.o. daily, and 
+Diovan 320 mg p.o. daily to be restarted after 1 to 2 days and Norvasc 10 mg 
+p.o. daily, and hydrochlorothiazide 12.5 mg p.o. daily along with 10 mEq p.o. 
+daily of potassium chloride to be started in about 5 to 6 days from now.  
+Caltrate 600 mg p.o. b.i.d., glucosamine/chondroitin 500 mg p.o. b.i.d., 
+Provigil 200 mg p.o. daily as per PCP and lomotil as directed by PCP.  The 
+patient's omeprazole and magnesium oxide were also held.  These can be 
+restarted once the patient reaches back home, and her symptoms have remained 
+settled.  She can restart her BiPAP machine after discharge.
+______________________________
+SHEBA ASGHAR, Resident
+HS Job # 889660 / 37635 / 
+SHY # **ID-NUM
+D: **DATE[May 28 2007] 16:27
+T: **DATE[May 29 2007] 02:48
+
+**CARBON-COPY
+
+
+E_O_R

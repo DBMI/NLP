@@ -1,0 +1,145 @@
+'(
+
+;; 10/7/2011 -- Simplified grammar for use with Autoslot
+
+(will-aux
+  (ptype willaux)
+  (comp (?string "will" "would" "won\'t"  "can" "could" "can\'t" "cannot" "may" "might" 
+                 "do" "did" "does" "doesn\'t" "don\'t" "should" "shoudn\'t")))
+
+  
+(have-aux
+  (ptype haveaux)
+  (comp (?string "have" "has" "had" "haven\'t" "hasn\'t" "hadn\'t")))
+  
+(be-aux
+  (ptype beaux)
+  (comp (?string "is" "was" "were" "isn\'t" "wasn\'t" "weren\'t" "be" "been" "are" "appear" "appeared" "appears" "remain" "remains" "remained"
+                  "appear to be" "appears to be" "appears to have been" "represent" "represents" "represented" "reflect" "reflected"
+                  "appears to represent" "apparently represents" "is seen to" "is seen to be" "is also" "probably is" "possibly is" 
+                  "probably are" "possibly are")))
+                   
+(not-aux
+  (ptype notaux)
+  (comp (?string "not")))
+
+(simple-ap 
+  (ptype ap)
+  (comp
+    (?adj (roles head))))
+
+(compound-ap 
+  (ptype ap)
+  (comp
+    (?adj (roles modifier))
+    (?ap (roles head))))
+
+(simple-np
+  (ptype np)
+  (comp
+    (?noun (roles head))))
+
+(compound-np 
+  (ptype np)
+  (comp
+    (?noun (roles modifier))
+    (?np (roles head))))
+
+(det-np 
+  (ptype np)
+  (comp
+    (?det (roles det))
+    (?np (roles head))))
+
+(ap-np
+  (ptype np)
+  (comp
+    (?ap (roles modifier))
+    (?np (roles head))))
+
+(pp
+  (ptype pp)
+  (comp
+    (?prep (roles head))
+    (?np (roles pphead np))))
+
+(pp-np
+  (ptype np)
+  (comp
+    (?np (roles head))
+    (?pp (roles modifier))))
+
+(np-np
+  (ptype np)
+  (comp
+    (?np1 (roles modifier) (matches simple-np ap-np compound-np))
+    (?np2 (roles head))))
+
+(simple-vp 
+  (ptype vp)
+  (comp
+    (?verb (roles head))
+    (?np (roles modifier))))
+
+(pred-s 
+  (ptype s)
+  (comp
+    (?np1 (roles subject head))
+    (?infl (roles infl))
+    (?np2 (roles predicate))))
+
+(pp-s 
+  (ptype s)
+  (comp
+    (?np (roles subject head))
+    (?infl (roles infl))
+    (?pp (roles predicate))))
+
+(vp-s 
+  (ptype s)
+  (comp
+    (?np (roles subject head))
+    (?vp (roles vp))))
+
+(there-is-s
+  (ptype s)
+  (comp
+    (?string "there is" "there are" "findings include")
+    (?np (roles head))))
+
+
+(np-conj
+  (ptype np)
+  (flags conj)
+  (comp
+    (?np1 (roles head))
+    (?conj (roles conj))
+    (?np2 (roles modifier))))
+
+(ap-conj
+  (ptype ap)
+  (flags conj)
+  (comp
+    (?ap (roles head))
+    (?conj (roles conj))
+    (?ap (roles modifier))))
+
+(np-consistent-with-np
+  (ptype np)
+  (comp
+    (?np1<condition> (roles head))
+    (?string "consistent with" "most consistent with" "suggestive of" "indicative of" "suspicious for" "due to"
+                   "related to" "relate to" "secondary to" "relating to" "to suggest" "to indicate"
+                   "to suggest the presence of" "which may reflect" "reflective of" "suggesting at least"
+                   "without evidence of" "resulting in" "concerning for" "of concern for" "compatible with" "typical of"
+                   "suggesting" "with suggestion of" "superimposed on background of" "classic for" "not consistent with"
+                   "except for" "associated with" "correlate for" "correlates for" 
+                   "correlate with" "correlates with" "correspond to" "worrisome for"
+                   "corresponding to" "correspond with" "corresponding with" "on the basis of"
+                   "following" "raising the question of" "result in" "resulting in" "thought to represent"
+                   "in combination with" "suggesting" "demonstrating" "showing")
+    (?np2<condition> (roles modifier)))
+  (sinterp (consistent-with ?np1<condition> ?np2<condition>)))
+
+
+)

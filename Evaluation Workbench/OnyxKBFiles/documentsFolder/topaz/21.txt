@@ -1,0 +1,52 @@
+
+ 
+**INSTITUTION 
+GENERAL MEDICINE
+DISCHARGE SUMMARY
+PATIENT NAME:  **NAME[BBB, CCC]
+ACCOUNT #:  **ID-NUM
+**ROOM
+ATTENDING PHYSICIAN:  DANY H ISSA
+ADMISSION DATE:  **DATE[Oct 29 2008]
+DISCHARGE DATE:  **DATE[Nov 12 2008]
+The patient presented with septic picture, was diagnosed with CMV colitis and 
+Shigella bacteremia on the background of a new diagnosis of HIV.  He was 
+treated with IV valacyclovir in addition to IV ceftriaxone with good 
+response; his diarrhea abated.  He was seen in consult by Infectious Disease. 
+ Today, he is tolerating p.o.  He is moving his bowels 4 to 5 times a day 
+with a good appetite.  He is not dizzy, and he is able to ambulate.  We will 
+discharge him today.  I discussed the case with Infectious Disease doctor 
+on-call, Dr. __________. 
+His discharge medications will include,
+1. Bactrim DS prophylaxis 1 tablet a day.
+2. Ferrous sulfate 3 to 5 mg p.o. t.i.d.
+3. Cipro 500 mg p.o. b.i.d.
+4. Valganciclovir 900 mg p.o. b.i.d.
+5. Over-the-counter multivitamin.
+We made him an appointment at the **INSTITUTION on **DATE[Nov 19 2008].  I 
+encouraged him to be compliant with appointment and to take his medications 
+as prescribed meticulously.  He will continue on Cipro for a total of 2 
+weeks; however, that could be changed depending on the clinical information 
+that might become available to the PACT clinic.  I advised him about that. 
+I also advised him that valganciclovir probably is going to be for a few 
+weeks, and that is again to be decided by the PACT group. 
+___________________________________
+DANY H ISSA
+ 
+Dictator:  **NAME[ZZZ M. YYY], M.D.
+**INITIALS
+D:  **DATE[Nov 12 2008] 11:45:48
+T:  **DATE[Nov 12 2008] 12:21:14
+R:  **DATE[Nov 14 2008] 01:02:13/anb
+Job ID:  909003/**ID-NUM
+Cc:
+ 
+*** Dictated By: 018781-**NAME[YYY, DDD M]. ***
+Electronically Signed by **NAME[ZZZ YYY]  **DATE[Nov 26 2008] 03:14:22 PM
+ 
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

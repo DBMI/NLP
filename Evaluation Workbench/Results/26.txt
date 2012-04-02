@@ -1,0 +1,180 @@
+
+* * * * * * * FINAL REPORT* * * * * * *
+
+EMERGENCY DEPARTMENT NOTE
+
+
+**NAME[ZZZ, YYY]
+MRN   **ID-NUM
+
+
+Gastroenteritis, Teaching physician addendum - brief
+
+Patient:   **NAME[ZZZ, YYY] N            MRN - **ID-NUM - CHP_MRN **NAME[XXX WWW]
+Age:   **AGE[birth-12] years     Sex:  Female     DOB:  **DATE[Nov 10 2006]
+Author:   **NAME[VVV]  M.D., **NAME[UUU]
+
+Basic Information
+Time seen: Date & time **DATE[Sep 13]/2008 10:42.
+History source: Patient, mother, father.
+Vital signs: t 36.7 P114  R24  BP 99/65.
+Arrival mode: Walking.
+Medications: None.
+Allergies: No known medication allergies.
+Immunizations: Up to date.
+History limitation: Patient's age.
+Notes: Patient's physician(s): Dr. **NAME[TTT].
+
+History of Present Illness
+**AGE[birth-12] yo white female accompanied by her parents here with c/o of reddish urine x
+1 day. She woke up at 8am
+complaining of vague abdominal pain, stating she has to "pee" but only able to
+urinate a few drops of urine
+which parents noted were red in color. Parents state that she would sit on the
+toilet but unable to urinate.
+**NAME[YYY] has good oral intake, drinking plenty of lfuids throughout the day. Her
+appetite is unchanged. No
+episodes of emesis, fever, rashes, abdominal pain, travel hx,
+myaglias/arthralgias,  URI sx, changes in her
+diet. They have pets, Labrador and turtles x 1 yr at home. She practices good
+handwashing after she plays
+with turtles which parents say is seldom. Sick contacts with her cousins,
+URI..  Om the ED, she had two loose
+BM, yellow stool with mucus and some streaks of blood noted..
+
+Associated Symptoms
+Constitutional symptoms:  No fever, no chills or no general weakness.
+Other gastrointestinal symptoms:  no vomiting  no abdominal distension,  no
+constipation.
+Abdominal pain:  Pt not verbalizing where it hurts the most
+
+Review of Systems
+ENT:  no Ear pain,  no Nasal congestion.
+Cardiovascular symptoms:  Negative.
+Respiratory symptoms:  Shortness of breath,  but no cough.
+Musculoskeletal symptoms:  Negative
+Skin symptoms:  No rash.
+Other significant review of systemsAll other systems reviewed and otherwise
+negative
+
+Past Medical/ Family/ Social History
+Medical history: Respiratory: Bronchiolitis as a one month old.
+Surgical history: Negative.
+Family history: Not significant.
+Social history: Family/social situation: Intact family, lives with parent(s),
+no daycare.
+Developmental history: Per parent report, appropriate for developmental stages.
+
+Physical Examination
+General appearance:  No acute distress, alert and Shy, pleasant. Not verbal to
+questions..
+Skin:  Warm. No rash.
+Ears, nose, mouth and throat:  Tympanic membranes clear.  Oral mucosa moist.
+Pharyngeal erythema noted with
+?white exudate on left.
+Heart:  Regular rate and rhythm, normal S1 & S2, no extra heart sounds.
+Respiratory:  Lungs clear to auscultation bilaterally.  Respirations
+nonlabored.
+Abdominal:  Normal bowel sounds.  Soft.  Nontender.  Non distended.  No
+organomegaly.  Unable to elicit
+tenderness with deep palpation.
+Rectal:  Normal tone.  Guaiac positive.  some erythema around anal sphincter.
+External genitalia:  Within normal limits. Genital development.  .
+Back:  Normal alignment.  No cva tenderness.
+Extremity:  Normal range of motion.  Normal tone.  No tenderness.
+Neurological:  Alert.  No focal neuro deficits.
+Lymph nodes:  No lymphadenopathy
+
+Medical Decision Making
+Differential diagnosis
+Hematuria: Nephrolithiasis, Urethrolithiasis, Urinary tract infection, Strep
+throat, Infectious
+Gastroenteritis.
+Clinical work-up/Interpretation
+Orders: Rapi Strep, Culture, Stool Cx , Abdo Xray, C. Diff.
+Results: Results.
+**DATE[Sep 13]/2008 11:17         Urine Volume              >10 ml
+                         Appearance                Clear
+                         Color                     Yellow
+                         Urine pH                  6.5
+                         Specific Gravity          1.026
+                         Bilirubin                 Neg
+                         Blood                     Neg
+                         Ketones                   3+
+                         Leukocyte Esterase        Neg
+                         Nitrite                   Neg
+                         Urine Protein, Qual       30 Milligrams/deciliter
+Abnormal
+                         Urine Glucose, Qual       Neg Milligrams/deciliter
+                         Urine Urobilinogen        Normal
+                         WBC                       1 /hpf
+                         RBC                       2 /hpf
+                         Squamous Epithelial Cells None /hpf
+                         Bacteria                  None
+                         Mucus                     Moderate
+X-ray: Abdominal xray reviewed with attending and radiology resident on call.
+Nonspecific gas pattern.
+Questionable white dense areas noted, most likely artifacts. In lieu of
+negative UA, will refrain from
+repeating. .
+Notes: Rapid strep negative, UA, clean catch specimen, without hematuria, LE,
+or nitrite.
+Reexamination/Reevaluation
+Reexamination: Reexamination: Pt able to tolerate po. Pleasant, interacting
+more. Denies abdominal pain. .
+
+Impression and Plan
+Discharge plan
+Condition: Unchanged.
+Dispositioned: To home.
+Patient was given the following educational materials: Will wait for stool
+studies and culture results.,
+Gastroenteritis (Vomiting, Diarrhea & Dehydration).
+Follow up with: Primary Care Physician, In: 2, day(s).
+Counseled: Family, Regarding diagnosis, Regarding treatment plan, Regarding
+diagnostic results.
+Infectious gastroenteritis
+Viral Gastroenteritis
+
+Addendum
+CHP attestation: CHP Attending Physician Attestation: The above documentation
+and note are filed separately
+and reflect that of the Emergency Department resident or clinician: I have
+personally interviewed, examined
+and participated in the care of this patient.  I have reviewed the
+documentation, discussed and agree with
+the history, assessment and plan except as noted in the following.
+Results Reviewed-Normal: I reviewed the laboratory studies and they are normal
+except as noted, I reviewed
+the x-rays and they are negative.
+Patient Response to Therapy: I have observed the patient over time in the
+emergency department. The patient
+improved with therapy.
+Disposition: I am discharging the patient to outpatient follow-up.
+Discussion: We have discussed the findings with the family, instructions given.
+E&M Coding: CPT-4: Level 4: 99284.
+ 
+Perform    by **NAME[VVV]  M.D., **NAME[UUU]   on **DATE[Sep 28]/2008 17:44
+ Sign       by **NAME[VVV]  M.D., **NAME[UUU]   on **DATE[Sep 28]/2008 17:44
+ VERIFY     by **NAME[VVV]  M.D., **NAME[UUU]   on **DATE[Sep 28]/2008 17:44
+ 
+
+
+
+
+Processed   **DATE[Sep 28]/2008 22:42:12/pco
+
+pc:
+**NAME[BBB M TTT] MD, PCP
+
+This document has been electronically signed by **NAME[UUU VVV] MD on **DATE[Sep 28]/2008
+22:42:17.
+
+
+EMERGENCY DEPARTMENT NOTE
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

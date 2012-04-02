@@ -1,0 +1,26 @@
+'
+("UTopazIntegrationAnnotation"
+  (level "document")
+  (uima "UTopazIntegrationAnnotation")
+  (workbench "DocumentAnnotation")
+  (classifications 
+      ("DocumentClass"
+        (attributes
+            ("cui" (uima "cui"))
+            ("concept" (uima "concept")))))
+  (attributes 
+      ("status" (uima "status")))
+  (components 
+      ("UTopazInferenceAnnotation"
+        (level "document")
+        (uima "UTopazInferenceAnnotation")
+        (workbench "DocumentAnnotation")
+        (classifications 
+            ("SnippetClass"
+              (attributes
+                  ("concept" (uima "concept"))
+                  ("cui" (uima "cui")))))
+        (attributes 
+            ("experiencer" (uima "experiencer"))
+            ("directionality" (uima "directionality"))
+            ("temporality" (uima "temporality"))))))

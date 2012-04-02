@@ -1,0 +1,91 @@
+
+Patient seen: 22:40
+Patient was transferred from another hospital.  Source of history:
+Mother.  **AGE[birth-12] year old male
+
+HPI:  **AGE[birth-12] year old male who was in his normal state of health until he
+developed diarrhea while in school today.  Mother was called by the
+school and told to come pick him up because he was having explosive
+diarrhea.  When she went to pick him up from the school they had to
+stay in the bathroom for approximately one hour due to profuse
+watery diarrhea. Mothe reports that the diarrhea did resemble bright
+red blood.  Child then taken to outside ED where he was evaluated
+and given total of 40cc/kg of normal saline for sinus tachycardia.
+Also received single dose of Flagyl for concern of C Diff.  Patient
+currently being treated with Amoxicillin for Strep pharyngitis (day
+#7 of treatment).  No fever, rash, emesis, or URI symptoms.
+
+CURRENT MEDICATIONS: Amoxicillin, Albuterol, Singulair, Prevacid
+ALLERGIES: Denies known medication allergies.
+PMH: Asthma, Asperger's syndrome, s/p bilateral PE tubes
+IMMUNIZATIONS: Up to date.
+Family History:  Maternal aunts with Crohn's, Maternal grandfather
+with ulcerative colitis, Mother with irritable bowel syndrome.
+SOCIAL HISTORY: Noncontributory.
+ROS: as above, all remainder negative or unremarkable.
+
+PE: T37.1     P126     R28     BP98/63
+APPEARANCE: Alert.  In no distress.  Nontoxic appearing.  Active and
+playing.
+HEENT: Normocephalic.  Atraumatic. PERRL.  EOMI.  Sclera without
+icterus or injection.  MMM.  No oral lesions.
+NECK: Supple.
+NODES: No cervical or supraclavicular lymph node enlargement.
+CHEST: Lungs clear to auscultation.  No wheeze, rales, rhonchi.
+CARDIOVASCULAR: Normal S1, S2. No rubs, murmurs or gallops.
+ABDOMEN: Bowel sounds normal. Not distended. Soft. No tenderness or
+masses.
+MENTAL STATUS: Patient alert and appropriate for age.
+
+TREATMENT & COURSE/MEDICAL DECISION MAKING:
+Outside hospital labs:
+CBC: WBC 27.9 (N77, Bd7, L7, M7), Hgb 12.7, Hct 33.3, Platelets 260
+SMA-7: NA+:  133;  K+:   4.2;  CL-:   97;  HCO3:  22 ;  BUN:   6 ;
+CREAT:  0.2; GLU:  99 .
+
+Repeat labs:
+CBC: Hemoglobin: 11.5; Hematocrit: 33.3; WBC:16.7 thousand
+cells/mm3; Differential:
+Platelets: 260 K.
+Stool culture and C Diff pending at time of admission.
+IVF given 20 cc/ kg
+
+DISPOSITION/PLAN:
+Admitted to pediatric service in stable condition.
+
+DIAGNOSIS:
+1.  Bacterial gastroenteritis vs. C Diff Colitis
+
+CHP ATTENDING ATTESTATION:
+I have personally interviewed, examined and participated in the care
+of this patient. I have reviewed, discussed, and agree with the
+history, assessment and plan except as otherwise noted. The key
+portions are identified as follows:
+
+ATTENDING NOTE:**AGE[birth-12] year old male patient presents with grossly bloody
+diarrhea.  No fevers. Questionable abdominal pain as mom reports
+that the patient does not always verbalize pain.  I observed the
+patient to be quiet and cooperative.  HEENT were normal to my exam.
+The mucous membranes and lips are moist.  The abdomen is soft and
+nontender throughout  Examination of the skin revealed no rashes, no
+petechiae or purpura.  Capillary refill normal.  Serial examinations
+were preformed by me during the course of the ED care.  Laboratory
+studies reviewed by me from the outside hospital as indicated above.
+The patient will have stoold studies sent.  The patient was admitted
+for observation and monitoring as there was some concern for
+possible intussusception and rehydration.   We have discussed the
+patient's treatment and disposition with the referring physician.
+
+
+
+CPT-4:
+Level 4: 99284.
+
+
+Electronically signed by: **NAME[ZZZ M YYY] MD, on **DATE[May 25 2008] at 12:00:02
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

@@ -1,0 +1,17 @@
+'(
+(2883 17987 17988 3760 "condition_at_location:pulmdisease:pulmloc")
+(2884 17990 17991 3761 "condition_at_location:pulmfinding:pulmloc")
+(2885 17992 17993 3762 "condition_has_state:pulmfinding:state")
+(2886 17992 17994 3762 "condition_at_location:pulmfinding:pulmloc")
+(2887 17995 17993 3762 "condition_has_state:pulmfinding:state")
+(2888 17995 17996 3762 "condition_at_location:pulmfinding:pulmloc")
+(2889 17998 17999 3764 "condition_at_location:pulmfinding:pulmloc")
+(2890 17998 18000 3764 "condition_has_state:pulmfinding:state")
+(2891 18001 18002 3764 "condition_at_location:pulmfinding:pulmloc")
+(2892 18003 18004 3765 "condition_at_location:pulmfinding:pulmloc")
+(2893 18005 18006 3766 "condition_at_location:pulmdisease:pulmloc")
+(2894 18007 18008 3766 "condition_at_location:pulmdisease:pulmloc")
+(2895 18009 18010 3767 "condition_has_state:pulmfinding:state")
+(2896 18009 18011 3767 "condition_at_location:pulmfinding:pulmloc")
+
+)

@@ -1,0 +1,135 @@
+;; Simple rule classifier for pneumonia, via Onyx semantic language.
+
+'(
+
+;; Java functions / relations
+(load-static-methods "onyx.asl.expression.form.sentence.javarelation.JavaRelations" "relation")
+(load-static-methods "onyx.asl.expression.term.javafunction.JavaFunctions" "function")
+
+;; Test rule
+;; (*-> (has_uncertain_pneumonia_support ?document) (do_something ?document))
+
+;; Rules for temporal reasoning
+
+(->
+	(and (is_condition ?c)
+		 (or (date-compare ?date ?c)
+		     (and (or (exam-compare ?exam ?c)
+		    	      (report_contains_finding ?exam ?c))
+			      (date_of ?exam ?date)))
+		 (change_of_state ?c ?change)
+		 (days_ago_greater_than ?date 10))
+	(is_chronic ?c))
+
+(->
+	(and (is_condition ?c)
+		 (or (and (report_contains_finding ?report ?c)
+				  (date_of ?report ?d)
+				  (bind ?date ?d))
+			 (bind ?date ?*current_date*)))
+	(date_of_finding ?c ?date))
+	
+;; Condition is on the left side of the chest
+(-> (and (condition_at_location ?c ?l)
+         (state_contains_string ?l "left"))
+    (on_left ?c))
+
+;; Condition is on the right side of the chest
+(-> (and (condition_at_location ?c ?l) 
+         (state_contains_string ?l "right"))
+    (on_right ?c))
+    
+;; Condition is bilateral
+(-> (and (condition_at_location ?c ?l) 
+         (state_contains_string ?l "bilateral"))
+    (is_bilateral ?c))
+
+;; If two conditions in the same document are both on the left or on the right, or one
+;; of them is bilateral, they are on the same side of the chest
+(-> (and (cooccurring_conditions ?document ?c1 ?c2)
+         (or (is_bilateral ?c1)
+             (is_bilateral ?c2)
+			 (and (on_left ?c1) 
+                  (on_left ?c2))
+	         (and (on_right ?c1)
+                  (on_right ?c2))))
+    (on_same_side ?document ?c1 ?c2))
+    
+(-> (not (is_absent ?c))
+    (is_present ?c))
+
+;; If a condition has a state which contains the word "absent", the condition is absent
+(-> (and (or (and (condition_has_state ?c ?s)
+                  (state_contains_string ?s "absent"))
+             (context_negation ?c)))
+    (is_absent ?c))
+    
+;; Condition has a change of state qualifier
+(-> (change_of_state ?c ?s)
+	(has_change_of_state ?c))
+	
+
+(-> (or (pneumonia_discounting_condition ?c)
+        (and (pneumonia_supporting_condition ?c)
+        	 (is_absent ?c)))
+    (condition_discounts_pneumonia ?c))
+    
+(-> (and (pneumonia_supporting_condition ?c)
+		 (is_present ?c))
+	(condition_supports_pneumonia ?c))
+	
+(-> (and (document_contains ?document ?c)
+         (pneumonia_supporting_condition ?c)
+         (is_present ?c))
+    (has_supporting_condition ?document))
+    
+(-> (and (document_contains ?document ?c)
+		 (pneumonia_identifying_condition ?c)
+		 (is_absent ?c))
+	(has_negated_identifying_condition ?document))
+	
+(-> (and (document_contains ?document ?c)
+		 (or (pneumonia_identifying_condition ?c)
+		 	 (pneumonia_supporting_condition ?c))
+		 (is_absent ?c))
+	(has_negated_supporting_condition ?document))
+	
+(-> (and (document_contains ?document ?c)
+		 (pneumonia_supporting_condition ?c)
+		 (has_change_of_state ?c))
+	(has_supporting_condition_with_change_of_state ?document))
+	
+(-> (and ;;(on_same_side ?document ?c1 ?c2)
+		 (cooccurring_conditions ?document ?c1 ?c2)
+         (or (and (condition_supports_pneumonia ?c1)
+	              (condition_discounts_pneumonia ?c2))
+	         (and (condition_supports_pneumonia ?c2)
+	              (condition_discounts_pneumonia ?c1))))
+    (has_conflicting_condition ?document))
+
+;; A report is negative for pneumonia if there are no supporting conditions, 
+;; or there are negated identifying conditions. 
+(-> (and (is_document ?document)
+	     (or (not (has_supporting_condition ?document))
+	         (has_negated_identifying_condition ?document)))
+	(has_negative_pneumonia_support ?document))
+
+;; A report is uncertain for pneumonia if:  
+;; 1- The report is not negative for pneumonia, and
+;; 2- There is a change of state to a supporting condition, or conflicting support on the same side
+(-> (and (is_document ?document)
+		 (or (has_supporting_condition_with_change_of_state ?document)
+		 	 (has_conflicting_condition ?document))
+		 (not (has_negative_pneumonia_support ?document)))
+	(has_uncertain_pneumonia_support ?document))
+	
+;; A report is positive for pneumonia if there are supporting or identifying conditions, and 
+;; the report is not uncertain.
+(-> (and (has_supporting_condition ?document)
+	     (not (has_uncertain_pneumonia_support ?document))
+	     (not (has_negative_pneumonia_support ?document)))
+    (has_positive_pneumonia_support ?document))
+    
+
+)
+

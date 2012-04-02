@@ -1,0 +1,128 @@
+
+
+**INSTITUTION
+**PLACE, PA
+
+DISCHARGE SUMMARY
+
+NAME:  **NAME[BBB, CCC]
+ACCT #:  **ID-NUM
+PATIENT LOC:  I6W W653 01 UPMCSHY   SHY
+ADMITTED:  **DATE[Jan 08]/2009
+TRANSFERRED:  **DATE[Jan 12]/2009
+DICT:  **NAME[ZZZ YYY], Resident
+ATTEND:  **PLACE, MD
+
+PRINCIPAL DIAGNOSIS:  Salmonella enterocolitis.
+
+SECONDARY DIAGNOSES:  
+1.  Aortic thrombus.
+2.  Hypokalemia.
+3.  Hypertension.
+4.  Coronary artery disease.
+5.  Hyperlipidemia.
+6.  Chronic obstructive pulmonary disease.
+7.  Pulmonary hypertension.
+
+LIST OF CONSULTANTS:  
+1.  Dr. **NAME[XXX WWW] from Cardiology.
+2.  Dr. **NAME[VVV UUU] from Gastroenterology.
+3.  Dr. **NAME[TTT SSS] from General Surgery.
+4.  Dr. **NAME[RRR QQQ] from Vascular Surgery.
+
+PROCEDURE AND TESTS:  An abdomen and pelvis CT showing and indeterminate-age 
+splenic infarct in the inferior pole as well as pan proctocolitis consistent 
+with infection, and extensive atherosclerotic disease of the aorta, 
+mesenteric arteries, and main renal arteries with aortic thrombus, read as 
+possibly floating, but reviewed with Vascular Surgery, who decided that it 
+was adherent and its location is at the level of the celiac and SMA origins.  
+Ultrasound of the abdominal aorta demonstrates a mural thrombus, which is 
+unchanged or marginally larger compared to **DATE[Sep 26], 2008.  Echocardiogram 
+showing calcified and restricted aortic valve leaflets, a normal LV and right 
+ventricular systolic function, and mild mitral annular calcification.
+
+DISCHARGE MEDICATIONS:  
+1.  Aspirin 81 mg once a day.
+2.  Citrucel 2 times a day.
+3.  Baclofen 10 mg daily.
+4.  Ciprofloxacin 500 mg three times a day for 7 days.
+5.  Plavix 75 mg once a day.
+6.  Isosorbide mononitrate 30 mg every morning.
+7.  Metoprolol 25 mg twice a day.
+8.  MS Contin 30 mg every 12 hours.
+9.  Multivitamin with minerals 1 tablet once a day.
+10.  Protonix 40 mg once a day.
+11.  Actonel as prescribed.
+12.  Simvastatin 20 mg every evening.
+
+HOSPITAL COURSE:  This is a **AGE[in 70s]-year-old female with a history of coronary 
+artery disease, prior ischemic bowel, hypertension, COPD, and pulmonary 
+hypertension who was admitted with Salmonella colitis, found also to have a 
+large mural thrombus in her abdominal aorta.  The patient was initially 
+presenting with about 2 weeks of nausea and 2 days of explosive diarrhea, 
+that did have a presence of blood in her stool, and stool culture did 
+eventually grow out Salmonella species group D.  Otherwise, she was negative 
+for Clostridium difficile ova and parasites.  She was treated initially with 
+some Flagyl empirically, and stool culture grew out Salmonella, at which time 
+she was switched over to ciprofloxacin.  She was rehydrated.  Actually, 
+really was quite symptom-free after the first night of admission in terms of 
+her abdominal pain and nausea.  She did tolerate p.o. food throughout her 
+course in the hospital, and her diarrhea did resolve after 3 days.  She was 
+initially started on a heparin drip by Vascular Surgery for concern that she 
+had floating thrombus in her abdominal aorta; however, further review of the 
+scan along with confirmation by abdominal ultrasound indicated this was 
+indeed a mural thrombus.  Heparin was discontinued as well as her aspirin and 
+Plavix in light of a possible GI bleed; however, it was more likely that this 
+was secondary to her colitis as well as her hemorrhoid.  She did have a 
+stable hemoglobin, that fluctuated somewhat in the range of 9.7 to 11.3.  
+Gastroenterology did see her, but there was no need for any procedures during 
+this admission, they will follow up with her with a colonoscopy as an 
+outpatient.  Upon identification of the organism causing her colitis, she was 
+restarted on her aspirin and Plavix.  She also did an echocardiogram that did 
+not reveal any left ventricular thrombus.  Vascular Surgery did consider her 
+thrombus stable and she was asymptomatic, with no evidence of ischemic bowel, 
+and they did recommend for her to get a chest CT to look for any aortic arch 
+thrombi that may have precipitated her splenic infarct; however, this was not 
+obtained during this hospitalization.  The patient did also require some 
+repletion of her potassium, which had dropped as low as 2.7 without any EKG 
+changes, and was 4.7 on the day of discharge.  Additionally, her magnesium 
+required repletion.  Electrolytes were otherwise within normal limits, and 
+her acute renal failure from dehydration improved from a BUN and creatinine 
+of 19 and 0.8 to 7 and 0.7 on the day of discharge.
+
+DISCHARGE DISPOSITION:  The patient was discharged in stable condition back 
+home.
+
+FOLLOWUP:  She is to follow up with her PCP, Dr. **NAME[PPP] within 1 week, she 
+is to have a CBC drawn before that appointment.  Additionally, she has a 
+colonoscopy scheduled with Dr. **INSTITUTION on **DATE[Jan 26], 
+2009, and she will also follow up with her cardiologist, Dr. **NAME[WWW], in 
+**DATE[May] 2009.
+
+
+______________________________
+**NAME[ZZZ YYY], Resident
+
+
+ATTENDING STATEMENT:
+
+I saw and evaluated the patient together with the team on the day of discharge;
+
+hospital course and plan are as summarized above by Dr. **NAME[YYY].  The plan was 
+discussed and formulated together.
+
+**PLACE, MD
+Associate Professor
+Department of Medicine
+
+HS Job # 158818 / 44076 / 
+SHY # **ID-NUM
+D: **DATE[Jan 12]/2009 13:53
+T: **DATE[Jan 13]/2009 06:21
+
+
+
+**CARBON-COPY
+
+
+E_O_R

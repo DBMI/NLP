@@ -1,0 +1,54 @@
+
+**INSTITUTION
+of **PLACE, PENNSYLVANIA  **ZIP-CODE
+NAME: **NAME[BBB, CCC M]
+MRUN: **ID-NUM
+DOB: **DATE[Aug 16 1930]
+Attending MD: **NAME[ZZZ]
+FLOOR:
+PROGRESS NOTE
+CLINICAL RELEVANT DATE  **DATE[Jul 29 2007]
+SERVICE:  				MEDICAL.
+ADMISSION DATE:			**DATE[Jul 28 2007].
+EVALUATION DATE:			**DATE[Jul 29 2007].
+A **AGE[in 70s]-year-old female, overnight events reviewed, medications and
+laboratories.  Stable.  **INSTITUTION, 3200.
+ASSESSMENT:
+1.	Abdominal pain, diarrhea, heme-positive stools, suspect
+gastroenteritis.  Heme stools positive, awaiting results of C. diff
+culture and stool for leukocytes.  Continue Flagyl and Culturella IV.
+GI consult for colonoscopy.
+2.	Hypertension.  Blood pressure controlled.  No
+neurovascular/cardiovascular decompensation.  Stable.  Continue
+Aceon/HCT.
+3.	Cardiovascular.  Stable.  Sinus rhythm.  S1, S2 normal.  No audible
+S3 or S4 flow murmur stable, MR murmur stable.  No cardiovascular
+decompensation.
+4.	Hypokalemia.  Potassium 3.1, replacing.
+5.	Catabolic protein malnutrition, mild.  Consistent with acute
+infectious process.  Albumin, total protein 2.9/6.2, stable.  Will
+anticipate improvement with resolution of catabolic process.
+**NAME[YYY]  **NAME[ZZZ], M.D.
+
+Page 1
+RB/dls
+____
+CHART
+D: **DATE[Jul 29 2007]
+____
+ATTENDING PHYSICIAN
+T: **DATE[Jul 29 2007]
+____
+RESIDENT **NAME[XXX]
+J: 846669
+____
+PROGRESS NOTE
+Electronically Signed by **NAME[WWW VVV]  for **NAME[YYY ZZZ] **DATE[Aug 21 2007] 03:52:38
+PM
+
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

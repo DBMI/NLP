@@ -1,0 +1,85 @@
+'(wordrule
+
+((words ("explosive" "watery") ("diarrhea" "stools"))
+ (cui "C0239182"))
+
+((ruleid adhoc0)
+ (match (words ("stool") ("obtained")))
+ (result (cui "C0202010")))
+
+(("stool order" "stool ordered" "stool orders" "stool cx" "stool study" 
+	"stool culture" "stool studies" "stool cultures") 
+	"C0202010")
+
+(("appetite" "eat" "eating" "anorexia") "C0003123")
+
+("saline" "C0036082")
+
+(("fatigue" "fatigued" "tired") "C0015672")
+
+(("difficult swallowing" "difficulty swallowing") "C0011168")
+
+(("arthralgia" "arthralgias" "joint pain" "joint ache" "joint aches") 	"C0003862")
+
+(("weak" "weaker" "weakness") "C0004093")
+
+(("ill" "ill-appearing") "C0231218")
+
+(("fatigue" "fatigued" "tired") "C0015672")
+
+((ruleid adhoc1)
+ (match (words ("abdomen" "abdominal") ("cramp" "cramps" "pain" "discomfort" )))
+ (result (cui "C0000737")))
+
+((ruleid adhoc2)
+ (match (words ("abdomen" "abdominal" "epigastric") ("tender" "tenderness")))
+ (result (cui "C0232498")))
+ 
+(("joint pain") "C0003862")
+
+(("bacterial gastroenteritis") "C0558348")
+
+(("colitis") "C0009319")
+
+((ruleid adhoc3)
+ (match (words ("hydration") ("continued")))
+ (result (cui "C0011175")))
+
+(("aggressively hydrated" "was hydrated") "C0011175")
+
+(("streaks of blood") "C0151594")
+
+(("watery") "C0239182")
+
+(("respiratory distress" "shortness of breath") "C0013404")
+
+(("tired" "decreased energy") "C0015672")
+
+(("low-grade temperature" "low-grade fever" "low grade temperature" "low grade fever") "C0015967")
+
+((ruleid adhoc4)
+ (match (words ("bowel movement") ("blood")))
+ (result (cui "C1321898")))
+
+(("hematorrhea") "C1321898")
+
+((ruleid adhoc5)
+ (match (words ("lab" "organism" "urine") ("shigella" "shigellosis" "shiga")))
+ (result (cui "C0036953")))
+
+(("myalgias/arthralgias") "C0231528")
+
+(("myalgias/arthralgias") "C0003862")
+
+(("nasal discharge") "C1260880")
+
+(("shiga toxin")  "C0074447")
+
+(("tenesmus")  "C0232726")
+
+(("viral gastroenteritis" "viral hepatitis" "viral infection") "C0521026")
+
+(("wheezing" "wheezes") "C0043144")
+
+ 
+)

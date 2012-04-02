@@ -1,0 +1,14 @@
+'(ConText
+
+((sourceFile "gazeteers/CaTIES_NegExPreNegationPhrases.lst")
+ (precedes true)
+ (context_relation "directionality")
+ (context_value "context_negation"))
+ 
+((sourceFile "gazeteers/CaTIES_NegExPostNegationPhrases.lst")
+ (precedes false)
+ (window 12)
+ (context_relation "directionality")
+ (context_value "context_negation"))
+
+)

@@ -1,0 +1,230 @@
+
+* * * * * * * FINAL REPORT* * * * * * *
+
+EMERGENCY DEPARTMENT NOTE
+
+
+**NAME[ZZZ, YYY]
+MRN   **ID-NUM
+
+
+Diarrhea, Teaching physician addendum - brief
+
+Patient:   **NAME[ZZZ, YYY]            MRN - **ID-NUM - CHP_MRN **NAME[XXX WWW]
+Age:   **AGE[birth-12] months     Sex:  Male     DOB:  **DATE[Sep 8 2008]
+Author:   **NAME[VVV] M.D., SYANA
+
+Basic Information
+Time seen: Date & time 10/2/2008 13:50.
+History source: Mother, father.
+Arrival mode: Air ambulance.
+Vital signs: Vital Signs.
+10/2/2008 13:19          Temperature               37.2 DegC
+                         Temperature Site          Rectal
+                         Pulse                     134 Beats/Minute
+                         Pulse Character           Regular
+                         Pulse Site                NIBP/monitor
+                         Respiratory Rate          32 br/min
+                         Systolic BP               109 mmHg
+                         Diastolic BP              72 mmHg
+                         BP Site                   Right leg
+                         BP Method                 NIBP/monitor
+                         Oxygen Therapy            Room Air
+Medications: None.
+Allergies: No known medication allergies.
+Immunizations: Up to date.
+
+History of Present Illness
+The patient is a 12 months old Male who presents with diarrhea and bright red
+blood per rectum. 2 weeks of
+green, diarrhea. Tmax was 100.7 near onset of diarrhea. He did have a few
+episodes of NBNB vomiting near the
+onset of illness, but no protracted vomiting. For the past week, mother has
+noted bloody streaks in green
+diarrheal stools. No black tarry stools. No clots. Today there was a small
+bowel movement that consisted of
+only blood (not mixed with stool). Reports average of 7 diarrheal stools.
+Today has had 3 prior to
+presentation. Mother states that c/o diarrhea and blood streaked diarrhea
+evaluated by PCP. States blood
+tests, stool tests, and xrays were done and negative. No results provided
+today. Family had been instructed
+to have child flown to CHP if bloody per rectum recurred. Parents also
+described episodic abdominal pain that
+causes child to cry and double over in pain. This can last for a few minutes
+to close to an hour. No
+medications or interventions to this time. Appetitie for food has been notably
+decreased. Has been taking
+bottle well. Parents have, however, noted decreased UOP. Only 1 wet diaper
+prior to 1:30pm today. No previous
+abx treatment. Formula made with store bought distilled water. No uncooked
+meat. No turtles, reptiles. No
+family h/o IBD. No belly distension seen. Father wonders about mass in LLQ,
+which seems to be tender per his
+evaluation. No joint pain. No rash or bruising..  Gestation-delivery: normal.
+Development: within normal
+limits.
+
+Review of Systems
+Other significant review of systemsAll other systems reviewed and otherwise
+negative
+
+Past Medical/ Family/ Social History
+Medical history: Additional significant medical history: treated with abx for
+pneumonia as an infant. No
+prior hospitalizations. .
+Surgical history: Negative.
+Family history: Not significant.
+Social history: Family/social situation: Intact family.
+Developmental history: Per parent report, wnl.
+
+Physical Examination
+General appearance:  No acute distress, alert, consolable and Anterior
+fontanelle examination: Within normal
+limits.
+Skin:  Warm. Dry. No pallor. No rash.
+Eye:  Pupils equal, round, and reactive to light.  Extraocular movements
+intact.  Normal conjuctiva.  no
+Icterus.
+Ears, nose, mouth and throat:  Tympanic membranes clear.  Oral mucosa moist
+(mucous membranes slightly dry).
+No pharyngeal erythema or exudate.  No oral lesions.
+Neck:  Supple, trachea midline, no tenderness, no enlarged nodes.
+Heart:  Regular rate and rhythm, normal S1 & S2, no extra heart sounds, no
+murmurs.
+Perfusion:  Within normal limits.
+Respiratory:  Lungs clear to auscultation bilaterally.  Respirations
+nonlabored.
+Abdominal:  Normal bowel sounds.  Soft.  Nontender.  Non distended.  No
+organomegaly.  No masses..
+Rectal:  Normal tone.  Guaiac negative and quality control is OK.  No rectal
+fissues, skin tages, or
+breakdown..
+Genitalia:  No tenderness. Normal external genitalia.
+Extremity:  Normal range of motion.  Normal tone.  No swelling.  No tenderness.
+Neurological:  Alert.  Moves all 4 extremities normally. DTRs wnl. .
+
+Medical Decision Making
+Differential diagnosis
+Colitis
+Gastroenteritis (infectious)
+Intusseception
+Meckels diverticulum
+HUS
+Clinical work-up/Interpretation
+Orders: AXR, Abd US, CBC, BMP, UA.
+Orders Placed: Medications: Bolus 25cc/kg NS.
+Results: Results,
+10/2/2008 18:00          Urine Volume              >10 ml
+                         Appearance                Clear
+                         Color                     Yellow
+                         Urine pH                  6.5
+                         Specific Gravity          1.017
+                         Bilirubin                 Neg
+                         Blood                     Neg
+                         Ketones                   Neg
+                         Leukocyte Esterase        Neg
+                         Nitrite                   Neg
+                         Reducing Substances       Neg %
+                         Urine Protein, Qual       Neg Milligrams/deciliter
+                         Urine Glucose, Qual       Neg Milligrams/deciliter
+                         Urine Urobilinogen        Normal
+                         WBC                       2 /cumm
+10/2/2008 16:42          Na                        140 mMol/L
+                         K                         5.0 mMol/L
+                         Cl                        107 mMol/L  High
+                         CO2                       18 mMol/L  Low
+                         BUN                       10 Milligrams/deciliter
+                         Cr                        0.2 Milligrams/deciliter
+                         Glucose                   114 Milligrams/deciliter
+High
+                         Ca                        9.8 Milligrams/deciliter
+                         WBC                       14.5 X10E+09/L
+                         Hgb                       12.4 grams/deciliter
+                         Hct                       35.9 %
+                         Platelets                 405 X10E+09/L  High
+                         Neutrophils               45 %  High
+                         Lymphs                    45 %
+                         Monocytes                 6 %
+                         Basophils                 3 %  High
+                         Eosinophils               1 %  Abdominal US: wnl, no
+intussiception.
+Abdominal/KUB x-ray: Within normal limits.
+Calls-Consults: Gastroenterology, Recommends: agrees with evaluation/mgmt.
+Interested in Hgb-- if decreased,
+t/c meckel evaluation. Agrees with admission to peds for monitoring/serial
+exams..
+Notes: Parents noticed that during US, child seemed to be tender
+suprapubically. No h/o UTI. Circumcised.
+Will evaluate bagged UA for blood..
+Documentation reviewed:
+none available
+
+Impression and Plan
+Diarrhea (SNMCT **ID-NUM, Reason For Visit, Emergency medicine, Medical)
+Hematochezia (SNMCT **ID-NUM, Working, Medical)
+Discharge plan
+Condition: Stable.
+Admit: To Inpatient Unit.
+Counseled: Family, Regarding diagnosis, Regarding treatment plan, Regarding
+diagnostic results, Regarding
+prescription.
+
+Addendum
+CHP attestation: CHP Attending Physician Attestation: The above documentation
+and note are filed separately
+and reflect that of the Emergency Department resident or clinician.
+Attending History & Physical: .
+Pt is a previously healthy 12 mo old with prolonged diarrhea now with bloody
+stools and fever.  Details as
+above.
+
+PE:  Vitals as above.
+Gen:  Well appearing, NAD
+HEENT:  NCAT. TM bilaterally clear, normal op, mm moist and pink.  No nucal
+rigidity.  No LAD.
+Resp:  CTA bilaterally
+Card:  RRR without murmur
+Abd:  Soft, **INITIALS, normal BS.  No HSM.
+Ext:  Normal tone, strength.  Normal sensation.
+Skin:  No rashes.  No petechiae, no purpura.
+
+Labs as above.  GI consulted.
+Pt admitted in stable condition.
+
+Diagnosis:
+1)  Hematochezia
+2)  Diarrhea
+Patient Response to Therapy: I have observed the patient over time in the
+emergency department. The patient
+improved with therapy, but will require admission.
+Disposition: I am admitting the patient to the hospital.
+Discussion: We have discussed the findings with the family, instructions
+given, We have discussed the
+patient's treatment and disposition with the referring clinician.
+E&M Coding: CPT-4: Level 5: 99285.
+ 
+Perform    by **NAME[VVV] M.D., SYANA  on **DATE[Sep 20]/2008 18:57
+ Sign       by **NAME[VVV] M.D., SYANA  on **DATE[Sep 20]/2008 18:57
+ VERIFY     by **NAME[VVV] M.D., SYANA  on **DATE[Sep 20]/2008 18:57
+ 
+
+
+
+
+Processed   **DATE[Sep 20]/2008 22:36:56/pco
+
+pc:
+**NAME[UUU TTT] MD, PCP
+
+This document has been electronically signed by Syana S Sarnaik MD on
+**DATE[Sep 20]/2008 22:37:02.
+
+
+EMERGENCY DEPARTMENT NOTE
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

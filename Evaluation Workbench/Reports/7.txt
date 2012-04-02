@@ -1,0 +1,50 @@
+
+* * * * * * * FINAL REPORT* * * * * * *
+
+PEDIATRIC CRITICAL CARE MEDICINE INPATIENT
+
+
+**NAME[ZZZ, YYY]
+MRN   **ID-NUM
+DOB   **DATE[Sep 29 1994]
+DOS   **DATE[Jul 29 2007]
+
+PROGRESS NOTE
+His organism came back as Shigella, so he had Shigella dysentery and septic
+shock, which have improved. We have not had to give him anymore volume
+boluses. We have been able to wean him off his epinephrine, norepinephrine,
+and milrinone. He is also off of his hydrocortisone and is feeling better now
+that he is awake and oriented. He tells me that he was walking through what
+sounds like raw sewage around the household that he was staying at Korea. So
+it is consistent with the Shigellosis.
+
+I have examined this critically ill child, titrated critical care therapies
+for a billing of 60 minutes.
+
+
+
+
+**NAME[XXX M WWW] MD
+
+
+
+D     **DATE[Jul 29 2007] 13:38:00/jac
+T     **DATE[Jul 30 2007] 01:20:30/acu
+R     *
+
+pc:
+Free Format, PCP
+
+This document has been electronically signed by **NAME[XXX M WWW] MD on
+**DATE[Jul 30 2007] 13:40:56.
+
+
+
+
+PEDIATRIC CRITICAL CARE MEDICINE INPATIENT
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

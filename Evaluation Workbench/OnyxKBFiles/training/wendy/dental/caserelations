@@ -1,0 +1,6 @@
+'(
+(2764 17968 17969 3754 "condition_has_state:dentcond:state")
+(2763 17968 17970 3754 "condition_at_location:dentcond:toothloc")
+(2765 17971 17972 3754 "condition_has_state:restcond:state")
+
+)

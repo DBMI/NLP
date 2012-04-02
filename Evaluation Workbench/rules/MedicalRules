@@ -1,0 +1,388 @@
+'(wordrule
+
+;; Influenza.jape
+
+((ruleid med0)
+ (words ("C0003123" "anorexia"))
+ (result (concept "anorexia")))
+ 
+((ruleid med1)
+ (words ("C0003862" "arthralgias"))
+ (result (concept "arthralgias")))
+ 
+((ruleid med2)
+ (words ("C0235592" "cervical lymphadenoma"))
+ (result (concept "cervical lymphadenoma")))
+ 
+((ruleid med3)
+ (words ("C0008031" "chest pain"))
+ (result (concept "chest pain")))
+ 
+((ruleid med4)
+ (words ("C0085593" "chill" "chills"))
+ (result (concept "chills")))
+ 
+((ruleid med5)
+ (words ("C0009763" "conjunctivitis"))
+ (result (concept "conjunctivitis")))
+ 
+((ruleid med6)
+ (words ("C0010200" "cough" "coughs"))
+ (result (concept "cough")))
+ 
+((ruleid med7)
+ (words ("COO10520" "cyanosis"))
+ (result (concept "cyanosis")))
+ 
+((ruleid med8)
+ (words ("C0011991" "C196301" "diarrhea" "loose stools"))
+ (result (concept "diarrhea")))
+ 
+((ruleid med9)
+ (words ("C0013404" "dyspnea" "shortness of breath" "difficulty breathing" "difficult breathing"))
+ (result (concept "dyspnea")))
+ 
+((ruleid med10)
+ (words ("C0015672" "C0015672" "C2024893" "C2364051" "C0557875" "C0231229" "C0475255" 
+	"fatigue" "fatigued" "tiredness" "tired" "tired-looking" "tired looking"))
+ (result (concept "fatigue")))
+ 
+((ruleid med11)
+ (words ("C0015967" "fever"))
+ (result (concept "fever")))
+ 
+((ruleid med12)
+ (words ("C0021400" "flu"))
+ (result (concept "flu")))
+ 
+((ruleid med13)
+ (words ("C0018681" "headache"))
+ (result (concept "headache")))
+ 
+((ruleid med14)
+ (words ("C0019079" "hemoptysis"))
+ (result (concept "hemoptysis")))
+ 
+((ruleid med15)
+ (words ("C0019825" "hoarseness"))
+ (result (concept "hoarseness")))
+ 
+((ruleid med16)
+ (words ("C0521839" "ili"))
+ (result (concept "ili")))
+ 
+((ruleid med17)
+ (words ("C0021400" "lab confirmed flu"))
+ (result (concept "lab confirmed flu")))
+ 
+((ruleid med18)
+ (words ("C0420679" "lab order nasal swab"))
+ (result (concept "lab order nasal swab")))
+ 
+((ruleid med19)
+ (words ("C0231218" "malaise"))
+ (result (concept "malaise")))
+ 
+((ruleid med20)
+ (words ("C0231528" "myalgias"))
+ (result (concept "myalgias")))
+ 
+((ruleid med21)
+ (words ("C0027497" "C1963179" "nausea"))
+ (result (concept "nausea")))
+ 
+((ruleid med22)
+ (words ("C0239430"))
+ (result (concept "pain on eye movement")))
+ 
+((ruleid med23)
+ (words ("pain") ("eye") ("movement"))
+ (result (concept "pain on eye movement")))
+ 
+((ruleid med24)
+ (words ("C0085636" "photophobia"))
+ (result (concept "photophobia")))
+ 
+((ruleid med25)
+ (words ("C0032285" "pneumonia"))
+ (result (concept "pneumonia")))
+ 
+((ruleid med26)
+ (words ("C1260880" "rhinorrhea"))
+ (result (concept "rhinorrhea")))
+ 
+((ruleid med27)
+ (words ("C0242429" "sore throat"))
+ (result (concept "sore throat")))
+ 
+((ruleid med28)
+ (words ("C0021400" "suspected flu"))
+ (result (concept "suspected flu")))
+ 
+((ruleid med29)
+ (words ("C0521026" "viral infection"))
+ (result (concept "viral infection")))
+ 
+((ruleid med30)
+ (words ("C0042740" "viral syndrome"))
+ (result (concept "viral syndrome")))
+ 
+((ruleid med31)
+ (words ("C0043144" "wheezing"))
+ (result (concept "wheezing")))
+ 
+((ruleid med32)
+ (words ("C0277794" "prostration"))
+ (result (concept "prostration")))
+ 
+((ruleid med33)
+ (words ("C0235710" "substernal discomfort or burning"))
+ (result (concept "substernal discomfort or burning")))
+ 
+((ruleid med34)
+ (words ("C0009443" "coryza"))
+ (result (concept "coryza")))
+ 
+((ruleid med35)
+ (words ("C0027429" "nasal obstruction"))
+ (result (concept "nasal obstruction")))
+ 
+((ruleid med36)
+ (words ("C0850149" "nonproductive cough" "non productive cough" "non-productive cough"))
+ (result (concept "nonproductive cough")))
+ 
+((ruleid med37)
+ (words ("C0004093" "asthenia" "weak" "weakness"))
+ (result (concept "asthenia")))
+ 
+((ruleid med38)
+ (words ("C0497156" "cervical adenopathy"))
+ (result (concept "cervical adenopathy")))
+ 
+((ruleid med38)
+ (words ("C0034642" "rales"))
+ (result (concept "rales")))
+ 
+;; inhalthrax.jape
+ 
+((ruleid med40)
+ (words ("C0028081" "night sweats" "night sweat"))
+ (result (concept "night sweat")))
+ 
+((ruleid med41)
+ (words ("C0242429" "sore throat"))
+ (result (concept "sore throat")))
+ 
+((ruleid med42)
+ (words ("C0011168" "difficult swallowing" "difficulty swallowing"))
+ (result (concept "difficult swallowing")))
+ 
+((ruleid med43)
+ (words ("C0497156" "enlarged lymph nodes"))
+ (result (concept "enlarged lymph nodes")))
+ 
+((ruleid med44)
+ (words ("C0018681" "headache"))
+ (result (concept "headache")))
+ 
+((ruleid med45)
+ (words ("C1971624" "loss of appetite"))
+ (result (concept "loss of appetite")))
+ 
+((ruleid med46)
+ (words ("C1971624" "abdominal stress"))
+ (result (concept "abdominal stress")))
+ 
+((ruleid med47)
+ (words ("C0746459" "widened mediastinum" "mediastinal widening"))
+ (result (concept "widened mediastinum")))
+ 
+((ruleid med48)
+ (words ("C0085498" "gram positive rods"))
+ (result (concept "gram positive rods")))
+ 
+((ruleid med49)
+ (words ("C0917801" "insomnia" "difficulty sleeping"))
+ (result (concept "insomnia")))
+ 
+((ruleid med50)
+ (words ("C2029900" "tachycardia"))
+ (result (concept "tachycardia")))
+ 
+((ruleid med51)
+ (words ("C0020649" "hypotension"))
+ (result (concept "hypotension")))
+ 
+((ruleid med52)
+ (words ("C1260880" "rhinorrhea"))
+ (result (concept "rhinorrhea")))
+ 
+((ruleid med53)
+ (words ("C0038450" "stridor"))
+ (result (concept "stridor")))
+ 
+((ruleid med54)
+ (words ("C0010520" "cyanosis"))
+ (result (concept "cyanosis")))
+ 
+((ruleid med55)
+ (words ("C0009676" "confusion"))
+ (result (concept "confusion")))
+ 
+((ruleid med56)
+ (words ("C0039070" "syncope"))
+ (result (concept "syncope")))
+ 
+((ruleid med57)
+ (words ("C0025289" "meningitis"))
+ (result (concept "meningitis")))
+ 
+((ruleid med58)
+ (words ("C0013604" "subcutaneous edema"))
+ (result (concept "subcutaneous edema")))
+ 
+ ;; Shig.jape
+ 
+((ruleid med59)
+ (words ("C0000729" "abdominal cramps or pains" "crampy abdominal pain" "crampy abdominal pains"))
+ (result (concept "abdominal cramps or pains")))
+ 
+((ruleid med60)
+ (words ("C0239182" "diarrhea watery" "watery diarrhea"))
+ (result (concept "diarrhea watery")))
+ 
+((ruleid med61)
+ (words ("blood" "bloody" "heme-positive" "heme positive" "hemorrhagic") ("diarrhea" "stool" "stools" "bm"))
+ (ordered false)
+ (result (concept "diarrhea bloody")))
+ 
+((ruleid med62)
+ (words ("C0151594" "C0151594" "C0011991" "C0005767" "C0005767" "C0011991"))
+ (result (concept "diarrhea bloody")))
+ 
+((ruleid med63)
+ (words ("C0232726" "tenesmus"))
+ (result (concept "tenesmus")))
+ 
+((ruleid med64)
+ (words ("C0426636" "rectal urgency"))
+ (result (concept "rectal urgency")))
+ 
+((ruleid med65)
+ (words ("C0011991" "diarrhea small volume" "small volume diarrhea"))
+ (result (concept "diarrhea_small_volume")))
+ 
+((ruleid med66)
+ (words ("C1321898" "hematorrhea"))
+ (result (concept "hematorrhea")))
+ 
+((ruleid med67)
+ (words ("C0009951" "convulsions"))
+ (result (concept "convulsions")))
+ 
+((ruleid med68)
+ (words ("C0004610" "bacteremia"))
+ (result (concept "bacteremia")))
+ 
+((ruleid med69)
+ (words ("C0009763" "conjunctivitis"))
+ (result (concept "conjunctivitis")))
+ 
+((ruleid med70)
+ (words ("C0232498" "abdominal tenderness"))
+ (result (concept "abdominal tenderness")))
+ 
+;; chest xray.jape -- Not added
+
+;; chronic.jape
+
+((ruleid med71)
+ (words ("addison's disease" 
+          "addison disease" 
+          "adrenal insufficiency" 
+          "adrenocortical insufficiency" 
+          "primary adrenocortical insufficiency" 
+          "hypoadrenalism" 
+          "asthma" 
+          "bronchiectasis" 
+          "bronchiectases" 
+          "cardiac failure" 
+          "heart failure" 
+          "cardiac insufficiency" 
+          "weak heart" 
+          "cardiac function failure" 
+          "heart insufficiency" 
+          "myocardial failure" 
+          "cardiomyopathy disease" 
+          "cardiomyopathy" 
+          "cardiomyopathies" 
+          "heart muscle disorder" 
+          "myocardial disorder" 
+          "myocardiopathy" 
+          "myocardial disease" 
+          "chronic renal disease" 
+          "chronic renal failure" 
+          "end stage renal disease" 
+          "chronic kidney failure" 
+          "renal failure" 
+          "end stage kidney disease" 
+          "coronary artery Disease" 
+          "coronary artery disorder" 
+          "cad" 
+          "crohn's disease" 
+          "crohn's enteritis" 
+          "crohn's" 
+          "chronic obstructive pulmonary disease " 
+          "copd" 
+          "diabetes" 
+          "diabetic" 
+          "dysrhythmias" 
+          "cardiac arrhythmia" 
+          "cardiac rhythm disorder" 
+          "cardiac rhythm disturbance" 
+          "arrhythmia" 
+          "epilepsy" 
+          "seizure disorder" 
+          "glaucoma" 
+          "haemophilia " 
+          "hemophilia" 
+          "hiv/aids" 
+          "hiv" 
+          "aids" 
+          "hyperlipidaemia" 
+          "lipemia" 
+          "lipoidemia" 
+          "hypertension" 
+          "high blood pressure" 
+          "hypertensive diseases" 
+          "increased blood pressure" 
+          "hypertensive vascular disease" 
+          "hypertensive cardiovascular disease or syndrome" 
+          "hypertensive vascular degeneration" 
+          "hypothyroidism" 
+          "subthyroidism" 
+          "multiple Sclerosis" 
+          "osteoarthritis" 
+          "degenerative joint disease" 
+          "primary oa" 
+          "degenerative arthritis" 
+          "hypertrophic arthritis" 
+          "degenerative arthropathy" 
+          "degenerative polyarthritis" 
+          "hypertrophic polyarthritis" 
+          "parkinson's disease" 
+          "parkinson's syndrome" 
+          "paralysis agitans" 
+          "rheumatoid arthritis" 
+          "rheumatoid disease" 
+          "systemic lupus erythematosis" 
+          "lupus" 
+          "disseminated lupus erythematosis" 
+          "lupus syndrome" 
+          "lupus erythematosis" 
+          "ulcerative colitis" 
+          "inflammatory bowel disease" 
+          "colitis gravis"))
+ (result (features (temporality "Historical") (rule "chronic"))))
+
+) 

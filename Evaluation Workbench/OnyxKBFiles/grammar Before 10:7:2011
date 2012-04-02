@@ -1,0 +1,458 @@
+  '(
+  
+  
+  	;; Rules with semantic components
+
+	;; Noun phrases that should not be interpreted
+	(nps-not-to-interpret
+		(ptype np)
+		(comp
+			(?string "class 2 mobility" "class 3 mobility"))
+		(flags nointerpret))
+
+       ;; e.g. "caries on the buccal"
+	(dental-condition-on-surface
+        	 (ptype np)
+         	 (comp
+	  	(?np<condition> (roles head))
+        		(?string "on" "on the")
+          		(?ap<surface> (roles modifier))))
+
+       (surface-count
+	(ptype ap)
+	(comp
+		(?string "1 surface" "2 surface" "3 surface" "4 surface" "5 surface" "6 surface"
+				"2 surfaces" "3 surfaces" "4 surfaces" "5 surfaces"
+				"one surface" "two surface" "three surface" "four surface" "five surface" "six surface"
+				"two surfaces" "three surfaces" "four surfaces" "five surfaces"))
+	(flags nointerpret))
+
+       (condition-with-condition
+	(ptype np)
+	(comp
+		(?np1<condition> (roles head))
+		(?string "with")
+		(?np2<condition> (roles modifier)))
+	(sinterp (with ?np1<condition> ?np2<condition>)))
+
+       (tooth-number
+	(ptype number)
+	(comp
+		(?string "tooth" "number" "tooth number" "teeth number" "teeth")
+		(?number<toothloc> (roles head))))
+          
+        (tooth-range
+          (ptype np)
+          (comp
+          	(?number1<toothloc> (roles head))
+      		(?string "through" "to")
+      		(?number2<toothloc> (roles head))))
+      		
+        ;; S
+
+        ;; e.g. "on the right it is evident that there is accumulated fluid"
+        (in-anatomic-finding-s
+         (ptype s)
+         (comp
+          (?pp (roles modifier))
+          (?s (roles head))))
+
+        (conj-s
+         (ptype s)
+         (comp
+          (?s1 (roles head))
+          (?sconj (roles modifier))
+          (?s2 (roles head)))
+         (triggers ?sconj)
+         (pattern ((optional ?s1) ?sconj ?s2))
+         (flags conj))
+
+        
+
+        (active-s  ;; e.g. "I see opacity" or "opacity has been increasing"
+         (ptype s)
+         (comp
+          (?np (roles subj))
+          (?infl (roles modifier infl))
+          (?vp (roles head pred)))
+         (pattern (?np (optional ?infl) ?vp)))
+
+        ;; e.g. "pleural effusions may be secondary to congestive failure"
+        (pred-ap-s
+         (ptype s)
+         (comp
+          (?np (roles head subj))
+          (?infl (roles modifier infl))
+          (?ap (roles modifier pred)))
+         (triggers ?infl))
+
+        ;; e.g. "distention seen of the upper lobe pulmonary vessels may reflect mitral valvular disease"
+        (pred-np-s
+         (ptype s)
+         (comp
+          (?np1 (roles head subj))
+          (?infl (roles modifier infl))
+          (?np2 (roles modifier pred)))
+         (triggers ?infl))
+
+        ;; e.g. "this is on the right side"
+        (pred-pp-s
+         (ptype s)
+         (comp
+          (?np (roles head subj))
+          (?infl (roles modifier infl))
+          (?pp (roles modifier pred))))
+          
+        ;; e.g. "cardiac size is at the upper limits of normal without evidence of pulmonary edema"
+        (pred-ap-with-ap-s
+         (ptype s)
+         (comp
+          (?s (roles head modifier))
+          (?pp (roles head modifier))))
+
+	;; 8/31/2009
+        ;; Inflections
+        (inflection-with-advp
+	(ptype infl)
+	(comp
+		(?advp (roles modifier))
+		(?infl (roles head))))
+
+        (will-aux
+         (ptype willaux)
+         (comp
+          (?string "will" "would" "won\'t"  "can" "could" "can\'t" "cannot" "may" "might" 
+                   "do" "did" "does" "doesn\'t" "don\'t" "should" "shoudn\'t")))
+
+  
+        (have-aux
+         (ptype haveaux)
+         (comp
+          (?string "have" "has" "had" "haven\'t" "hasn\'t" "hadn\'t")))
+  
+        (be-aux
+         (ptype beaux)
+         (comp
+          (?string "is" "was" "were" "isn\'t" "wasn\'t" "weren\'t" "be" "been" "are" "appear" "appeared" "appears" "remain" "remains" "remained"
+                   "appear to be" "appears to be" "appears to have been" "represent" "represents" "represented" "reflect" "reflected"
+                   "appears to represent" "apparently represents" "is seen to" "is seen to be" "is also" "probably is" "possibly is" 
+                   "probably are" "possibly are")))
+                   
+        (not-aux
+         (ptype notaux)
+         (comp
+          (?string "not")))
+
+              ;; VPs
+        (active-vp
+         (ptype vp)
+         (comp
+          (?verb (roles verb))
+          (?np (roles head))
+          (?pp (roles modifier pp)))
+         (pattern (?verb ?np (optional ?pp))))
+
+        (ap-vp  ;; e.g. "looks fine"
+         (ptype vp) 
+         (comp
+          (?verb (roles verb head))
+          (?ap (roles modifier))))
+
+            ;; PPs
+        (simple-pp
+         (ptype pp)
+         (comp
+          (?prep (roles prep modifier))
+          (?np (roles head))))
+
+        (extended-anatomic-pp
+         (ptype pp)
+         (comp
+          (?pp1)
+          (?pp2)))
+
+        ;; PP-links
+
+        ;; compound prepositional links; e.g. "consistent with", "suggestive of"
+        (consistent-with-plink
+         (ptype plink)
+         (comp
+          (?string "consistent with" "most consistent with" "suggestive of" "indicative of" "suspicious for" "due to"
+                   "related to" "relate to" "secondary to" "relating to" "to suggest" "to indicate"
+                   "to suggest the presence of" "which may reflect" "reflective of" "suggesting at least"
+                   "without evidence of" "resulting in" "concerning for" "of concern for" "compatible with" "typical of"
+                   "suggesting" "with suggestion of" "superimposed on background of" "classic for" "not consistent with"
+                   "except for" "associated with" "correlate for" "correlates for" 
+                   "correlate with" "correlates with" "correspond to" "worrisome for"
+                   "corresponding to" "correspond with" "corresponding with" "on the basis of"
+                   "following" "raising the question of" "result in" "resulting in" "thought to represent"
+                   "in combination with" "suggesting" "demonstrating" "showing")))
+
+        
+
+        ;; AP
+
+        (conj*-ap
+         (ptype ap)
+         (comp
+          (?ap1 (roles modifier))
+          (?conj (roles conj))
+          (?ap2 (roles head) (pretest (isConjunct ?*))))
+         (pattern (?ap1 (optional ?conj) ?ap2))
+         (flags conj compound-conj))
+         
+        (ap-conj
+         (ptype ap)
+         (comp
+          (?ap1 (roles head))
+          (?conj (roles conj))
+          (?ap2 (roles head)))
+         (flags conj))
+
+        
+
+        ;; 9/28/2000:  Workaround for when unify-sinterp-paths rejects phrase due to modifier-depth
+
+        ;; unification for which no previous phrase was possible
+        ;; e.g. "parietal region subdural
+        (ap-modified-by-np
+         (ptype ap)
+         (comp
+          (?np (roles modifier))
+          (?adj (roles head)))
+         (triggers ?adj))
+
+        (simple-ap
+         (ptype ap)
+         (comp
+          (?adj (roles head))))
+
+        ;; 10/4/2000: permit recursion on both sides, so that "left sided subdural" can keep "left side" together
+        (ap-ap
+         (ptype ap)
+         (comp
+          (?ap1 (roles modifier))
+          (?ap2 (roles head))))
+
+        (pp-ap  ;; e.g. "clear without pulmonary edema"
+         (ptype ap)
+         (comp
+          	(?ap (roles head modifier))
+        	 	(?pp (roles head modifier)))
+         (triggers ?pp))
+
+        (advp-ap1
+      	   (ptype ap)
+       	   (comp
+        		(?advp (roles modifier))
+         		(?ap (roles head))))
+
+        (advp-ap2
+         (ptype ap)
+         (comp
+          	(?ap (roles head))
+          	(?adv (roles modifier)))
+         (triggers ?adv))
+
+        ;; e.g. "suggesting consolidation", "possibly consistent with atelectasis"
+        (consistent-with-ap
+         (ptype consistent-with-ap)
+         (comp
+          (?advp (roles modifier))
+          (?string "suggesting" "representing" "showing" "demonstrating")
+          (?plink (roles modifier link))
+          (?np (roles head) (pretest (hasinterpretation ?*))))
+         (pattern ((optional ?advp) (or ?string ?plink) ?np)))
+         
+        ;; ADVPs
+
+        (simple-advp
+         (ptype advp)
+         (comp (?adv (roles head))))
+
+        (adv-advp
+         (ptype advp)
+         (comp
+          (?advp (roles modifier))
+          (?adv (roles head))))
+
+        ;; NPs
+        (simple-np
+         (ptype np)
+         (comp
+          (?noun (roles head))))
+
+        (date-np
+         (ptype np)
+         (comp 
+          (?date (roles head))))
+
+        (det-np
+         (ptype np)
+         (comp
+          (?det (roles det modifier))
+          (?np (roles head))
+          (?adj (roles head)))
+         (pattern (?det (or ?np ?adj))))
+
+        (ap-np
+         (ptype np)
+         (comp
+          (?ap (roles modifier head))
+          (?np (roles modifier head))))
+          
+        ;; 10/5/2000:  e.g. "(abnormally (low attenuation))"
+        (advp-np
+         (ptype np)
+         (comp
+          (?advp (roles modifier))
+          (?np (roles head))))
+
+	;; Potentially explosive and expensive!!
+        (np-np
+         (ptype np)
+         (comp
+          (?np1 (roles modifier) (pretest (hasinterpretation ?*)))
+          (?np2 (roles head) (pretest (hasinterpretation ?*)))))
+
+        (pp-np
+         (ptype np)
+         (comp
+          (?np (roles head))
+          (?string "also")
+          (?pp (roles modifier pp)))
+         (pattern (?np (optional ?string) ?pp)))
+
+        ;; e.g. "opacity consistent with atelectasis", "opacity representing diminished inspiration"
+        (consistent-with-np
+         (ptype np)
+         (comp
+          (?np<condition> (roles head))
+          (?consistent-with-ap<condition> (roles modifier)))
+         (sinterp (consistent-with ?np<condition> ?consistent-with-ap<condition>)))        
+
+        ;; e.g. "opacity infiltrates <"and" or "or"> pleural effusions"
+        ;; 9/11/2000
+        (conj*-np
+         (ptype np)x
+         (comp
+          (?np1 (roles modifier))
+          (?conj (roles conj))
+          (?np2 (roles head) (pretest (isConjunct ?*))))
+         (flags conj compound-conj)
+         (pattern (?np1 (optional ?conj) ?np2)))
+                
+        (np-conj
+         (ptype np)
+         (comp
+          (?np1 (roles head))
+          (?conj (roles conj))
+          (?np2 (roles head)))
+         (flags conj))
+
+        (pronoun-np
+         (ptype np)
+         (comp 
+          (?pron (roles head))))
+
+        (participle-np
+         (ptype np)
+         (comp
+          (?np1 (roles head))
+          (?parp (roles modifier link))
+          (?np2 (roles modifier)))) 
+          
+       ;; Number rules
+        (number*-np
+         (ptype number)
+         (comp
+          (?number1 (roles modifier))
+          (?conj (roles conj))
+          (?number2 (roles head) (pretest (isConjunct ?*))))
+          (pattern (?number1 (optional ?conj) ?number2))
+         (flags conj compound-conj))
+                
+        (number-conj
+         (ptype number)
+         (comp
+          (?number1 (roles head))
+          (?conj (roles conj))
+          (?number2 (roles head)))
+         (flags conj))
+         
+         (number-range-through
+          (ptype number)
+          (comp
+           (?number1 (roles head))
+           (?string "through")
+           (?number2 (roles modifier))))
+
+        (number-noun
+          (ptype noun)
+          (comp (?number (roles head))))
+
+       ;; Multiword phrases that act as single terminal types
+
+        (mult-word-prep
+         (ptype prep)
+         (comp
+          (?string "adjacent to" "immediately adjacent to" "lateral to" "next to" "seen at" "centered in" "with perhaps"
+                   "possibly with" "perhaps with" "project over" "projects over" "projecting over"
+                   "projected over" "predicted over" "present over" "superimposed over"
+                   "predominantly in")))
+
+        (multi-word-conj
+         (ptype conj)
+         (comp
+          (?string "in combination with" "along with" "and also")))
+
+        (mult-word-noun
+         (ptype noun)
+         (comp
+          (?string "all of this")))
+
+        (spelled-number
+         (ptype number)
+         (comp (?string "one" "two" "three" "four" "five" "six" "seven" "eight" "nine" "ten" "eleven" "twelve" "thirteen"
+         			"fourteen" "fifteen" "sixteen" "seventeen" "eighteen" "nineteen" "twenty" "twenty one" "twenty two" 
+         			"twenty three" "twenty four" "twenty five" "twenty six" "twenty seven" "twenty eight" "twenty nine"
+         			"thirty" "thirty one" "thirty two")))
+
+        (multi-word-adj
+         (ptype adj)
+         (comp
+          (?string "best seen" "seen best")))
+          
+          ;;; STRING RULES:  I SEEM TO HAVE INADVERTENTLY DELETED THE FILE, SO I HAVE TO 
+          ;;; RECREATE IT FROM SCRATCH.  OR MAYBE I CAN BORROW WENDY'S...
+          
+          (there-is-s
+           (ptype s)
+           (comp
+            (?string "there is" "there are" "findings include")
+            (?np (roles head))))
+
+	;; Temporal rules
+
+	;; "Compared with 11/2/2010, the lower lobe infiltrate has improved"
+		(compared-with-date
+          (ptype s)
+          (comp
+		  (?string "compared with" "compared to" "in comparison with" "in comparison to" "when compared with" "when compared to")
+           (?np<date> (roles modifier))
+		  (?s<condition> (roles head)))
+          (sinterp (date-compare ?np<date> ?s<condition>)))
+
+	;; "Compared with the most recent exam, the lower lobe infiltrate has improved"
+		(compared-with-exam
+          (ptype s)
+          (comp
+		  (?string "compared with" "compared to" "in comparison with" "in comparison to" "when compared with" "when compared to")
+           (?np<report> (roles modifier))
+		  (?s<condition> (roles head)))
+          (sinterp (exam-compare ?np<report> ?s<condition>)))
+
+
+
+        )
+

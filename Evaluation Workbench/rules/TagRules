@@ -1,0 +1,36 @@
+'(tagrule
+
+;; NegEX tag rules:
+
+((ruleid negexpre)
+ (sourceFile "Gazeteers/CaTIES_NegExPreNegationPhrases.lst")
+ (stopword ("_BUT_" "_PRESENTATION_" "_AND_" "_REMAIN_" "_ETIOLOGY_"))
+ (directionality "negated")
+ (precedes true))
+ 
+((ruleid negexpost)
+ (sourceFile "Gazeteers/CaTIES_NegExPostNegationPhrases.lst")
+ (directionality "negated")
+ (precedes false))
+
+;; Other ConText tag rules:
+((ruleid history_tag)
+ (words ("_HISTORY_" "_HISTORY_FOR_THE_PLAST_"))
+ (temporality "historical"))
+
+((ruleid history_one_word_scope_tag)
+ (words ("_HISTORY_ONE_WORD_SCOPE_"))
+ (window 4)
+ (temporality "historical"))
+ 
+((ruleid experiencer_tag)
+ (words ("_EXPERIENCER_"))
+ (experiencer "other"))
+
+((ruleid hypothetical_tag)
+ (words ("_HYPOTHETICAL_"))
+ (temporality "not particular"))
+
+ 
+)
+

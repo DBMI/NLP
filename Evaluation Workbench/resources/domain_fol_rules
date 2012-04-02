@@ -1,0 +1,35 @@
+'(
+	;; Java functions / relations
+	(load-static-methods "onyx.asl.expression.form.sentence.javarelation.JavaRelations" "relation")
+	(load-static-methods "onyx.asl.expression.term.function.javafunction.JavaFunctions" "function")
+
+	(-> (or (type_of ?cc "diarrhea, bloody")
+			(type_of ?cc "diarrhea, small volume")
+			(type_of ?cc "diarrhea watery")
+			(type_of ?cc "diarrhea, watery"))
+		(type_of ?cc "diarrhea"))
+		
+	(-> (type_of ?cc "hematorrhea") (type_of ?cc "diarrhea, bloody"))
+	
+	(-> (type_of ?cc "bacterial gastroenteritis") (type_of ?cc "gastroenteritis"))
+	
+	(-> (type_of ?cc "bacteremia") (type_of ?cc "bacterial infection"))
+	
+	(-> (or (type_of ?cc "shigella")
+			(type_of ?cc "lab confirmed shigellosis")
+			(type_of ?cc "shigellosis")
+			(type_of ?cc "suspected shigellosis"))
+		(type_of ?cc "shiga toxin"))
+		
+	(-> (or (type_of ?cc "persistent nonproductive cough")
+			(type_of ?cc "nonproductive cough")
+			(type_of ?cc "cough  nonproductive"))
+		(type_of ?cc "cough"))
+		
+	;;(-> (and (type_of ?cc1 "fever")
+        ;;         (or (type_of ?cc2 "cough")
+        ;;             (type_of ?cc2 "sore throat"))
+        ;;         (same_property_state ?cc1 ?cc2))
+        ;;    (type_of ?cc1 "ili")) 
+	
+)

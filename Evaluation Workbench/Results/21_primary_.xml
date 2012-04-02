@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<graph source_file="21.txt" annotator_name="primary">
+<node id="DocumentAnnotation_81" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5776" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="abdominal cramps or pains" />
+<f name="DocumentCUI" value="C0000729" />
+</node>
+<edge from="DocumentAnnotation_81" to="Classification_5776"/>
+<node id="DocumentAnnotation_52" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5747" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="abdominal distress" />
+<f name="DocumentCUI" value="C0235295" />
+</node>
+<edge from="DocumentAnnotation_52" to="Classification_5747"/>
+<node id="DocumentAnnotation_6" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5701" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="abdominal pain" />
+<f name="DocumentCUI" value="C0000737" />
+</node>
+<edge from="DocumentAnnotation_6" to="Classification_5701"/>
+<node id="DocumentAnnotation_31" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5726" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="abdominal stress" />
+<f name="DocumentCUI" value="C0235295" />
+</node>
+<edge from="DocumentAnnotation_31" to="Classification_5726"/>
+<node id="DocumentAnnotation_87" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5782" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="abdominal tenderness" />
+<f name="DocumentCUI" value="C0232498" />
+</node>
+<edge from="DocumentAnnotation_87" to="Classification_5782"/>
+<node id="SnippetAnnotation_102" type="annotation">
+<f name="level" value="SnippetAnnotation"/>
+<f name="temporality" value="acute"/>
+<f name="directionality" value="affirmed"/>
+<f name="experiencer" value="patient"/>
+</node>
+<node id="Classification_5804" type="classification" annotationtype="CoreConcept">
+<f name="SnippetCUI" value="C0003123" />
+<f name="SnippetConcept" value="anorexia" />
+</node>
+<edge from="SnippetAnnotation_102" to="Classification_5804"/>
+<edge from="SnippetAnnotation_102" to="DocumentAnnotation_102"/>
+<sink id="span_0" start="610" end="617"/>
+<edge from="SnippetAnnotation_102" to="span_0"/>
+<node id="DocumentAnnotation_102" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="acute"/>
+</node>
+<node id="Classification_5805" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="anorexia" />
+<f name="DocumentCUI" value="C0003123" />
+</node>
+<edge from="DocumentAnnotation_102" to="Classification_5805"/>
+<edge from="DocumentAnnotation_102" to="SnippetAnnotation_102"/>
+<sink id="span_0" start="610" end="617"/>
+<edge from="DocumentAnnotation_102" to="span_0"/>
+<node id="DocumentAnnotation_45" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5740" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="arthralgia" />
+<f name="DocumentCUI" value="C0003862" />
+</node>
+<edge from="DocumentAnnotation_45" to="Classification_5740"/>
+<node id="DocumentAnnotation_47" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5742" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="asthenia" />
+<f name="DocumentCUI" value="C0004093" />
+</node>
+<edge from="DocumentAnnotation_47" to="Classification_5742"/>
+<node id="SnippetAnnotation_98" type="annotation">
+<f name="level" value="SnippetAnnotation"/>
+<f name="temporality" value="acute"/>
+<f name="directionality" value="affirmed"/>
+<f name="experiencer" value="patient"/>
+</node>
+<node id="Classification_5796" type="classification" annotationtype="CoreConcept">
+<f name="SnippetCUI" value="C0004610" />
+<f name="SnippetConcept" value="bacteremia" />
+</node>
+<edge from="SnippetAnnotation_98" to="Classification_5796"/>
+<edge from="SnippetAnnotation_98" to="DocumentAnnotation_98"/>
+<sink id="span_1" start="309" end="318"/>
+<edge from="SnippetAnnotation_98" to="span_1"/>
+<node id="DocumentAnnotation_98" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="acute"/>
+</node>
+<node id="Classification_5798" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="bacteremia" />
+<f name="DocumentCUI" value="C0004610" />
+</node>
+<edge from="DocumentAnnotation_98" to="Classification_5798"/>
+<edge from="DocumentAnnotation_98" to="SnippetAnnotation_98"/>
+<sink id="span_1" start="309" end="318"/>
+<edge from="DocumentAnnotation_98" to="span_1"/>
+<node id="DocumentAnnotation_30" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5725" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="bacteria" />
+<f name="DocumentCUI" value="C0004611" />
+</node>
+<edge from="DocumentAnnotation_30" to="Classification_5725"/>
+<node id="DocumentAnnotation_19" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5714" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="bacterial gastroenteritis" />
+<f name="DocumentCUI" value="C0558348" />
+</node>
+<edge from="DocumentAnnotation_19" to="Classification_5714"/>
+<node id="SnippetAnnotation_99" type="annotation">
+<f name="level" value="SnippetAnnotation"/>
+<f name="temporality" value="acute"/>
+<f name="directionality" value="affirmed"/>
+<f name="experiencer" value="patient"/>
+</node>
+<node id="Classification_5797" type="classification" annotationtype="CoreConcept">
+<f name="SnippetCUI" value="C0004623" />
+<f name="SnippetConcept" value="bacterial infection" />
+</node>
+<edge from="SnippetAnnotation_99" to="Classification_5797"/>
+<edge from="SnippetAnnotation_99" to="DocumentAnnotation_99"/>
+<sink id="span_2" start="309" end="318"/>
+<edge from="SnippetAnnotation_99" to="span_2"/>
+<node id="DocumentAnnotation_99" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="acute"/>
+</node>
+<node id="Classification_5799" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="bacterial infection" />
+<f name="DocumentCUI" value="C0004623" />
+</node>
+<edge from="DocumentAnnotation_99" to="Classification_5799"/>
+<edge from="DocumentAnnotation_99" to="SnippetAnnotation_99"/>
+<sink id="span_2" start="309" end="318"/>
+<edge from="DocumentAnnotation_99" to="span_2"/>
+<node id="DocumentAnnotation_74" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5769" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="cervical adenopathy" />
+<f name="DocumentCUI" value="C0497156" />
+</node>
+<edge from="DocumentAnnotation_74" to="Classification_5769"/>
+<node id="DocumentAnnotation_5" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5700" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="cervical lymphadenoma" />
+<f name="DocumentCUI" value="C0235592" />
+</node>
+<edge from="DocumentAnnotation_5" to="Classification_5700"/>
+<node id="DocumentAnnotation_92" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5787" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="chest pain" />
+<f name="DocumentCUI" value="C0008031" />
+</node>
+<edge from="DocumentAnnotation_92" to="Classification_5787"/>
+<node id="DocumentAnnotation_35" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5730" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="chill" />
+<f name="DocumentCUI" value="C0085593" />
+</node>
+<edge from="DocumentAnnotation_35" to="Classification_5730"/>
+<node id="DocumentAnnotation_91" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5786" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="chills" />
+<f name="DocumentCUI" value="C0085593" />
+</node>
+<edge from="DocumentAnnotation_91" to="Classification_5786"/>
+<node id="SnippetAnnotation_95" type="annotation">
+<f name="level" value="SnippetAnnotation"/>
+<f name="temporality" value="acute"/>
+<f name="directionality" value="affirmed"/>
+<f name="experiencer" value="patient"/>
+</node>
+<node id="Classification_5790" type="classification" annotationtype="CoreConcept">
+<f name="SnippetCUI" value="C0009319" />
+<f name="SnippetConcept" value="colitis" />
+</node>
+<edge from="SnippetAnnotation_95" to="Classification_5790"/>
+<edge from="SnippetAnnotation_95" to="DocumentAnnotation_95"/>
+<sink id="span_3" start="287" end="293"/>
+<edge from="SnippetAnnotation_95" to="span_3"/>
+<node id="DocumentAnnotation_95" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="acute"/>
+</node>
+<node id="Classification_5791" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="colitis" />
+<f name="DocumentCUI" value="C0009319" />
+</node>
+<edge from="DocumentAnnotation_95" to="Classification_5791"/>
+<edge from="DocumentAnnotation_95" to="SnippetAnnotation_95"/>
+<sink id="span_3" start="287" end="293"/>
+<edge from="DocumentAnnotation_95" to="span_3"/>
+<node id="DocumentAnnotation_69" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5764" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="confusion" />
+<f name="DocumentCUI" value="C0009676" />
+</node>
+<edge from="DocumentAnnotation_69" to="Classification_5764"/>
+<node id="DocumentAnnotation_8" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5703" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="conjunctivitis" />
+<f name="DocumentCUI" value="C0009763" />
+</node>
+<edge from="DocumentAnnotation_8" to="Classification_5703"/>
+<node id="DocumentAnnotation_27" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5722" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="convulsions" />
+<f name="DocumentCUI" value="C0009951" />
+</node>
+<edge from="DocumentAnnotation_27" to="Classification_5722"/>
+<node id="DocumentAnnotation_75" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5770" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="coryza" />
+<f name="DocumentCUI" value="C0009443" />
+</node>
+<edge from="DocumentAnnotation_75" to="Classification_5770"/>
+<node id="DocumentAnnotation_78" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5773" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="cough" />
+<f name="DocumentCUI" value="C0010200" />
+</node>
+<edge from="DocumentAnnotation_78" to="Classification_5773"/>
+<node id="DocumentAnnotation_77" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5772" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="cough  nonproductive" />
+<f name="DocumentCUI" value="C0850149" />
+</node>
+<edge from="DocumentAnnotation_77" to="Classification_5772"/>
+<node id="DocumentAnnotation_36" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5731" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="cyanosis" />
+<f name="DocumentCUI" value="C0010520" />
+</node>
+<edge from="DocumentAnnotation_36" to="Classification_5731"/>
+<node id="DocumentAnnotation_55" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5750" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="dehydration" />
+<f name="DocumentCUI" value="C0011175" />
+</node>
+<edge from="DocumentAnnotation_55" to="Classification_5750"/>
+<node id="DocumentAnnotation_37" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5732" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="desquamation" />
+<f name="DocumentCUI" value="C0237849" />
+</node>
+<edge from="DocumentAnnotation_37" to="Classification_5732"/>
+<node id="SnippetAnnotation_100" type="annotation">
+<f name="level" value="SnippetAnnotation"/>
+<f name="temporality" value="acute"/>
+<f name="directionality" value="affirmed"/>
+<f name="experiencer" value="patient"/>
+</node>
+<node id="Classification_5800" type="classification" annotationtype="CoreConcept">
+<f name="SnippetCUI" value="C0011991" />
+<f name="SnippetConcept" value="diarrhea" />
+</node>
+<edge from="SnippetAnnotation_100" to="Classification_5800"/>
+<edge from="SnippetAnnotation_100" to="DocumentAnnotation_101"/>
+<edge from="SnippetAnnotation_100" to="DocumentAnnotation_100"/>
+<sink id="span_4" start="458" end="465"/>
+<edge from="SnippetAnnotation_100" to="span_4"/>
+<node id="DocumentAnnotation_101" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="acute"/>
+</node>
+<node id="Classification_5803" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="diarrhea" />
+<f name="DocumentCUI" value="C0011991" />
+</node>
+<edge from="DocumentAnnotation_101" to="Classification_5803"/>
+<edge from="DocumentAnnotation_101" to="SnippetAnnotation_100"/>
+<edge from="DocumentAnnotation_101" to="SnippetAnnotation_101"/>
+<sink id="span_4" start="458" end="465"/>
+<edge from="DocumentAnnotation_101" to="span_4"/>
+<sink id="span_5" start="458" end="465"/>
+<edge from="DocumentAnnotation_101" to="span_5"/>
+<node id="DocumentAnnotation_42" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5737" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="diarrhea watery" />
+<f name="DocumentCUI" value="C0239182" />
+</node>
+<edge from="DocumentAnnotation_42" to="Classification_5737"/>
+<node id="DocumentAnnotation_29" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5724" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="diarrhea, bloody" />
+<f name="DocumentCUI" value="C0151594" />
+</node>
+<edge from="DocumentAnnotation_29" to="Classification_5724"/>
+<node id="SnippetAnnotation_101" type="annotation">
+<f name="level" value="SnippetAnnotation"/>
+<f name="temporality" value="acute"/>
+<f name="directionality" value="affirmed"/>
+<f name="experiencer" value="patient"/>
+</node>
+<node id="Classification_5801" type="classification" annotationtype="CoreConcept">
+<f name="SnippetCUI" value="C0011991" />
+<f name="SnippetConcept" value="diarrhea, small volume" />
+</node>
+<edge from="SnippetAnnotation_101" to="Classification_5801"/>
+<edge from="SnippetAnnotation_101" to="DocumentAnnotation_101"/>
+<edge from="SnippetAnnotation_101" to="DocumentAnnotation_100"/>
+<sink id="span_5" start="458" end="465"/>
+<edge from="SnippetAnnotation_101" to="span_5"/>
+<node id="DocumentAnnotation_100" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="acute"/>
+</node>
+<node id="Classification_5802" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="diarrhea, small volume" />
+<f name="DocumentCUI" value="C0011991" />
+</node>
+<edge from="DocumentAnnotation_100" to="Classification_5802"/>
+<edge from="DocumentAnnotation_100" to="SnippetAnnotation_100"/>
+<edge from="DocumentAnnotation_100" to="SnippetAnnotation_101"/>
+<sink id="span_4" start="458" end="465"/>
+<edge from="DocumentAnnotation_100" to="span_4"/>
+<sink id="span_5" start="458" end="465"/>
+<edge from="DocumentAnnotation_100" to="span_5"/>
+<node id="DocumentAnnotation_49" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5744" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="diarrhea, watery" />
+<f name="DocumentCUI" value="C0239182" />
+</node>
+<edge from="DocumentAnnotation_49" to="Classification_5744"/>
+<node id="DocumentAnnotation_56" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5751" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="difficult swallowing" />
+<f name="DocumentCUI" value="C0011168" />
+</node>
+<edge from="DocumentAnnotation_56" to="Classification_5751"/>
+<node id="DocumentAnnotation_51" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5746" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="dyspnea" />
+<f name="DocumentCUI" value="C0013404" />
+</node>
+<edge from="DocumentAnnotation_51" to="Classification_5746"/>
+<node id="DocumentAnnotation_85" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5780" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="encephalitis" />
+<f name="DocumentCUI" value="C0014038" />
+</node>
+<edge from="DocumentAnnotation_85" to="Classification_5780"/>
+<node id="DocumentAnnotation_83" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5778" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="enlarged lymph nodes" />
+<f name="DocumentCUI" value="C0497156" />
+</node>
+<edge from="DocumentAnnotation_83" to="Classification_5778"/>
+<node id="DocumentAnnotation_7" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5702" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="fatigue" />
+<f name="DocumentCUI" value="C0015672" />
+</node>
+<edge from="DocumentAnnotation_7" to="Classification_5702"/>
+<node id="DocumentAnnotation_63" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5758" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="fever" />
+<f name="DocumentCUI" value="C0015967" />
+</node>
+<edge from="DocumentAnnotation_63" to="Classification_5758"/>
+<node id="DocumentAnnotation_34" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5729" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="flu" />
+<f name="DocumentCUI" value="BC0021400" />
+</node>
+<edge from="DocumentAnnotation_34" to="Classification_5729"/>
+<node id="DocumentAnnotation_68" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5763" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="food poisoning" />
+<f name="DocumentCUI" value="C0016479" />
+</node>
+<edge from="DocumentAnnotation_68" to="Classification_5763"/>
+<node id="DocumentAnnotation_12" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5707" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="gastroenteritis" />
+<f name="DocumentCUI" value="C0017160" />
+</node>
+<edge from="DocumentAnnotation_12" to="Classification_5707"/>
+<node id="DocumentAnnotation_17" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5712" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="gram positive rods" />
+<f name="DocumentCUI" value="C0085498" />
+</node>
+<edge from="DocumentAnnotation_17" to="Classification_5712"/>
+<node id="DocumentAnnotation_43" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5738" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="headache" />
+<f name="DocumentCUI" value="C0018681" />
+</node>
+<edge from="DocumentAnnotation_43" to="Classification_5738"/>
+<node id="DocumentAnnotation_79" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5774" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="hematochezia" />
+<f name="DocumentCUI" value="C0018932" />
+</node>
+<edge from="DocumentAnnotation_79" to="Classification_5774"/>
+<node id="DocumentAnnotation_38" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5733" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="hematorrhea" />
+<f name="DocumentCUI" value="C1321898" />
+</node>
+<edge from="DocumentAnnotation_38" to="Classification_5733"/>
+<node id="DocumentAnnotation_41" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5736" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="hemoccult" />
+<f name="DocumentCUI" value="C0201811" />
+</node>
+<edge from="DocumentAnnotation_41" to="Classification_5736"/>
+<node id="DocumentAnnotation_46" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5741" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="hemoptysis" />
+<f name="DocumentCUI" value="C0019079" />
+</node>
+<edge from="DocumentAnnotation_46" to="Classification_5741"/>
+<node id="DocumentAnnotation_18" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5713" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="hoarseness" />
+<f name="DocumentCUI" value="C0019825" />
+</node>
+<edge from="DocumentAnnotation_18" to="Classification_5713"/>
+<node id="DocumentAnnotation_62" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5757" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="hypotension" />
+<f name="DocumentCUI" value="C0020649" />
+</node>
+<edge from="DocumentAnnotation_62" to="Classification_5757"/>
+<node id="DocumentAnnotation_66" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5761" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="ili" />
+<f name="DocumentCUI" value="C0521839" />
+</node>
+<edge from="DocumentAnnotation_66" to="Classification_5761"/>
+<node id="DocumentAnnotation_3" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5698" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="influenza" />
+<f name="DocumentCUI" value="C0021400" />
+</node>
+<edge from="DocumentAnnotation_3" to="Classification_5698"/>
+<node id="DocumentAnnotation_84" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5779" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="insomnia" />
+<f name="DocumentCUI" value="C0917801" />
+</node>
+<edge from="DocumentAnnotation_84" to="Classification_5779"/>
+<node id="DocumentAnnotation_70" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5765" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="koplik spots" />
+<f name="DocumentCUI" value="C0221200" />
+</node>
+<edge from="DocumentAnnotation_70" to="Classification_5765"/>
+<node id="DocumentAnnotation_32" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5727" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="lab confirmed flu" />
+<f name="DocumentCUI" value="LC0021400" />
+</node>
+<edge from="DocumentAnnotation_32" to="Classification_5727"/>
+<node id="DocumentAnnotation_16" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5711" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="lab confirmed influenza" />
+<f name="DocumentCUI" value="LC0021400" />
+</node>
+<edge from="DocumentAnnotation_16" to="Classification_5711"/>
+<node id="DocumentAnnotation_53" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5748" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="lab confirmed shigellosis" />
+<f name="DocumentCUI" value="C0036953" />
+</node>
+<edge from="DocumentAnnotation_53" to="Classification_5748"/>
+<node id="DocumentAnnotation_71" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5766" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="lab order nasal swab" />
+<f name="DocumentCUI" value="C0420679" />
+</node>
+<edge from="DocumentAnnotation_71" to="Classification_5766"/>
+<node id="DocumentAnnotation_28" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5723" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="loss of appetite" />
+<f name="DocumentCUI" value="C1971624" />
+</node>
+<edge from="DocumentAnnotation_28" to="Classification_5723"/>
+<node id="DocumentAnnotation_76" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5771" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="maculopapular rash" />
+<f name="DocumentCUI" value="C0423791" />
+</node>
+<edge from="DocumentAnnotation_76" to="Classification_5771"/>
+<node id="DocumentAnnotation_22" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5717" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="malaise" />
+<f name="DocumentCUI" value="C0231218" />
+</node>
+<edge from="DocumentAnnotation_22" to="Classification_5717"/>
+<node id="DocumentAnnotation_39" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5734" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="meningitis" />
+<f name="DocumentCUI" value="C0025289" />
+</node>
+<edge from="DocumentAnnotation_39" to="Classification_5734"/>
+<node id="DocumentAnnotation_15" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5710" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="meningitis meningismus" />
+<f name="DocumentCUI" value="C0025289" />
+</node>
+<edge from="DocumentAnnotation_15" to="Classification_5710"/>
+<node id="DocumentAnnotation_13" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5708" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="myalgia" />
+<f name="DocumentCUI" value="C0231528" />
+</node>
+<edge from="DocumentAnnotation_13" to="Classification_5708"/>
+<node id="DocumentAnnotation_88" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5783" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="myalgias" />
+<f name="DocumentCUI" value="C0231528" />
+</node>
+<edge from="DocumentAnnotation_88" to="Classification_5783"/>
+<node id="DocumentAnnotation_33" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5728" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="nasal obstruction" />
+<f name="DocumentCUI" value="C0027429" />
+</node>
+<edge from="DocumentAnnotation_33" to="Classification_5728"/>
+<node id="DocumentAnnotation_60" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5755" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="nasal swab order" />
+<f name="DocumentCUI" value="C0420679" />
+</node>
+<edge from="DocumentAnnotation_60" to="Classification_5755"/>
+<node id="DocumentAnnotation_72" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5767" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="nausea" />
+<f name="DocumentCUI" value="C0027497" />
+</node>
+<edge from="DocumentAnnotation_72" to="Classification_5767"/>
+<node id="DocumentAnnotation_2" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5697" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="night sweat" />
+<f name="DocumentCUI" value="C0028081" />
+</node>
+<edge from="DocumentAnnotation_2" to="Classification_5697"/>
+<node id="DocumentAnnotation_65" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5760" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="nonproductive cough" />
+<f name="DocumentCUI" value="C0850149" />
+</node>
+<edge from="DocumentAnnotation_65" to="Classification_5760"/>
+<node id="DocumentAnnotation_44" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5739" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="pain on eye movement" />
+<f name="DocumentCUI" value="C0239430" />
+</node>
+<edge from="DocumentAnnotation_44" to="Classification_5739"/>
+<node id="DocumentAnnotation_80" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5775" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="periorbital edema" />
+<f name="DocumentCUI" value="C0151205" />
+</node>
+<edge from="DocumentAnnotation_80" to="Classification_5775"/>
+<node id="DocumentAnnotation_73" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5768" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="persistent nonproductive cough" />
+<f name="DocumentCUI" value="C0850149" />
+</node>
+<edge from="DocumentAnnotation_73" to="Classification_5768"/>
+<node id="DocumentAnnotation_61" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5756" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="photophobia" />
+<f name="DocumentCUI" value="C0085636" />
+</node>
+<edge from="DocumentAnnotation_61" to="Classification_5756"/>
+<node id="DocumentAnnotation_23" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5718" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="pneumonia" />
+<f name="DocumentCUI" value="C0032285" />
+</node>
+<edge from="DocumentAnnotation_23" to="Classification_5718"/>
+<node id="DocumentAnnotation_89" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5784" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="prostration" />
+<f name="DocumentCUI" value="C0277794" />
+</node>
+<edge from="DocumentAnnotation_89" to="Classification_5784"/>
+<node id="DocumentAnnotation_64" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5759" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="rales" />
+<f name="DocumentCUI" value="C0034642" />
+</node>
+<edge from="DocumentAnnotation_64" to="Classification_5759"/>
+<node id="DocumentAnnotation_10" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5705" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="rectal hemorrhage" />
+<f name="DocumentCUI" value="C0267596" />
+</node>
+<edge from="DocumentAnnotation_10" to="Classification_5705"/>
+<node id="DocumentAnnotation_59" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5754" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="rectal urgency" />
+<f name="DocumentCUI" value="C0426636" />
+</node>
+<edge from="DocumentAnnotation_59" to="Classification_5754"/>
+<node id="DocumentAnnotation_94" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5789" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="rhinorrhea" />
+<f name="DocumentCUI" value="C1260880" />
+</node>
+<edge from="DocumentAnnotation_94" to="Classification_5789"/>
+<node id="DocumentAnnotation_4" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5699" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="saline solution" />
+<f name="DocumentCUI" value="C0036082" />
+</node>
+<edge from="DocumentAnnotation_4" to="Classification_5699"/>
+<node id="SnippetAnnotation_96" type="annotation">
+<f name="level" value="SnippetAnnotation"/>
+<f name="temporality" value="acute"/>
+<f name="directionality" value="affirmed"/>
+<f name="experiencer" value="patient"/>
+</node>
+<node id="Classification_5792" type="classification" annotationtype="CoreConcept">
+<f name="SnippetCUI" value="C0074447" />
+<f name="SnippetConcept" value="shiga toxin" />
+</node>
+<edge from="SnippetAnnotation_96" to="Classification_5792"/>
+<edge from="SnippetAnnotation_96" to="DocumentAnnotation_96"/>
+<sink id="span_7" start="300" end="307"/>
+<edge from="SnippetAnnotation_96" to="span_7"/>
+<node id="DocumentAnnotation_96" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="acute"/>
+</node>
+<node id="Classification_5794" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="shiga toxin" />
+<f name="DocumentCUI" value="C0074447" />
+</node>
+<edge from="DocumentAnnotation_96" to="Classification_5794"/>
+<edge from="DocumentAnnotation_96" to="SnippetAnnotation_96"/>
+<sink id="span_7" start="300" end="307"/>
+<edge from="DocumentAnnotation_96" to="span_7"/>
+<node id="DocumentAnnotation_21" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5716" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="shigella" />
+<f name="DocumentCUI" value="C0013371" />
+</node>
+<edge from="DocumentAnnotation_21" to="Classification_5716"/>
+<node id="SnippetAnnotation_97" type="annotation">
+<f name="level" value="SnippetAnnotation"/>
+<f name="temporality" value="acute"/>
+<f name="directionality" value="affirmed"/>
+<f name="experiencer" value="patient"/>
+</node>
+<node id="Classification_5793" type="classification" annotationtype="CoreConcept">
+<f name="SnippetCUI" value="C0013371" />
+<f name="SnippetConcept" value="shigellosis" />
+</node>
+<edge from="SnippetAnnotation_97" to="Classification_5793"/>
+<edge from="SnippetAnnotation_97" to="DocumentAnnotation_97"/>
+<sink id="span_6" start="300" end="307"/>
+<edge from="SnippetAnnotation_97" to="span_6"/>
+<node id="DocumentAnnotation_97" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="acute"/>
+</node>
+<node id="Classification_5795" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="shigellosis" />
+<f name="DocumentCUI" value="C0013371" />
+</node>
+<edge from="DocumentAnnotation_97" to="Classification_5795"/>
+<edge from="DocumentAnnotation_97" to="SnippetAnnotation_97"/>
+<sink id="span_6" start="300" end="307"/>
+<edge from="DocumentAnnotation_97" to="span_6"/>
+<node id="DocumentAnnotation_48" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5743" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="shock" />
+<f name="DocumentCUI" value="C0020649" />
+</node>
+<edge from="DocumentAnnotation_48" to="Classification_5743"/>
+<node id="DocumentAnnotation_67" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5762" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="sore throat" />
+<f name="DocumentCUI" value="C0242429" />
+</node>
+<edge from="DocumentAnnotation_67" to="Classification_5762"/>
+<node id="DocumentAnnotation_20" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5715" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="stool order" />
+<f name="DocumentCUI" value="C0202010" />
+</node>
+<edge from="DocumentAnnotation_20" to="Classification_5715"/>
+<node id="DocumentAnnotation_93" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5788" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="stridor" />
+<f name="DocumentCUI" value="C0038450" />
+</node>
+<edge from="DocumentAnnotation_93" to="Classification_5788"/>
+<node id="DocumentAnnotation_11" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5706" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="subcutaneous edema" />
+<f name="DocumentCUI" value="C0013604" />
+</node>
+<edge from="DocumentAnnotation_11" to="Classification_5706"/>
+<node id="DocumentAnnotation_26" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5721" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="subcutaneous edema of head and neck" />
+<f name="DocumentCUI" value="C0013604" />
+</node>
+<edge from="DocumentAnnotation_26" to="Classification_5721"/>
+<node id="DocumentAnnotation_90" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5785" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="substernal discomfort or burning" />
+<f name="DocumentCUI" value="C0235710" />
+</node>
+<edge from="DocumentAnnotation_90" to="Classification_5785"/>
+<node id="DocumentAnnotation_25" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5720" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="suspected flu" />
+<f name="DocumentCUI" value="IC0021400" />
+</node>
+<edge from="DocumentAnnotation_25" to="Classification_5720"/>
+<node id="DocumentAnnotation_9" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5704" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="suspected influenza" />
+<f name="DocumentCUI" value="C0021400" />
+</node>
+<edge from="DocumentAnnotation_9" to="Classification_5704"/>
+<node id="DocumentAnnotation_24" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5719" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="suspected shigellosis" />
+<f name="DocumentCUI" value="C0013371" />
+</node>
+<edge from="DocumentAnnotation_24" to="Classification_5719"/>
+<node id="DocumentAnnotation_50" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5745" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="syncope" />
+<f name="DocumentCUI" value="C0039070" />
+</node>
+<edge from="DocumentAnnotation_50" to="Classification_5745"/>
+<node id="DocumentAnnotation_57" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5752" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="tachycardia" />
+<f name="DocumentCUI" value="C2029900" />
+</node>
+<edge from="DocumentAnnotation_57" to="Classification_5752"/>
+<node id="DocumentAnnotation_14" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5709" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="tenesmus" />
+<f name="DocumentCUI" value="C0232726" />
+</node>
+<edge from="DocumentAnnotation_14" to="Classification_5709"/>
+<node id="DocumentAnnotation_86" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5781" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="viral infection" />
+<f name="DocumentCUI" value="C0521026" />
+</node>
+<edge from="DocumentAnnotation_86" to="Classification_5781"/>
+<node id="DocumentAnnotation_58" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5753" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="viral syndrome" />
+<f name="DocumentCUI" value="C0042740" />
+</node>
+<edge from="DocumentAnnotation_58" to="Classification_5753"/>
+<node id="DocumentAnnotation_40" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5735" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="vomiting" />
+<f name="DocumentCUI" value="C0042963" />
+</node>
+<edge from="DocumentAnnotation_40" to="Classification_5735"/>
+<node id="DocumentAnnotation_54" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5749" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="weakness" />
+<f name="DocumentCUI" value="C1883552" />
+</node>
+<edge from="DocumentAnnotation_54" to="Classification_5749"/>
+<node id="DocumentAnnotation_82" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5777" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="wheezing" />
+<f name="DocumentCUI" value="C0043144" />
+</node>
+<edge from="DocumentAnnotation_82" to="Classification_5777"/>
+<node id="DocumentAnnotation_1" type="annotation">
+<f name="level" value="DocumentAnnotation"/>
+<f name="status" value="missing"/>
+</node>
+<node id="Classification_5696" type="classification" annotationtype="DocumentClass">
+<f name="DocumentConcept" value="widened mediastinum" />
+<f name="DocumentCUI" value="C0746459" />
+</node>
+<edge from="DocumentAnnotation_1" to="Classification_5696"/>
+</graph>

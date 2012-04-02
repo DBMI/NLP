@@ -1,0 +1,128 @@
+
+Patient seen: 13:10
+Patient walked into the emergency department.  Source of history:
+Patient and father.  **AGE[birth-12] year old female with vomiting and diarrhea
+which has been ongoing for the past two weeks.  She has had
+worsening abdominal pain.  No fevers.  She has been unable to eat
+anything as it gives her really bad cramping pain.  Sister has had
+similar symptoms that only lasted three days and has since resolved.
+The patient has just had worsening symptoms - and they have not been
+getting any better.  She continues to have diarrhea
+
+CURRENT MEDICATIONS: None.
+ALLERGIES: Denies known allergies.
+PMH:  PMH negative.
+IMMUNIZATIONS: Up to date.
+Family History:  Negative for findings pertinent to the HPI.
+SOCIAL HISTORY: Noncontributory.
+ROS: as above, all remainder negative or unremarkable.
+DEVELOPMENTAL HISTORY: Developmentally normal..
+
+PE:
+APPEARANCE: Pt is alert and cooperative, complaining of intermittent
+crampy abdominal pain
+VS: T: 36.8 degrees C.  P: 124.  R: 24.  BP: 124/64.
+HEENT: Normocephalic.  Atraumatic.  Both external auditory canals
+clear.  Both tympanic membranes intact.  PERRL.  EOMI.
+NECK: Supple.
+NODES: No cervical, axillary or inguinal lymph node enlargement.
+CHEST: Lungs clear to auscultation.
+CARDIOVASCULAR: Normal S1, S2. No rubs, murmurs or gallops.
+ABDOMEN: Bowel sounds normal. Not distended. diffuse tenderness
+MENTAL STATUS: Patient alert, cooperative and conversant.
+
+TREATMENT & COURSE/MEDICAL DECISION MAKING:
+
+Orders:  CBC with diff, BUN/creatinine, electrolytes, glucose, LFTs
+and UA.
+Detail-Value w/Units
+Urine Volume->10 ml
+Appearance-Clear
+Color-Amber
+Urine pH-5.0
+Specific Gravity-1.039
+Bilirubin-Neg
+Blood-3+
+Ketones-2+
+Leukocyte Esterase-Neg
+Nitrite-Neg
+Reducing Substances-Neg %
+Urine Protein, Qual-Trace Milligrams/deciliter
+Urine Glucose, Qual-Neg Milligrams/deciliter
+Urine Urobilinogen-Normal
+WBC-5 /hpf
+RBC-8 /hpf
+Epithelial Cells-<1 /hpf
+Squamous Epithelial Cells-None /hpf
+Bacteria-Rare
+Amorphous-Rare
+Na-140 Milliequivalents/Liter
+K-4.5 Milliequivalents/Liter
+Cl-99 Milliequivalents/Liter
+CO2-25 Milliequivalents/Liter
+BUN-13 Milligrams/deciliter
+Cr-0.5 Milligrams/deciliter
+Glomerular Filtration Rate-Glomerular Filtration Rate
+Glucose-108 Milligrams/deciliter
+Ca-10.3 Milligrams/deciliter
+Bili, Total-0.5 Milligrams/deciliter
+ALT/SGPT-34 Int'l Unit/Liter
+AST/SGOT-29 Int'l Unit/Liter
+Alk Phos-223 Int'l Unit/Liter
+gGTP-11 Int'l Unit/Liter
+Lipase-35 Int'l Unit/Liter
+WBC-10.1 X10E+09/L
+RBC-4.66 X10E+12/L
+Hgb-14.5 grams/deciliter
+Hct-41.3 %
+MCV-88.6 fL
+MCH-31.1 pg
+MCHC-35.1 grams/deciliter
+RDW-12.6 %
+MPV-7.3 fL
+Platelets-309 X10E+09/L
+Neutrophils-83 %
+Lymphs-9 %
+Monocytes-8 %
+Basophils-0 %
+Eosinophils-0 %
+ABS Neutrophils-8.40 X10E+09/L
+ABS Lymphs-0.90 X10E+09/L
+ABS Monocytes-0.80 X10E+09/L
+ABS Basophils-0.00 X10E+09/L
+ABS Eosinophils-0.00 X10E+09/L
+Type of Differential-Automated Differential
+Bolus 20 cc/kg NS
+Orders:  abdominal x-ray - nonspecific findings
+Zofran 3 mg IV
+The patient had several bouts of bloody diarrhea in the ER and the
+parents deny the patient having them previously.
+She is also complaining of severe cramping pain.
+Pt then given a dose of toradol in an attempt to alleviate her pain
+- which was only partially effective.
+The patient began to have a worsening abdominal exam - increasing
+tenderness.  The decision was made to order a CT scan to ensure that
+the pateint did not have an appendicitis or any other type of
+abdominal pathology that could have a surgical cure.  Most likely
+the patient has a bacterial gastroenteritis which is causing her
+symptoms.
+
+
+DISPOSITION/PLAN:
+Admitted to pediatric service in unchanged condition.
+DIAGNOSIS:
+1. Bacterial gastroenteritis
+
+
+
+CPT-4:
+Level 4: 99284.
+
+
+Electronically signed by: **NAME[ZZZ M YYY] MD, on **DATE[Nov 13 2007] at 08:19:51
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R

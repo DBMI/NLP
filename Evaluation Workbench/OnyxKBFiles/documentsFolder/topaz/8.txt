@@ -1,0 +1,177 @@
+
+* * * * * * * FINAL REPORT* * * * * * *
+
+INFECTIOUS DISEASES EVALUATION
+
+
+**NAME[ZZZ, YYY]
+MRN   **ID-NUM
+DOB   **DATE[Jul 25 2007]
+DOS   **DATE[Jan 28]/2009
+
+Dear Dr **NAME[XXX]
+
+We had the pleasure of seeing your patient **NAME[YYY] in our **INSTITUTION here at **INSTITUTION of **PLACE for an initial consultation.
+**NAME[YYY] is an adorable 2 1/**AGE[birth-12] year old male who was seen in clinic today along
+with his sister because of a diagnosis of shigella enteritis. **NAME[YYY] is a
+previously healthy male who was relatively well until about the 10th of
+**DATE[Dec] when he developed a brief history of fever and vomiting which lasted
+for over two days. His maximum temperature was about 101. He then developed
+diarrhea which, at that time, was not severe. This was three days prior to a
+trip that the family took to Peru. During the two-week visit in Peru he
+continued to have mild diarrhea but on return to the United States on **DATE[Dec 
+31], he had a period where he continued to have just a few episodes of loose
+stools but then his diarrhea got significantly worse on **DATE[Jan 16]. At that
+time, he was having in excess of 6 watery stools per day which were greenish
+in appearance and did continue but no blood. He had no vomiting or fever at
+the time but had significant loss of fluids from his loose stools. His
+appetite was also significantly decreased. He had no skin rash and no other
+symptoms at that time. He was seen in your office and had a stool culture done
+because of the persistence of his diarrhea and his stool culture result was
+subsequently positive for shigella. He was started on a ten-day course of oral
+ciprofloxacin on Monday of this week, so today would have been his fifth dose.
+His father, however, got concerned because he started complaining of ankle and
+knee and leg pain and also complained of a headache. He had no skin rash. His
+diarrhea has significantly improved and, in fact, had begun to improve even
+prior to starting his ciprofloxacin. He has had no stools since yesterday and
+he has not had any return of his vomiting. He has no abdominal pain. He does
+however still have a significant reduction in his appetite but continues to
+drink milk.
+
+REVIEW OF SYSTEMS
+He does have a cough and stuffiness which began just a few days ago. He has no
+shortness of breath or wheezing. He has no skin rash or joint swellings. He
+has no hematuria or dysuria.
+
+PAST MEDICAL HISTORY
+He has no known chronic illnesses and has had no prior hospitalizations.
+
+BIRTH HISTORY
+He was delivered by spontaneous vaginal delivery at term. His birth weight was
+about 6 pounds. He was sent home after two days but was readmitted because of
+jaundice at which time he was hospitalized for two additional days.
+
+IMMUNIZATIONS
+Up-to-date; he received a flu shot.
+
+ALLERGIES
+He has no known drug allergies.
+
+FAMILY HISTORY
+Negative for immunodeficiency or recurrent infections.
+
+MEDICATIONS
+He currently is receiving oral ciprofloxacin. He has had four days of doses
+since Monday but has received no dose today.
+
+SOCIAL HISTORY
+**NAME[YYY] lives with his parents and his younger sister. His dad is from Peru and
+his mother is from Brazil, so the family visits both countries every two
+years. His dad is a teacher at **INSTITUTION. His mom works at Bayer
+Corporation.
+
+PHYSICAL EXAM
+Temperature 35.9 celsius; heart rate 140 per minute; respiratory rate 28 per
+minute. His weight was 15 kg which is in the 75th and 90th percentile. His
+height was 94.8 cm which is in the 50th and 90th percentile. General exam - he
+was alert, well-appearing, not ill-appearing and in no acute distress. His
+hydration status was adequate. HEENT exam - head was normocephalic and
+atraumatic. Eyes - he had no conjunctival injection or discharge. Ears - both
+tympanic membranes were normal. Nose - he had normal nasal turbinates and no
+nasal discharge. Throat was not hyperemic; he had no exudate on his tonsils.
+Neck was supple and there was no significant lymphadenopathy. Respiratory -
+breath sounds were clear and equal bilaterally. He had no crackles or wheezes.
+Cardiovascular - his pulse was regular normal volume. His apex beat was not
+displaced. Heart sounds, 1 and 2 were heard and normal and he had no murmurs.
+Abdomen was soft and scaphoid. He had no tenderness or masses. He had no
+hepatosplenomegaly. Kidneys were not palpable. His bowel sounds were normal.
+Musculoskeletal - he had no swelling or tenderness of any of his joints.
+Neurological - he was alert, active, cooperative. He had no cranial nerve
+deficits. His power and tone in his extremities were normal. Skin - he had no
+rash.
+
+LABORATORY DATA
+Review of his laboratory data showed a stool culture which was done on
+**DATE[Jan 20]/2009 which was positive for shigella sonnei which was sensitive to
+ciprofloxacin and resistant to ampicillin and sulfamethoxazole, trimethoprim.
+He had a stool test also done for ova and parasites and that was negative for
+Giardia, cryptosporidium and no ova and parasites were seen on microscopic
+exam.
+
+ASSESSMENT AND PLAN
+**NAME[YYY] is a 2 1/**AGE[birth-12] year old male with no chronic illnesses who developed
+shigella enteritis. His diarrhea has actually been going on for over a month
+prior to his visit to Peru. There was however, a significant change in the
+nature of his diarrhea on his return to the United States. It is possible that
+he may have had an enteritis by some other organism but then developed a
+shigella infection and it is quite likely that this infection occurred during
+his visit to Peru. Treatment with ciprofloxacin was appropriate in his case
+since his symptoms seem to have been progressing at the time when he was
+initially evaluated. Based on **NAME[YYY]'s father's concerns about the
+ciprofloxacin and the fact that his symptoms are improving significantly, it
+is reasonable to discontinue his ciprofloxacin. He has had four days' worth
+which will help a long way in decreasing colonization in his stool and so I
+feel comfortable stopping the ciprofloxacin at this point in time. He has
+reports that the Health Department of Allegheny has been calling the home
+daily to check up on them and they are due to have a repeat stool culture to
+ensure clearance prior to the return to daycare. We advised that Monday would
+be a reasonable time to have this done so that they could return to daycare as
+soon as possible, especially since his diarrhea has stopped.
+
+Thank you for allowing us to take part in **NAME[YYY]'s care. It was a pleasure to
+see both him and his sister. If you have any questions regarding the
+recommendations to day, feel free to contact us and we will be more than happy
+to discuss them with you.
+
+
+**NAME[WWW M VVV] MD
+Fellow, Pediatric Infectious Diseases
+
+
+**NAME[WWW M VVV] MD
+Fellow, Pediatric Infectious Diseases
+
+D     **DATE[Jan 28]/2009 16:50:43/gvw
+T     **DATE[Feb 07]/2009 20:21:55/mas
+R     *
+
+pc:
+**NAME[BBB XXX] MD, Referring Physician
+
+This document has been electronically signed by **NAME[UUU M TTT SSS] PhD on
+**DATE[Feb 07]/2009 22:22:48.
+
+
+INFECTIOUS DISEASES EVALUATION
+<start header>Page 3
+
+**NAME[ZZZ, YYY]
+MRN   **ID-NUM
+DOS   **DATE[Jan 28]/2009
+<end header>
+
+
+
+<START HEADER>
+            
+
+
+**PLACE A Darville MD DIVISION OF ALLERGY, IMMUNOLOGY AND INFECTIOUS DISEASES
+Administrative Office
+ Chief, Infectious Diseases         (**PHONE
+**NAME[RRR M QQQ] MD MPH  DIVISION OF INFECTIOUS DISEASES     Appointments &
+Consultations
+**NAME[PPP M OOO SSS] PhD          (**PHONE
+Philana L Lin MD M Sc         Evenings & Weekends
+**NAME[NNN MMM] MD        (**PHONE
+**NAME[LLL M KKK] MD MPH            FAX (**PHONE
+**NAME[UUU TTT] SSS] PhD    <END HEADER>
+
+
+
+
+
+-------------------------------------------------------------------------------
+
+
+E_O_R
