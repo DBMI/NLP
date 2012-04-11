@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>edu.utah.bmi.ckass.login.Login</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>login.Register</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>login.Test</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>New Task</servlet-name>
+    <servlet-class>dbaction.newtask</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/servlet/Login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/servlet/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/servlet/Test</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+    <servlet-name>New Task</servlet-name>
+    <url-pattern>/servlet/Newtask</url-pattern>
+  </servlet-mapping>
+</web-app>
