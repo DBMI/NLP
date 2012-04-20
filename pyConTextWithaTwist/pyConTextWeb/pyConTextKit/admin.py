@@ -29,8 +29,8 @@ class itemDatumAdmin(admin.ModelAdmin):
     )
 
 class ReportAdmin(admin.ModelAdmin):
-    fields = ['dataset','reportid','reportType']
-    list_display = ('dataset','reportid','reportType')        
+    fields = ['dataset','reportid','reportType']#also, reportType got rid of dataset from the this field
+    list_display = ('dataset','reportid','reportType')#also, reportType got rid of dataset at first position        
     
 class AlertAdmin(admin.ModelAdmin):
     fields = ['reportid','category','alert','report']

@@ -84,7 +84,7 @@ class ReportType(models.Model):
 
 class Report(models.Model):
     dataset = models.ForeignKey(collection) 
-    reportid = models.TextField()
+    #reportid = models.TextField()
     reportType = models.ForeignKey(ReportType)
     report = models.TextField()
     def __unicode__(self):

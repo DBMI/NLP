@@ -1,4 +1,4 @@
-# Django settings for pyConTextWeb project.
+#Django settings for pyConTextWeb project.
 import sys
 import os
 
@@ -10,7 +10,9 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 user_home = os.getenv('HOME')
-pyConTextWebHome = os.path.join(user_home,'pyConTextWeb')
+pyConTextWebHome = os.path.join(user_home,'Documents/NLP/pyConTextWithaTwist/pyConTextWeb')
+
+#pyConTextWebHome = '/Users/glenndayton/Documents/NLP/pyConTextWithaTwist/pyConTextWeb'
 
 MANAGERS = ADMINS
 
@@ -18,8 +20,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
         #'NAME': 'c:\Documents and Settings\Annie Chen\My Documents\Komodo\pyConTextWeb\pyConTextWeb.db',                      # Or path to database file if using sqlite3.
-	'NAME': os.path.join(pyConTextWebHome,'pyConTextWeb.db'),
-        'USER': '',                      # Not used with sqlite3.
+	#'NAME': os.path.join(pyConTextWebHome,'pyConTextWeb.db'),
+        'NAME': os.path.join(pyConTextWebHome,'pyConTextWeb.db'),
+	'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
@@ -60,8 +63,8 @@ MEDIA_ROOT = os.path.join(pyConTextWebHome, 'templates', 'media')#'templates', '
 #MEDIA_URL = 'http://quiil.ucsd.edu/media/pyConTextKit/'
 
 #--- Below is for testing in Django's own server ---
-MEDIA_URL = 'http://localhost:8000/pyConTextKit/media/'
-#MEDIA_URL = 'http://localhost:8095/pyConTextKit/media/'
+#MEDIA_URL = 'http://localhost:8000/pyConTextKit/media/'
+MEDIA_URL = 'http://localhost:8095/pyConTextKit/media/'
 # Absolute path to the directory static files should be collected to.
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.

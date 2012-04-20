@@ -34,18 +34,15 @@ application, and then have the other models inherit from it.
 from django.db import models
 from django.contrib.auth.models import User
 
-class creator(models.Model):
-    """Valid creators for itemDatum"""
-    name = models.CharField(max_length=250)
-    """
-    If we decide to base the creator off of the currently logged in user:
-    Precondition: User must be authenticated
-
+class creator(models.Model): 
+	#instead of using creator, we could use, user
+    #name = models.CharField(max_length=250)
+    #If we decide to base the creator off of the currently logged in user:
+    #Precondition: User must be authenticated
     user = models.ForeignKey(User, unique=True)
-    """
     def __unicode__(self):
-    	"""return user"""
-        return id # should I also return the id? => Yes, creators could have the same name. -Glenn
+    	return user
+        #return id
 
 class supercategory(models.Model): 
     name = models.CharField(max_length=250)
@@ -58,16 +55,16 @@ class itemRule(models.Model):
 
 class collection(models.Model):
     name = models.CharField(max_length=250)
-    creator = models.ForeignKey(creator)
+    creator = models.ForeignKey(User)#removed creator from here
     
 class itemDatum(models.Model):
     supercategory = models.ForeignKey(supercategory)
     category = models.ForeignKey(category)
     literal = models.CharField(max_length=250)
     re = models.CharField(max_length=250,blank=True)
-    re.help_text='regular expression'
+    re.help_text='<a href="http://www.dhtmlgoodies.com/scripts/regular-expression/regular-expression.html">Regex builder</a>'
     rule = models.ForeignKey(itemRule)
-    creator = models.ForeignKey(creator)
+    creator = models.ForeignKey(User) #Made a modification
     #include = models.BooleanField() # we want to delete include from itemDatum
     def __unicode__(self):
         return self.literal

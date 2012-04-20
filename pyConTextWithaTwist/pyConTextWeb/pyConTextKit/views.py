@@ -22,6 +22,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.core.urlresolvers import reverse
 from django.template import Context, RequestContext
 import csv
+import os
 from django.utils.encoding import smart_str, smart_unicode
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 #connection for raw sql
@@ -290,3 +291,22 @@ def ajax_user_search( request ):
             }
             return render_to_response( template, data, 
                                        context_instance = RequestContext( request ) )
+                                       
+def upload_database(request):
+	if request.method=="POST":
+		dform = UploadDatabase(request.FILES)
+		if dform.is_valid():
+			handle_uploaded_file(request.FILES['file'])
+			return HttpResponseRedirect('pyConTextKit/index/')
+			#dbase = UploadDatabase()
+	else:
+		dform = UploadDatabase()
+	return render_to_response('pyConTextKit/upload_db.html', {'form':dform}, context_instance=RequestContext(request))
+			
+def handle_uploaded_file(f):
+	user_home = os.getenv('HOME')
+	pyConTextWebHome = os.path.join(user_home,'Documents/NLP/pyConTextWithaTwist/pyConTextWeb') #this needs to be modifed to accomodate othe user's home directory
+	destination = open(os.path.join(pyConTextWebHome,'pyConTextWeb.db'),'wb+')
+	for chunk in f.chunks():
+		destination.write(chunk)
+	destination.close()
