@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}pyConTextKit{% endblock %}
+
+{% block pagetitle %}Upload SQLite Database{% endblock %}
+{% block content %}
+
+<form action="" method="post">
+{% csrf_token %}
+<table>
+{{ form }}
+</table>
+<input type="submit" value="Submit" />
+</form>
+
+{% endblock %}

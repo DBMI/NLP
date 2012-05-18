@@ -299,14 +299,23 @@ def upload_database(request):
 			handle_uploaded_file(request.FILES['file'])
 			return HttpResponseRedirect('pyConTextKit/index/')
 			#dbase = UploadDatabase()
+		
 	else:
 		dform = UploadDatabase()
 	return render_to_response('pyConTextKit/upload_db.html', {'form':dform}, context_instance=RequestContext(request))
 			
 def handle_uploaded_file(f):
 	user_home = os.getenv('HOME')
-	pyConTextWebHome = os.path.join(user_home,'Documents/NLP/pyConTextWithaTwist/pyConTextWeb') #this needs to be modifed to accomodate othe user's home directory
+	pyConTextWebHome = os.path.join(user_home,'pyConTextWeb') #this needs to be modifed to accomodate othe user's home directory
 	destination = open(os.path.join(pyConTextWebHome,'pyConTextWeb.db'),'wb+')
 	for chunk in f.chunks():
 		destination.write(chunk)
 	destination.close()
+
+def edit_report(request, eid=None):
+	eReport = EditReport(request.POST or None,instance=eid and Report.objects.get(id=eid))
+	if request.method == "POST" and eReport.is_valid:
+		eReport.save()
+        return HttpResponseRedirect('pyConTextKit')
+	
+	return render_to_response('pyConTextKit/edit_report.html', {'form': eReport}, context_instance=RequestContext(request))

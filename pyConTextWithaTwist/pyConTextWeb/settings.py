@@ -10,9 +10,9 @@ ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
 user_home = os.getenv('HOME')
-pyConTextWebHome = os.path.join(user_home,'Documents/NLP/pyConTextWithaTwist/pyConTextWeb')
+#pyConTextWebHome = os.path.join(user_home,'pyConTextWeb')
 
-#pyConTextWebHome = '/Users/glenndayton/Documents/NLP/pyConTextWithaTwist/pyConTextWeb'
+pyConTextWebHome = '/Users/glenndayton/Documents/NLP/pyConTextWithaTwist/pyConTextWeb'
 
 MANAGERS = ADMINS
 

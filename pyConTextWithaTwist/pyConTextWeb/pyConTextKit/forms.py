@@ -70,3 +70,10 @@ class UploadDatabase(forms.Form):
 	This form enables the user to upload a custom database file
 	"""
 	databaseFile = forms.FileField()
+	
+class EditReport(forms.ModelForm):
+	
+	class Meta:
+		report = Report
+	
+	
