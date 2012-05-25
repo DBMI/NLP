@@ -46,6 +46,8 @@ class creator(models.Model):
 
 class supercategory(models.Model): 
     name = models.CharField(max_length=250)
+    def __unicode__(self):
+    	return self.name
 
 class category(models.Model):
     name = models.CharField(max_length=250)
