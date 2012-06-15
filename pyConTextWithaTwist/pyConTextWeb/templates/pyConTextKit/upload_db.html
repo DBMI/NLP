@@ -2,14 +2,16 @@
 
 {% block title %}pyConTextKit{% endblock %}
 
-{% block pagetitle %}Upload SQLite Database{% endblock %}
+{% block pagetitle %}Upload CSV into SQLite Database{% endblock %}
 {% block content %}
-
+<p><u>CSV Upload Preconditions:</u><br />&nbsp;&nbsp;Use comma as delimiter, and quotation as quote character.</p>
+</p>
 <form action="" method="post">
 {% csrf_token %}
 <table>
 {{ form }}
 </table>
+<br />
 <input type="submit" value="Submit" />
 </form>
 
