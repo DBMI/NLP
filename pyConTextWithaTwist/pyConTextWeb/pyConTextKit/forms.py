@@ -63,13 +63,6 @@ class ReportForm(forms.Form):
     
     id = forms.ChoiceField(choices=REPORT_CHOICES, widget=forms.Select(attrs={'onchange':'get_report_number();'}))
     text = forms.CharField()
-
-
-class UploadDatabase(forms.Form):
-	"""
-	This form enables the user to upload a custom database file
-	"""
-	csvFile = forms.FileField()
 	
 class EditReport(forms.ModelForm):
 	

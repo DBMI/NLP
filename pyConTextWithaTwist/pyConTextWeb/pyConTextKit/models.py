@@ -33,6 +33,7 @@ application, and then have the other models inherit from it.
 """
 from django.db import models
 from django.contrib.auth.models import User
+import time
 
 class creator(models.Model): 
 	#instead of using creator, we could use, user

@@ -31,6 +31,7 @@ from pyConTextKit.models import *
 from pyConTextKit.criticalFinderGraph import criticalFinder, modifies, getParser
 from pyConTextGraphV2.itemData import itemData, contextItem
 from pyConTextKit.forms import *
+from csvparser import csvParser
 
 from django.forms.models import modelformset_factory
 
@@ -292,25 +293,30 @@ def ajax_user_search( request ):
             return render_to_response( template, data, 
                                        context_instance = RequestContext( request ) )
                                        
-def upload_database(request):
-	if request.method=="POST":
-		dform = UploadDatabase(request.FILES)
-		if dform.is_valid():
-			handle_uploaded_file(request.FILES['file'])
-			return HttpResponseRedirect('pyConTextKit/index/')
-			#dbase = UploadDatabase()
+def upload_csv(request):
+	status = ''
+	if request.method == 'POST':
+		res = handle_uploaded_file(request.FILES['csvfile'])
+		if res == False:
+			status = '<p style="color:red;">File was not CSV, or formatted incorrectly</p>'
+		else:
+			status = '<p style="color:green;">Database was successfully modified</p>'
+		return render_to_response('pyConTextKit/upload_db.html',{'status': status},context_instance=RequestContext(request))
+		#return HttpResponseRedirect(reverse('pyConTextKit.views.upload_csv'))
 		
-	else:
-		dform = UploadDatabase()
-	return render_to_response('pyConTextKit/upload_db.html', {'form':dform}, context_instance=RequestContext(request))
+	return render_to_response('pyConTextKit/upload_db.html',{'status': status},context_instance=RequestContext(request))
 			
 def handle_uploaded_file(f):
 	user_home = os.getenv('HOME')
-	pyConTextWebHome = os.path.join(user_home,'pyConTextWeb') #this needs to be modifed to accomodate othe user's home directory
-	destination = open(os.path.join(pyConTextWebHome,'pyConTextWeb.db'),'wb+')
+	pyConTextWebHome = os.path.join(user_home,'pyConTextWeb','templates','media','csvuploads') #this needs to be modifed to accomodate othe user's home directory
+	destPath = os.path.join(pyConTextWebHome,str(int(round(time.time() * 1000)))+'.csv')
+	destination = open(destPath,'wb+')
 	for chunk in f.chunks():
 		destination.write(chunk)
 	destination.close()
+	#then implement the csvparser class here
+	c = csvParser(destPath)
+	return c.iterateRows() #updates DB with table information
 
 def edit_report(request, eid=None):
 	eReport = EditReport(request.POST or None,instance=eid and Report.objects.get(id=eid))

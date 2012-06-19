@@ -2,6 +2,7 @@ import csv
 import array
 import hashlib
 import sqlite3
+import os
 
 class csvParser:
 	"""
@@ -9,7 +10,7 @@ class csvParser:
 		@param file String containing the path to the file
 	"""
 	def __init__(self,file):
-		self.execute = false  """modify the tables? used for debugging"""
+		self.execute = True
 		try:
 			fileBIN = open(file,'rb')
 		except IOError:
@@ -37,12 +38,12 @@ class csvParser:
 		signatures = {
 			'b293cd42dda42b69a6e7b0cbff288b39': 'pyConTextKit_creator',
 			'd6971d52331b336bb0616c30d9dfe24a': 'pyConTextKit_supercategory',
-			'd6971d52331b336bb0616c30d9dfe24a': 'pyConTextKit_category', 		"""collision"""
+			'd6971d52331b336bb0616c30d9dfe24a': 'pyConTextKit_category', 		#collison	
 			'0fcc05e97edc5a953fa85d4a2ebdd760': 'pyConTextKit_itemrule',
 			'78dca56aa59521629732b498e152d856': 'pyConTextKit_collection',
 			'6ae2f59d723ed0c5d8d83aeddd85032f': 'pyConTextKit_itemdatum',
 			'6283941eb6481137e01a77aa16e5ee4e': 'pyConTextKit_itemdatumset',
-			'd6971d52331b336bb0616c30d9dfe24a': 'pyConTextKit_reporttype',		"""collision"""
+			'd6971d52331b336bb0616c30d9dfe24a': 'pyConTextKit_reporttype',		#collison			
 			'ba39dd7a8908db13ca13bed83ad0fbc0': 'pyConTextKit_report',
 			'8c063fd4dddbb381af4851ab1ed8f3d3': 'pyConTextKit_alert',
 			'c5bc83a2d88c827f8e6bb572101db1e3': 'pyConTextKit_result'
@@ -64,12 +65,12 @@ class csvParser:
 		sqlconfigs = {
 			'pyConTextKit_creator': ['id','user_id'],
 			'pyConTextKit_supercategory': ['id','name'],
-			'pyConTextKit_category': ['id','name'],									"""modify"""
+			'pyConTextKit_category': ['id','name'],					#modify					
 			'pyConTextKit_itemrule': ['id','rule'],
 			'pyConTextKit_collection': ['id','name','creator_id'],
 			'pyConTextKit_itemdatum': ['id','supercategory_id','category_id','literal','re','rule_id','creator_id'],
 			'pyConTextKit_itemdatumset': ['id','setname','itemDatum_id'],
-			'pyConTextKit_reporttype': ['id','name'],								"""modify"""
+			'pyConTextKit_reporttype': ['id','name'],				#modify					
 			'pyConTextKit_report': ['id','dataset_id','reportid','reportType_id','report'],
 			'pyConTextKit_alert': ['id','reportid','category','alert','report'],
 			'pyConTextKit_result': ['id','reportid','category','disease','uncertainty','historical','literal','matchedphrase']
@@ -101,8 +102,10 @@ class csvParser:
 	"""
 	def iterateRows(self):
 		if self.execute:
-			connection = sqlite3.connect('pyConTextWeb.db')
-			c = conn.cursor()
+			user_home = os.getenv('HOME')
+			pyConTextWebHome = os.path.join(user_home,'pyConTextWeb')
+			connection = sqlite3.connect(os.path.join(pyConTextWebHome,'pyConTextWeb.db'))
+			c = connection.cursor()
 		for row in self.csvReader:
 			keysSorted = sorted(row.keys())
 			valuesSorted = []
@@ -115,7 +118,10 @@ class csvParser:
 			else:
 				print self.createSQLStmt(valuesSorted)
 		if self.execute:
-			conn.commit()
+			connection.commit()
 			c.close()
+		
+		# Take care of error handling for the output of true/false
+		return True
 		
 	

@@ -28,7 +28,7 @@ urlpatterns = patterns('',
     (r'^pyConTextKit/$', 'pyConTextKit.views.index'),    
     (r'^pyConTextKit/admin/', include(admin.site.urls)),
     (r'^pyConTextKit/accounts/login/$', 'django.contrib.auth.views.login'),
-    (r'^pyConTextKit/upload_db/', 'pyConTextKit.views.upload_database'),
+    url(r'^pyConTextKit/upload_db/', 'pyConTextKit.views.upload_csv', name='upload_csv'),
     (r'^pyConTextKit/edit_report/(?P<eid>\w+)$', 'pyConTextKit.views.edit_report'),
 )
 if settings.DEBUG:
