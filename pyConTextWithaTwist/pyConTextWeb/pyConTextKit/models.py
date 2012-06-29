@@ -52,9 +52,13 @@ class supercategory(models.Model):
 
 class category(models.Model):
     name = models.CharField(max_length=250)
+    def __unicode__(self):
+    	return self.name
 
 class itemRule(models.Model):
     rule = models.CharField(max_length=250)
+    def __unicode__(self):
+    	return self.name
 
 class collection(models.Model):
     name = models.CharField(max_length=250)
