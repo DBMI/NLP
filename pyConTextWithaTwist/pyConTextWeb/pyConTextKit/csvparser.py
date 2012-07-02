@@ -37,13 +37,13 @@ class csvParser:
 	def matchTable(self):
 		signatures = {
 			'b293cd42dda42b69a6e7b0cbff288b39': 'pyConTextKit_creator',
-			'd6971d52331b336bb0616c30d9dfe24a': 'pyConTextKit_supercategory',
-			'd6971d52331b336bb0616c30d9dfe24a': 'pyConTextKit_category', 		#collison	
+			'f0926b37e96a015c05f560fc21daef44': 'pyConTextKit_supercategory',
+			'59e29a74cc10d0a429aaaa5505377cb4': 'pyConTextKit_category', 		
 			'0fcc05e97edc5a953fa85d4a2ebdd760': 'pyConTextKit_itemrule',
 			'78dca56aa59521629732b498e152d856': 'pyConTextKit_collection',
 			'6ae2f59d723ed0c5d8d83aeddd85032f': 'pyConTextKit_itemdatum',
 			'6283941eb6481137e01a77aa16e5ee4e': 'pyConTextKit_itemdatumset',
-			'd6971d52331b336bb0616c30d9dfe24a': 'pyConTextKit_reporttype',		#collison			
+			'd6971d52331b336bb0616c30d9dfe24a': 'pyConTextKit_reporttype',					
 			'ba39dd7a8908db13ca13bed83ad0fbc0': 'pyConTextKit_report',
 			'8c063fd4dddbb381af4851ab1ed8f3d3': 'pyConTextKit_alert',
 			'c5bc83a2d88c827f8e6bb572101db1e3': 'pyConTextKit_result'
@@ -64,13 +64,13 @@ class csvParser:
 	def createSQLStmt(self,row):
 		sqlconfigs = {
 			'pyConTextKit_creator': ['id','user_id'],
-			'pyConTextKit_supercategory': ['id','name'],
-			'pyConTextKit_category': ['id','name'],					#modify					
+			'pyConTextKit_supercategory': ['id','name_supercategory'],
+			'pyConTextKit_category': ['id','name_category'],									
 			'pyConTextKit_itemrule': ['id','rule'],
 			'pyConTextKit_collection': ['id','name','creator_id'],
 			'pyConTextKit_itemdatum': ['id','supercategory_id','category_id','literal','re','rule_id','creator_id'],
 			'pyConTextKit_itemdatumset': ['id','setname','itemDatum_id'],
-			'pyConTextKit_reporttype': ['id','name'],				#modify					
+			'pyConTextKit_reporttype': ['id','name'],									
 			'pyConTextKit_report': ['id','dataset_id','reportid','reportType_id','report'],
 			'pyConTextKit_alert': ['id','reportid','category','alert','report'],
 			'pyConTextKit_result': ['id','reportid','category','disease','uncertainty','historical','literal','matchedphrase']

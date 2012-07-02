@@ -46,19 +46,19 @@ class creator(models.Model):
         #return id
 
 class supercategory(models.Model): 
-    name = models.CharField(max_length=250)
+    name_supercategory = models.CharField(max_length=250)
     def __unicode__(self):
-    	return self.name
+    	return self.name_supercategory
 
 class category(models.Model):
-    name = models.CharField(max_length=250)
+    name_category = models.CharField(max_length=250)
     def __unicode__(self):
-    	return self.name
+    	return self.name_category
 
 class itemRule(models.Model):
     rule = models.CharField(max_length=250)
     def __unicode__(self):
-    	return self.name
+    	return self.rule
 
 class collection(models.Model):
     name = models.CharField(max_length=250)
