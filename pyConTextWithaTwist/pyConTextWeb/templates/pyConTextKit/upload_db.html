@@ -7,18 +7,28 @@
 {% if status != '' %}
 	{% autoescape off %}{{ status }}{% endautoescape %}
 {% endif %}
+CSV file must follow <a href="http://creativyst.com/Doc/Articles/CSV/CSV01.htm#ExampleData">excel csv formatting guidelines</a>.
 <form method="post" enctype="multipart/form-data">
 	{% csrf_token %}
 	<table border="0">
-		<tr>
-    		<td><input type="file" name="csvfile" />
-    		<br />Uploaded CSV files must follow <a href="#">Formatting guidelines</a></td>
-    	</tr>
     	<tr><td></td></tr>
     	<tr>
-    		<td><input type="submit" name="submit" value="Upload" /></td>
+    		{{ form.label.errors }}
+    		{{ form.csvfile.errors }}
+    		<table border="0">
+    			<tr>
+    				<td>Label</td>
+    				<td>{{ form.label }}</td>
+    			</tr>
+    			<tr>
+    				<td></td>
+    				<td>{{ form.csvfile }}</td>
+    			</tr>
+    			<tr>
+    				<td colspan="2"><input type="submit" name="submit" value="Upload" /></td>
+    			</tr>
+    		</table>
     	</tr>
     </table>
 </form>
-
 {% endblock %}

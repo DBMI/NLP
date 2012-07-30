@@ -67,6 +67,7 @@ def run(request):
             dataset = rform.cleaned_data['dataset']
             category = rform.cleaned_data['category']
             limit = rform.cleaned_data['limit']
+            label = rform.cleaned_data['label']
             parser = getParser()
             (options, args) = parser.parse_args()
             options.dataset = dataset
@@ -75,18 +76,6 @@ def run(request):
             else:
                 options.category = category
             options.number=limit            
-            
-            probableNegations = itemData('PROBABLE_NEGATED_EXISTENCE')
-            definiteNegations = itemData('DEFINITE_NEGATED_EXISTENCE')
-            pseudoNegations = itemData('PSEUDONEG')
-            indications = itemData('INDICATION')
-            historicals = itemData('HISTORICAL')
-            conjugates = itemData('CONJ')
-            probables = itemData('PROBABLE_EXISTENCE')
-            definites = itemData('DEFINITE_EXISTENCE')
-            future = itemData('FUTURE') 
-            
-            critItems = itemData('CRIT_ITEMS')
             
             pec = criticalFinder(options)
             pec.processReports()
@@ -106,16 +95,20 @@ def complete(request):
     """
     return render_to_response('pyConTextKit/complete.html',context_instance=RequestContext(request))
 
+"""
+	UPDATED 7/27/12 G.D.
+	Changed reference from itemDatum object to Lexical object, formset shares same names w/ Lexical's 
+	names, they did not need modification. (Line 122, Declaration of formset)
+"""
 def itemData_view(request):
-    itemFormSet = modelformset_factory(itemDatum, fields=('id',), extra=0)
+    itemFormSet = modelformset_factory(Lexical, fields=('id',), extra=0)
     sform = SearchForm(data = request.POST)
     if request.method == "POST" and sform.is_valid():
-        #print "sform is valid" <= Looks like debugging line
         term = sform.cleaned_data['term']
         if term != '':
             #print "non-space"
-            r=itemDatum.objects.filter(literal__contains=term)
-            formset = itemFormSet(queryset=r)
+            #literal__contains looks at field, literal and checks against term
+            formset = itemFormSet(queryset = Lexical.objects.filter(literal__contains=term))
             return render_to_response('pyConTextKit/itemdata.html',{'formset': formset, 'form': sform,},context_instance=RequestContext(request))
         else:
             formset = itemFormSet(request.POST, request.FILES)
@@ -125,21 +118,28 @@ def itemData_view(request):
     formset = itemFormSet()
     return render_to_response("pyConTextKit/itemdata.html", {
         "formset": formset,'form': sform,}, context_instance=RequestContext(request))
- 
-def itemData_filter(request, supercat):
+        
+"""
+	UPDATED 7/27/12 G.D.
+	Removed supercategory and replaced w/ category, not sure if we want this method anymore
+"""
+def itemData_filter(request, cat):
     """
     This method takes a supercategory name as an argument and renders a view of
     the criteria in this supercategory.
     """
-    itemFormSet = modelformset_factory(itemDatum, fields=('id',), extra=0)
+    itemFormSet = modelformset_factory(Lexical, fields=('id',), extra=0)
     sform = SearchForm(data = request.POST)
-    r=itemDatum.objects.filter(supercategory=supercat)
-    formset = itemFormSet(queryset=r)
+    formset = itemFormSet(queryset=itemDatum.objects.filter(category=cat))
     return render_to_response('pyConTextKit/itemdata.html',{'formset': formset,'form': sform,},context_instance=RequestContext(request))
-  
+
+"""
+	UPDATED 7/27/12
+	Changed reference from itemDatum to Lexical
+"""
 def itemData_edit(request, itemData_id=None):
     """
-    This method takes an itemDatum ID as an argument and renders a form for the
+    This method takes an Lexical ID as an argument and renders a form for the
     user to edit the specified extraction criterion.  If no argument is supplied,
     a blank form is rendered, which the user can use to enter a new criterion.
     
@@ -154,11 +154,11 @@ def itemData_edit(request, itemData_id=None):
     You can learn more about Python regular expressions at:
     <a href="http://docs.python.org/library/re.html">http://docs.python.org/library/re.html</a>"""
   
-    iform = itemForm(request.POST or None,instance=itemData_id and itemDatum.objects.get(id=itemData_id))
+    iform = itemForm(request.POST or None,instance=itemData_id and Lexical.objects.get(id=itemData_id))
     if request.method == "POST" and iform.is_valid:
         iform.save()
         return HttpResponseRedirect(reverse('pyConTextKit.views.itemData_complete'))
-        
+    	
     return render_to_response('pyConTextKit/itemdata_edit.html', {'form': iform, 'intro': intro}, context_instance=RequestContext(request))
     
 def itemData_complete(request):
@@ -295,18 +295,20 @@ def ajax_user_search( request ):
                                        
 def upload_csv(request):
 	status = ''
-	if request.method == 'POST':
-		res = handle_uploaded_file(request.FILES['csvfile'])
-		if res == False:
+	uploadDbForm = UploadDatabase(request.POST, request.FILES)
+	if request.method == 'POST' and uploadDbForm.is_valid:
+		res = handle_uploaded_file(request.FILES['csvfile'], request.cleaned_data['label'])
+		uploadDbForm.save()
+		"""if res == False:
 			status = '<p style="color:red;">File was not CSV, or formatted incorrectly</p>'
 		else:
-			status = '<p style="color:green;">Database was successfully modified</p>'
-		return render_to_response('pyConTextKit/upload_db.html',{'status': status},context_instance=RequestContext(request))
-		#return HttpResponseRedirect(reverse('pyConTextKit.views.upload_csv'))
-		
-	return render_to_response('pyConTextKit/upload_db.html',{'status': status},context_instance=RequestContext(request))
+			status = '<p style="color:green;">Database was successfully modified</p>'"""
+		return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'form': uploadDbForm},context_instance=RequestContext(request))
+	else:
+		uploadDbForm = UploadDatabase()	
+	return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'form': uploadDbForm},context_instance=RequestContext(request))
 			
-def handle_uploaded_file(f):
+def handle_uploaded_file(f, label):
 	user_home = os.getenv('HOME')
 	pyConTextWebHome = os.path.join(user_home,'pyConTextWeb','templates','media','csvuploads') #this needs to be modifed to accomodate othe user's home directory
 	destPath = os.path.join(pyConTextWebHome,str(int(round(time.time() * 1000)))+'.csv')
@@ -315,7 +317,7 @@ def handle_uploaded_file(f):
 		destination.write(chunk)
 	destination.close()
 	#then implement the csvparser class here
-	c = csvParser(destPath)
+	c = csvParser(destPath, label)
 	return c.iterateRows() #updates DB with table information
 
 def edit_report(request, eid=None):

@@ -42,13 +42,11 @@ Search for an existing term: {{ form.term }}
 <tr>
 <th>category</th>
 <th>literal</th>
-<th>include</th>
 </tr> 
 {% for f in formset.forms %}
 <tr class="{% if forloop.counter|divisibleby:2 %}even{% else %}odd{% endif %}">
     <td>{{ f.id }}{{ f.instance.category }}</td>
     <td><a href='/pyConTextKit/itemData_edit/{{f.instance.id}}'>{{ f.instance.literal }}</a></td>
-    <td>{{ f.include }}</td>
 </tr>
 {% endfor %}
 </table>

@@ -16,7 +16,11 @@ This module contains the forms that are used in the pyConTextKit application.
 """
 from django import forms
 from django.forms import ModelForm
-from pyConTextKit.models import itemDatum, Report
+"""
+	**TODO**
+		Eventually remove import of itemDatum
+"""
+from pyConTextKit.models import Report, Lexical
 
 UNCERTAINTY_CHOICES = (('separate_uncertainty','distinguish certainty from uncertainty'), ('allow_uncertainty','do not distinguish certainty from uncertainty'), ('no_uncertainty','do not include instances of uncertainty'))
 
@@ -33,9 +37,11 @@ class RunForm(forms.Form):
     dataset = forms.ChoiceField(label = 'Report dataset', choices=[], required=False)
     category = forms.CharField(label = 'Target category', required=False)
     limit = forms.IntegerField(required=False)
+    label = forms.ChoiceField(label = 'Label of lexical', choices=[], required=False)
     def __init__(self, *args, **kwargs):
         super(RunForm, self).__init__(*args, **kwargs)
         self.fields['dataset'].choices = Report.objects.all().values_list("dataset","dataset").distinct()
+        self.fields['label'].choices = Lexical.objects.all().values_list("label","label").distinct()
 
 class DocClassForm(forms.Form):
     """
@@ -46,13 +52,17 @@ class DocClassForm(forms.Form):
     uncertainty = forms.ChoiceField(widget=forms.RadioSelect, choices=UNCERTAINTY_CHOICES,initial={'separate_uncertainty','separate_uncertainty'})
     def __init__(self, *args, **kwargs):
         super(DocClassForm, self).__init__(*args, **kwargs)
-    
+
+"""
+	UPDATED 7/27/12 G.D.
+	Changed model from itemDatum to Lexical
+"""
 class itemForm(forms.ModelForm):
     """
-    This form for the itemDatum class employs the default ModelForm.
+    This form for the Lexical class employs the default ModelForm.
     """
     class Meta:
-        model = itemDatum
+        model = Lexical
         
 class ReportForm(forms.Form):
     """
@@ -68,5 +78,10 @@ class EditReport(forms.ModelForm):
 	
 	class Meta:
 		report = Report
+	
+class UploadDatabase(forms.Form):
+	label = forms.CharField(max_length=250)
+	csvfile  = forms.FileField()
+	
 	
 	

@@ -35,62 +35,23 @@ from django.db import models
 from django.contrib.auth.models import User
 import time
 
-class creator(models.Model): 
-	#instead of using creator, we could use, user
-    #name = models.CharField(max_length=250)
-    #If we decide to base the creator off of the currently logged in user:
-    #Precondition: User must be authenticated
-    user = models.ForeignKey(User, unique=True)
-    def __unicode__(self):
-    	return user
-        #return id
-
-class supercategory(models.Model): 
-    name_supercategory = models.CharField(max_length=250)
-    def __unicode__(self):
-    	return self.name_supercategory
-
-class category(models.Model):
-    name_category = models.CharField(max_length=250)
-    def __unicode__(self):
-    	return self.name_category
-
-class itemRule(models.Model):
-    rule = models.CharField(max_length=250)
-    def __unicode__(self):
-    	return self.rule
-
-class collection(models.Model):
-    name = models.CharField(max_length=250)
-    creator = models.ForeignKey(User)#removed creator from here
-    
-class itemDatum(models.Model):
-    supercategory = models.ForeignKey(supercategory)
-    category = models.ForeignKey(category)
+# Stores both lexical and Domain data
+class Lexical(models.Model):
+    creator = models.ForeignKey(User)
+    label = models.CharField(max_length=250)
+    category = models.CharField(max_length=250)
     literal = models.CharField(max_length=250)
-    re = models.CharField(max_length=250,blank=True)
-    re.help_text='<a href="http://www.dhtmlgoodies.com/scripts/regular-expression/regular-expression.html">Regex builder</a>'
-    rule = models.ForeignKey(itemRule)
-    creator = models.ForeignKey(User) #Made a modification
-    #include = models.BooleanField() # we want to delete include from itemDatum
+    re = models.CharField(max_length=250)
+    re.help_text='<a target="_blank" href="http://www.dhtmlgoodies.com/scripts/regular-expression/regular-expression.html">Regex builder</a>'
+    rule = models.CharField(max_length=250,blank=True)
     def __unicode__(self):
-        return self.literal
-    
-class itemDatumSet(models.Model):
-    setname = models.CharField(max_length=50)
-    itemDatum = models.ForeignKey(itemDatum)
-    #include = models.BooleanField()
-    def __unicode__(self):
-        return self.setname
-
-class ReportType(models.Model):
-    name = models.CharField(max_length=250)
+        return self.label
 
 class Report(models.Model):
-    dataset = models.ForeignKey(collection) 
+    dataset = models.CharField(max_length=250)
     reportid = models.TextField()
-    reportType = models.ForeignKey(ReportType)
     report = models.TextField()
+    # add label functionality
     def __unicode__(self):
         return str(self.reportid)
     def get_all_fields(self):
@@ -102,10 +63,10 @@ class Report(models.Model):
             # resolve picklists/choices, with get_xyz_display() function
             get_choice = 'get_'+fname+'_display'
             if hasattr( self, get_choice):
-                value = getattr( self, get_choice)()
+        	    value = getattr( self, get_choice)()
             else:
                 try :
-                    value = getattr(self, fname)
+            	    value = getattr(self, fname)
                 except User.DoesNotExist:
                     value = None
     
@@ -120,6 +81,7 @@ class Report(models.Model):
                   }
                 )
         return fields
+        
 # Can we generalize the Alert class to be an application class that is built by
 # the user?
 class Alert(models.Model):
@@ -156,6 +118,7 @@ class Alert(models.Model):
                   }
                 )
         return fields
+       
 # Don't know that we want to store this back into the database
 # How would we make results general?
 class Result(models.Model):
@@ -166,8 +129,9 @@ class Result(models.Model):
     historical = models.TextField()
     literal = models.TextField()
     matchedphrase = models.TextField()
+	
     def __unicode__(self):
-        return str(self.reportid)
+	    return str(self.reportid)
     def get_all_fields(self):
         """Returns a list of all field names on the instance."""
         fields = []

@@ -23,7 +23,7 @@ The database should have a table named 'reports' with a field named 'impression'
 although these values can be specified through the command line options.
 """
 from django.db.models import Count
-from pyConTextKit.models import itemDatum, Report, Result, Alert
+from pyConTextKit.models import Report, Result, Alert
 import sys
 import os
 from optparse import OptionParser
@@ -35,6 +35,8 @@ import pyConTextGraphV2.pyConTextGraphV2 as pyConText
 from pyConTextGraphV2.pyConTextSqlV2 import pyConTextSql
 from pyConTextGraphV2.itemData import itemData, contextItem
 import cPickle
+import unicodecsv
+
 """helper functions to compute final classification"""
 
 class criticalFinder(object):
@@ -74,7 +76,12 @@ class criticalFinder(object):
         # Create the itemData object to store the modifiers for the  analysis
         # starts with definitions defined in pyConText and then adds
         # definitions specific for peFinder
-
+        
+        #label specifies whether the user wants a domain or lexical set.
+        label = ""
+        items = itemData.instantiateFromSQLite("../pyConTextWeb.db",label,"pyConTextKit_lexical")
+		
+        """
         probableNegations = itemData('PROBABLE_NEGATED_EXISTENCE')      
         definiteNegations = itemData('DEFINITE_NEGATED_EXISTENCE')
         pseudoNegations = itemData('PSEUDONEG')
@@ -84,7 +91,6 @@ class criticalFinder(object):
         probables = itemData('PROBABLE_EXISTENCE')
         definites = itemData('DEFINITE_EXISTENCE')
         future = itemData('FUTURE')
-    
         critItems = itemData('CRIT_ITEMS')        
         
         self.modifiers = {"disease":itemData('')}
@@ -97,6 +103,7 @@ class criticalFinder(object):
         self.modifiers["disease"].prepend(conjugates)
         self.modifiers["disease"].prepend(future)
         self.modifiers["disease"].prepend(historicals)
+    	"""
 
         # Quality targets (generated from category parameter set by parser)
         if( options.category.lower() == 'all'):

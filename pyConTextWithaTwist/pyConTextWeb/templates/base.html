@@ -12,7 +12,7 @@
 <div id="topnav">
 {% block user %}
 {% if user.is_authenticated %}
-Welcome,<span class="username">{{ user.username }}</span>&nbsp;|&nbsp;
+Welcome, <span class="username">{{ user.username }}</span>&nbsp;|&nbsp;
 <a href="/pyConTextKit/logout/">log out</a>
 {% else %}
 <a href="/pyConTextKit/accounts/login/">Log in</a>
