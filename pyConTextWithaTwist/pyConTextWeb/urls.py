@@ -1,4 +1,4 @@
-#from pyConTextWeb import settings 
+#from pyConTextWeb import settings
 import settings
 from django.conf.urls.defaults import *
 
@@ -25,11 +25,10 @@ urlpatterns = patterns('',
     (r'^pyConTextKit/logout/$', 'pyConTextKit.views.logout_view'),
     url(r'^pyConTextKit/ajax_user_search/$', 'pyConTextKit.views.ajax_user_search', name = 'demo_user_search' ),
     (r'^pyConTextKit/report_text/(?P<reportid>\d+)/$', 'pyConTextKit.views.report_text'),
-    (r'^pyConTextKit/$', 'pyConTextKit.views.index'),    
+    (r'^pyConTextKit/$', 'pyConTextKit.views.index'),
     (r'^pyConTextKit/admin/', include(admin.site.urls)),
     (r'^pyConTextKit/accounts/login/$', 'django.contrib.auth.views.login'),
-    url(r'^pyConTextKit/upload_db/', 'pyConTextKit.views.upload_csv', name='upload_csv'),
-    (r'^pyConTextKit/edit_report/(?P<eid>\w+)$', 'pyConTextKit.views.edit_report'),
+    url(r'^pyConTextKit/upload_db/', 'pyConTextKit.views.upload_csv', name='upload_csv')
 )
 if settings.DEBUG:
     urlpatterns += patterns('',

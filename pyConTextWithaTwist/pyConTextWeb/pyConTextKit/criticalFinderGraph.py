@@ -33,7 +33,7 @@ import datetime, time
 import pyConTextNLP.helpers as helpers
 import pyConTextGraphV2.pyConTextGraphV2 as pyConText
 from pyConTextGraphV2.pyConTextSqlV2 import pyConTextSql
-from pyConTextGraphV2.itemData import itemData, contextItem
+from pyConTextGraphV2 import itemData
 import cPickle
 import unicodecsv
 
@@ -78,8 +78,7 @@ class criticalFinder(object):
         # definitions specific for peFinder
         
         #label specifies whether the user wants a domain or lexical set.
-        label = ""
-        items = itemData.instantiateFromSQLite("../pyConTextWeb.db",label,"pyConTextKit_lexical")
+        items = itemData.instantiateFromSQLite("../pyConTextWeb.db",options.label,"pyConTextKit_lexical")
 		
         """
         probableNegations = itemData('PROBABLE_NEGATED_EXISTENCE')      

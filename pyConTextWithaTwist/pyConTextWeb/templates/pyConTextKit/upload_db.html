@@ -10,24 +10,35 @@
 CSV file must follow <a href="http://creativyst.com/Doc/Articles/CSV/CSV01.htm#ExampleData">excel csv formatting guidelines</a>.
 <form method="post" enctype="multipart/form-data">
 	{% csrf_token %}
+	{{ status }}
 	<table border="0">
-    	<tr><td></td></tr>
+		<tr>
+			<th>Upload Reports</th>
+		</tr>
     	<tr>
-    		{{ form.label.errors }}
-    		{{ form.csvfile.errors }}
-    		<table border="0">
-    			<tr>
-    				<td>Label</td>
-    				<td>{{ form.label }}</td>
-    			</tr>
-    			<tr>
-    				<td></td>
-    				<td>{{ form.csvfile }}</td>
-    			</tr>
-    			<tr>
-    				<td colspan="2"><input type="submit" name="submit" value="Upload" /></td>
-    			</tr>
-    		</table>
+    		<td>
+    			<table border="0">
+    				{{ form_reports }}
+    				<tr>
+    					<td></td>
+    					<td align="right"><input type="submit" name="submit1" value="Upload Reports" /></td>
+    				</tr>
+    			</table>
+    		</td>
+    	<tr>
+    	<tr>
+			<th>Upload Lexicon</th>
+		</tr>
+    	</tr>
+    		<td>
+    			<table border="0">
+    				{{ form_lexicon }}
+    				<tr>
+    					<td></td>
+    					<td align="right"><input type="submit" name="submit2" value="Upload Lexicon" /></td>
+    				</tr>
+    			</table>
+    		</td>
     	</tr>
     </table>
 </form>

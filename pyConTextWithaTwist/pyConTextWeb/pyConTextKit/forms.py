@@ -12,7 +12,7 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 """
-This module contains the forms that are used in the pyConTextKit application. 
+This module contains the forms that are used in the pyConTextKit application.
 """
 from django import forms
 from django.forms import ModelForm
@@ -63,25 +63,22 @@ class itemForm(forms.ModelForm):
     """
     class Meta:
         model = Lexical
-        
+
 class ReportForm(forms.Form):
     """
     This form enables the user to select a report to view.
     """
     REPORT_CHOICES = [(i.id, i.id) for i in Report.objects.all()]
     REPORT_CHOICES.insert(0, ('', '-- choose a report number first --'))
-    
+
     id = forms.ChoiceField(choices=REPORT_CHOICES, widget=forms.Select(attrs={'onchange':'get_report_number();'}))
     text = forms.CharField()
-	
+
 class EditReport(forms.ModelForm):
-	
+
 	class Meta:
 		report = Report
-	
+
 class UploadDatabase(forms.Form):
 	label = forms.CharField(max_length=250)
 	csvfile  = forms.FileField()
-	
-	
-	

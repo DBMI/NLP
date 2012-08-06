@@ -41,11 +41,18 @@ class Lexical(models.Model):
     label = models.CharField(max_length=250)
     category = models.CharField(max_length=250)
     literal = models.CharField(max_length=250)
-    re = models.CharField(max_length=250)
+    re = models.CharField(max_length=250,blank=True)
     re.help_text='<a target="_blank" href="http://www.dhtmlgoodies.com/scripts/regular-expression/regular-expression.html">Regex builder</a>'
-    rule = models.CharField(max_length=250,blank=True)
+    #rule = models.CharField(max_length=250,blank=True)
+    RULE_CHOICES = (
+        ('forward','Forward'),
+        ('backward','Backward'),
+        ('terminate','Terminate'),
+        ('bidirectional','Bidirectional'),
+    )
+    rule = models.CharField(max_length=250, choices=RULE_CHOICES, blank=True) 
     def __unicode__(self):
-        return self.label
+        return self.literal
 
 class Report(models.Model):
     dataset = models.CharField(max_length=250)
@@ -56,7 +63,7 @@ class Report(models.Model):
         return str(self.reportid)
     def get_all_fields(self):
         """Returns a list of all field names on the instance."""
-        fields = []
+        fields = ()
         for f in self._meta.fields:
     
             fname = f.name        
@@ -93,7 +100,7 @@ class Alert(models.Model):
         return str(self.reportid)
     def get_all_fields(self):
         """Returns a list of all field names on the instance."""
-        fields = []
+        fields = ()
         for f in self._meta.fields:
     
             fname = f.name        
@@ -134,7 +141,7 @@ class Result(models.Model):
 	    return str(self.reportid)
     def get_all_fields(self):
         """Returns a list of all field names on the instance."""
-        fields = []
+        fields = ()
         for f in self._meta.fields:
     
             fname = f.name        

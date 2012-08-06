@@ -12,7 +12,7 @@
 #See the License for the specific language governing permissions and
 #limitations under the License.
 """
-This module contains the views that are used in the pyConTextKit application. 
+This module contains the views that are used in the pyConTextKit application.
 """
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
@@ -32,6 +32,8 @@ from pyConTextKit.criticalFinderGraph import criticalFinder, modifies, getParser
 from pyConTextGraphV2.itemData import itemData, contextItem
 from pyConTextKit.forms import *
 from csvparser import csvParser
+from pyConTextKit.models import *
+import re
 
 from django.forms.models import modelformset_factory
 
@@ -56,7 +58,7 @@ def logout_view(request):
     """
     logout(request)
     return render_to_response('registration/logout.html',context_instance=RequestContext(request))
-    
+
 def run(request):
     """
     This executes the Annotate feature.
@@ -75,8 +77,8 @@ def run(request):
                 options.category = 'all'
             else:
                 options.category = category
-            options.number=limit            
-            
+            options.number=limit
+
             pec = criticalFinder(options)
             pec.processReports()
 
@@ -86,7 +88,7 @@ def run(request):
 
     else:
         rform=RunForm()
-        
+
     return render_to_response('pyConTextKit/run.html', {'form': rform,},context_instance=RequestContext(request))
 
 def complete(request):
@@ -97,7 +99,7 @@ def complete(request):
 
 """
 	UPDATED 7/27/12 G.D.
-	Changed reference from itemDatum object to Lexical object, formset shares same names w/ Lexical's 
+	Changed reference from itemDatum object to Lexical object, formset shares same names w/ Lexical's
 	names, they did not need modification. (Line 122, Declaration of formset)
 """
 def itemData_view(request):
@@ -114,11 +116,11 @@ def itemData_view(request):
             formset = itemFormSet(request.POST, request.FILES)
             if formset.is_valid():
                 formset.save()
-                return HttpResponseRedirect(reverse('pyConTextKit.views.itemData_complete'))               
+                return HttpResponseRedirect(reverse('pyConTextKit.views.itemData_complete'))
     formset = itemFormSet()
     return render_to_response("pyConTextKit/itemdata.html", {
         "formset": formset,'form': sform,}, context_instance=RequestContext(request))
-        
+
 """
 	UPDATED 7/27/12 G.D.
 	Removed supercategory and replaced w/ category, not sure if we want this method anymore
@@ -142,28 +144,50 @@ def itemData_edit(request, itemData_id=None):
     This method takes an Lexical ID as an argument and renders a form for the
     user to edit the specified extraction criterion.  If no argument is supplied,
     a blank form is rendered, which the user can use to enter a new criterion.
-    
+
     Note: A useful addition to this would be examples that the user can use as
     a reference.
     """
-    intro="""<p>This application employs Python regular expressions. Refer to the key below
+    intro="""<style type="text/css">
+    .indent{
+    	margin-left:15px;
+    }
+    </style>
+    <p>This application employs Python regular expressions. Refer to the key below
     for guidance on how to create regular expressions.<p><b>\s:</b> space<br><b>|:</b> or<br>
     <b>\w:</b> alphanumeric character or underscore (equivalent to [a-zA-Z0-9_])<br>
     <b>*:</b> match one or more repetitions of the preceding regular expression<br>
     <b>?:</b> matches 0 or 1 of the preceding regular expressions<br>
     You can learn more about Python regular expressions at:
     <a href="http://docs.python.org/library/re.html">http://docs.python.org/library/re.html</a>"""
-  
+    dup = ""
     iform = itemForm(request.POST or None,instance=itemData_id and Lexical.objects.get(id=itemData_id))
-    if request.method == "POST" and iform.is_valid:
-        iform.save()
+    if request.method == "POST" and iform.is_valid():
+    	items = Lexical.objects.filter(literal__contains=iform.cleaned_data['literal'])
+    	if items.count() > 0 and 'submit2' not in request.POST:
+    	    dup = "<span style=\"color:red\"><b>"+str(items.count())+"</b> Duplicate(s) detected</span><br />"
+    	    dup += "<div class=\"indent\">"
+    	    for i in items:
+    	        dup += re.sub(r'('+iform.cleaned_data['literal']+')', r'<b style=\"color:green;\">\1</b>', i.literal, flags=re.I)+"<br />"
+    	    dup += """</div><br />What would you like to do?<br />
+    	    <div class="indent">
+    	    <ul>
+    	    <li><input type="submit" name="submit2" value="Ignore, and post item" /></li>
+    	    <li>Make edits to item below, and resubmit.</li>
+    	    <li><a href="/edit_itemdata/">Reset form</a></li>
+    	    </ul>
+    	    </div>
+    	    """
+    	    return render_to_response('pyConTextKit/itemdata_edit.html', {'form': iform, 'intro': intro, 'dup':dup}, context_instance=RequestContext(request))
+    	else:
+            iform.save()
         return HttpResponseRedirect(reverse('pyConTextKit.views.itemData_complete'))
-    	
-    return render_to_response('pyConTextKit/itemdata_edit.html', {'form': iform, 'intro': intro}, context_instance=RequestContext(request))
-    
+
+    return render_to_response('pyConTextKit/itemdata_edit.html', {'form': iform, 'intro': intro, 'dup':dup}, context_instance=RequestContext(request))
+
 def itemData_complete(request):
     return render_to_response('pyConTextKit/itemdata_complete.html',context_instance=RequestContext(request))
-     
+
 def output_alerts(request):
     response = HttpResponse(mimetype='text/csv')
     response['Content-Disposition'] = 'attachment; filename=alerts.csv'
@@ -174,7 +198,7 @@ def output_alerts(request):
     for a in alerts:
         writer.writerow([smart_str(a.id), smart_str(a.reportid), smart_str(a.category), smart_str(a.alert), smart_str(a.report)])
     return response
-    
+
 def output_results(request):
     response = HttpResponse(mimetype='text/csv')
     response['Content-Disposition'] = 'attachment; filename=results.csv'
@@ -199,7 +223,7 @@ def reports(request):
     except EmptyPage:
         # If page is out of range (e.g. 9999), deliver last page of results.
         reports = paginator.page(paginator.num_pages)
-   
+
     return render_to_response('pyConTextKit/reports.html', {"report": reports},context_instance=RequestContext(request))
 
 def report_detail(request, reportid):
@@ -258,13 +282,13 @@ def alerts(request):
 
     else:
         rform=DocClassForm()
-        
+
     return render_to_response('pyConTextKit/run_alert.html', {'form': rform,},context_instance=RequestContext(request))
 
 def results(request):
     r=Result.objects.all()
     return render_to_response('pyConTextKit/results.html',{'result': r},context_instance=RequestContext(request))
-    
+
 def result_detail(request, result_id):
     try:
         r = Result.objects.get(id=result_id)
@@ -272,31 +296,31 @@ def result_detail(request, result_id):
         raise Http404
     return render_to_response('pyConTextKit/result_detail.html', {'result': r},context_instance=RequestContext(request))
 
-def stats(request): 
+def stats(request):
     a=Alert.objects.values('category','alert').annotate(Count('id'))
     return render_to_response('pyConTextKit/stats.html',{'alert': a},context_instance=RequestContext(request))
-   
+
 def report_text(request, reportid):
     if request.is_ajax() and request.method == 'POST':
         report = Report.objects.get(pk=request.POST.get('reportid', ''))
     return render_to_response('pyConTextKit/report_test.html', {'report':report}, context_instance=RequestContext(request))
-    
+
 def ajax_user_search( request ):
     if request.is_ajax():
         q = request.GET.get( 'q' )
-        if q is not None:            
+        if q is not None:
             results = Report.objects.get(pk=q)
             template = 'pyConTextKit/report_test.html'
             data = {
                 'results': results,
             }
-            return render_to_response( template, data, 
+            return render_to_response( template, data,
                                        context_instance = RequestContext( request ) )
-                                       
+
 def upload_csv(request):
 	status = ''
 	uploadDbForm = UploadDatabase(request.POST, request.FILES)
-	if request.method == 'POST' and uploadDbForm.is_valid:
+	if request.method == 'POST' and uploadDbForm.is_valid():
 		res = handle_uploaded_file(request.FILES['csvfile'], request.cleaned_data['label'])
 		uploadDbForm.save()
 		"""if res == False:
@@ -305,9 +329,9 @@ def upload_csv(request):
 			status = '<p style="color:green;">Database was successfully modified</p>'"""
 		return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'form': uploadDbForm},context_instance=RequestContext(request))
 	else:
-		uploadDbForm = UploadDatabase()	
+		uploadDbForm = UploadDatabase()
 	return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'form': uploadDbForm},context_instance=RequestContext(request))
-			
+
 def handle_uploaded_file(f, label):
 	user_home = os.getenv('HOME')
 	pyConTextWebHome = os.path.join(user_home,'pyConTextWeb','templates','media','csvuploads') #this needs to be modifed to accomodate othe user's home directory
@@ -319,11 +343,3 @@ def handle_uploaded_file(f, label):
 	#then implement the csvparser class here
 	c = csvParser(destPath, label)
 	return c.iterateRows() #updates DB with table information
-
-def edit_report(request, eid=None):
-	eReport = EditReport(request.POST or None,instance=eid and Report.objects.get(id=eid))
-	if request.method == "POST" and eReport.is_valid:
-		eReport.save()
-        return HttpResponseRedirect('pyConTextKit')
-	
-	return render_to_response('pyConTextKit/edit_report.html', {'form': eReport}, context_instance=RequestContext(request))
