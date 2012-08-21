@@ -67,17 +67,13 @@ def run(request):
         rform = RunForm(data = request.POST)
         if rform.is_valid():
             dataset = rform.cleaned_data['dataset']
-            category = rform.cleaned_data['category']
             limit = rform.cleaned_data['limit']
             label = rform.cleaned_data['label']
             parser = getParser()
             (options, args) = parser.parse_args()
             options.dataset = dataset
-            if(category == ''):
-                options.category = 'all'
-            else:
-                options.category = category
-            options.number=limit
+            options.label = label
+            options.number = limit
 
             pec = criticalFinder(options)
             pec.processReports()
@@ -317,22 +313,54 @@ def ajax_user_search( request ):
             return render_to_response( template, data,
                                        context_instance = RequestContext( request ) )
 
-def upload_csv(request):
-	status = ''
-	uploadDbForm = UploadDatabase(request.POST, request.FILES)
-	if request.method == 'POST' and uploadDbForm.is_valid():
-		res = handle_uploaded_file(request.FILES['csvfile'], request.cleaned_data['label'])
-		uploadDbForm.save()
-		"""if res == False:
-			status = '<p style="color:red;">File was not CSV, or formatted incorrectly</p>'
-		else:
-			status = '<p style="color:green;">Database was successfully modified</p>'"""
-		return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'form': uploadDbForm},context_instance=RequestContext(request))
-	else:
-		uploadDbForm = UploadDatabase()
-	return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'form': uploadDbForm},context_instance=RequestContext(request))
+def upload_csv(request, formType=None):
+    status = ''
+    uploadDbFormReports = UploadDatabaseReports(request.POST, request.FILES)
+    uploadDbFormLexicon = UploadDatabaseLexicon(request.POST, request.FILES)
+    if formType is not None:
+    	if formType == "report":
+            if request.method == 'POST':
+                if uploadDbFormReports.is_valid():
+                    res = handle_uploaded_file(request.FILES['csvfile'], uploadDbFormReports.cleaned_data['dataset'], "report")
+                    #uploadDbFormReports.save()
+                    if len(res) > 0:
+                    	status = "<span style=\"color:red;\">The following errors occured:<br /><ul>"
+                    	for i in res:
+                    		status += "<li>"+i+"</li>"
+                    	status += "</ul></span>"
+                    else:
+                    	status = "<b style=\"color:green;\">Report uploaded successfully</b>"
+                else:
+                    status = "<b style=\"color:red;\">Report: Please fix errors before proceeding</b>"
+                return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'form_reports': uploadDbFormReports, 'state': True, 'formType': formType},context_instance=RequestContext(request))
+            else:
+                uploadDbFormReports = UploadDatabaseReports()
+                return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'form_reports': uploadDbFormReports, 'state': True, 'formType': formType},context_instance=RequestContext(request))
 
-def handle_uploaded_file(f, label):
+        elif formType == "lexicon":       #===LEXICON===
+            if request.method == 'POST':
+                if uploadDbFormLexicon.is_valid():
+                    res = handle_uploaded_file(request.FILES['csvfile'], uploadDbFormLexicon.cleaned_data['label'], "lexicon")
+                    #uploadDbFormLexicon.save()
+                    if len(res) > 0:
+                    	status = "<span style=\"color:red;\">The following errors occured:<br /><ul>"
+                    	for i in res:
+                    		status += "<li>"+i+"</li>"
+                    	status += "</ul></span>"
+                    else:
+                    	status = "<b style=\"color:green;\">Lexicon uploaded successfully</b>"
+                else:
+                    status = "<b style=\"color:red;\">Lexicon: Please fix errors before proceeding</b>"
+                return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'form_lexicon': uploadDbFormLexicon, 'state': True, 'formType': formType},context_instance=RequestContext(request))
+            else:
+                uploadDbFormLexicon = UploadDatabaseLexicon()
+                return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'form_lexicon': uploadDbFormLexicon, 'state': True, 'formType': formType},context_instance=RequestContext(request))
+        else:
+        	return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'state': False},context_instance=RequestContext(request))
+    else:
+         return render_to_response('pyConTextKit/upload_db.html',{'status': status, 'state': False},context_instance=RequestContext(request))
+
+def handle_uploaded_file(f, label, type):
 	user_home = os.getenv('HOME')
 	pyConTextWebHome = os.path.join(user_home,'pyConTextWeb','templates','media','csvuploads') #this needs to be modifed to accomodate othe user's home directory
 	destPath = os.path.join(pyConTextWebHome,str(int(round(time.time() * 1000)))+'.csv')
@@ -341,5 +369,6 @@ def handle_uploaded_file(f, label):
 		destination.write(chunk)
 	destination.close()
 	#then implement the csvparser class here
-	c = csvParser(destPath, label)
-	return c.iterateRows() #updates DB with table information
+	c = csvParser(destPath, label, type)
+	c.iterateRows()
+	return c.returnIssues() #updates DB with table information

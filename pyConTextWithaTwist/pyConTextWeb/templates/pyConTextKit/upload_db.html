@@ -7,11 +7,14 @@
 {% if status != '' %}
 	{% autoescape off %}{{ status }}{% endautoescape %}
 {% endif %}
-CSV file must follow <a href="http://creativyst.com/Doc/Articles/CSV/CSV01.htm#ExampleData">excel csv formatting guidelines</a>.
+
+{% if state %}
+<br />CSV file must follow <a href="http://creativyst.com/Doc/Articles/CSV/CSV01.htm#ExampleData">excel csv formatting guidelines</a>.<br /><br />
 <form method="post" enctype="multipart/form-data">
 	{% csrf_token %}
-	{{ status }}
 	<table border="0">
+		{% if formType == 'report' %}
+		Fields <i>report, and reportid</i> must be included<br /> in the CSV file that you are uploading<br />
 		<tr>
 			<th>Upload Reports</th>
 		</tr>
@@ -21,11 +24,14 @@ CSV file must follow <a href="http://creativyst.com/Doc/Articles/CSV/CSV01.htm#E
     				{{ form_reports }}
     				<tr>
     					<td></td>
-    					<td align="right"><input type="submit" name="submit1" value="Upload Reports" /></td>
+    					<td align="right"><input type="submit" name="submit" value="Upload Reports" /></td>
     				</tr>
     			</table>
     		</td>
     	<tr>
+    	{% endif %}
+    	{% if formType == 'lexicon' %}
+    	Fields <i>creator_id, category, literal, re, and rule</i> must<br /> be included in the CSV file that you are uploading<br />
     	<tr>
 			<th>Upload Lexicon</th>
 		</tr>
@@ -35,11 +41,16 @@ CSV file must follow <a href="http://creativyst.com/Doc/Articles/CSV/CSV01.htm#E
     				{{ form_lexicon }}
     				<tr>
     					<td></td>
-    					<td align="right"><input type="submit" name="submit2" value="Upload Lexicon" /></td>
+    					<td align="right"><input type="submit" name="submit" value="Upload Lexicon" /></td>
     				</tr>
     			</table>
     		</td>
     	</tr>
+    	{% endif %}
     </table>
 </form>
+{% else %}
+<a href="report">Upload Report &raquo;</a><br />
+<a href="lexicon">Upload Lexicon &raquo;</a>
+{% endif %}
 {% endblock %}

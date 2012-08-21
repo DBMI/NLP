@@ -28,7 +28,8 @@ urlpatterns = patterns('',
     (r'^pyConTextKit/$', 'pyConTextKit.views.index'),
     (r'^pyConTextKit/admin/', include(admin.site.urls)),
     (r'^pyConTextKit/accounts/login/$', 'django.contrib.auth.views.login'),
-    url(r'^pyConTextKit/upload_db/', 'pyConTextKit.views.upload_csv', name='upload_csv')
+    (r'^pyConTextKit/upload_db/(?P<formType>\w+)$', 'pyConTextKit.views.upload_csv'),
+    (r'^pyConTextKit/upload_db/$', 'pyConTextKit.views.upload_csv')
 )
 if settings.DEBUG:
     urlpatterns += patterns('',

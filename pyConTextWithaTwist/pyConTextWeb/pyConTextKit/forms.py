@@ -16,6 +16,7 @@ This module contains the forms that are used in the pyConTextKit application.
 """
 from django import forms
 from django.forms import ModelForm
+from django.forms.widgets import RadioSelect, CheckboxSelectMultiple
 """
 	**TODO**
 		Eventually remove import of itemDatum
@@ -35,7 +36,7 @@ class RunForm(forms.Form):
     This form enables the user to specify settings for Annotate (formerly called "Analyze").
     """
     dataset = forms.ChoiceField(label = 'Report dataset', choices=[], required=False)
-    category = forms.CharField(label = 'Target category', required=False)
+    #category = forms.CharField(label = 'Target category', required=False)
     limit = forms.IntegerField(required=False)
     label = forms.ChoiceField(label = 'Label of lexical', choices=[], required=False)
     def __init__(self, *args, **kwargs):
@@ -79,6 +80,23 @@ class EditReport(forms.ModelForm):
 	class Meta:
 		report = Report
 
+"""
 class UploadDatabase(forms.Form):
 	label = forms.CharField(max_length=250)
 	csvfile  = forms.FileField()
+"""
+
+class UploadDatabaseReports(forms.Form):
+    dataset = forms.CharField(max_length=250, required=True)
+    csvfile  = forms.FileField(label="CSV File", required=True)
+
+class UploadDatabaseLexicon(forms.Form):
+    label = forms.CharField(max_length=250, required=True)
+    csvfile  = forms.FileField(label="CSV File", required=True)
+    """
+    options = (
+    	('domain','Domain'),
+    	('linguistic','Linguistic')
+    )
+    lextype = forms.MultipleChoiceField(label="Lexicon Type", widget=RadioSelect, choices=options)
+    """
