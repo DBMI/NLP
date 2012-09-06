@@ -42,7 +42,7 @@ import unicodecsv
 class criticalFinder(object):
     """This is the class definition that will contain the majority of processing
     algorithms for criticalFinder.
-    
+
     The constructor takes as an argument the name of an SQLite database containing
     the relevant information.
     """
@@ -51,23 +51,23 @@ class criticalFinder(object):
         database.
         dbname: name of SQLite database
         """
-       
+
         t = time.localtime()
-        
+
         self.doGraphs = options.doGraphs
         self.allow_uncertainty = options.allow_uncertainty
         self.proc_category = options.category
-        
+
         self.reports = Report.objects.filter(dataset=options.dataset)[:options.number]
 
         #print "number of reports to process",len(self.reports)
         #raw_input('continue')
- 
+
         # create context objects for each of the questions we want to be answering
         self.context = {"disease":pyConText.pyConText()}
 
         rsltsDB = options.odbname
-        
+
         alerts=Alert.objects.all()
         alerts.delete()
         rslts=Result.objects.all()
@@ -76,12 +76,15 @@ class criticalFinder(object):
         # Create the itemData object to store the modifiers for the  analysis
         # starts with definitions defined in pyConText and then adds
         # definitions specific for peFinder
-        
-        #label specifies whether the user wants a domain or lexical set.
-        items = itemData.instantiateFromSQLite("../pyConTextWeb.db",options.label,"pyConTextKit_lexical")
-		
+
+        #label specifies whether the user wants a domain or linguistic set.
+
+        #items returns an array of contextItems (e.g. getCategory(), getLiteral() )
+        items_modifiers = itemData.instantiateFromSQLite("../pyConTextWeb.db",options.label_modifiers,"pyConTextKit_lexical")
+        items_targets = itemData.instantiateFromSQLite("../pyConTextWeb.db",options.label_targets,"pyConTextKit_lexical")
+		#itemData = itemData.itemData(items)
         """
-        probableNegations = itemData('PROBABLE_NEGATED_EXISTENCE')      
+        probableNegations = itemData('PROBABLE_NEGATED_EXISTENCE')
         definiteNegations = itemData('DEFINITE_NEGATED_EXISTENCE')
         pseudoNegations = itemData('PSEUDONEG')
         indications = itemData('INDICATION')
@@ -90,8 +93,8 @@ class criticalFinder(object):
         probables = itemData('PROBABLE_EXISTENCE')
         definites = itemData('DEFINITE_EXISTENCE')
         future = itemData('FUTURE')
-        critItems = itemData('CRIT_ITEMS')        
-        
+        critItems = itemData('CRIT_ITEMS')
+
         self.modifiers = {"disease":itemData('')}
         self.modifiers["disease"].prepend(pseudoNegations)
         self.modifiers["disease"].prepend(definiteNegations)
@@ -131,7 +134,7 @@ class criticalFinder(object):
         sentences = helpers.sentenceSplitter(report)
         count = 0
         for s in sentences:
-            context.setTxt(s) 
+            context.setTxt(s)
             context.markItems(modifiers, mode="modifier")
             context.markItems(targets, mode="target")
             context.pruneMarks()
@@ -141,7 +144,7 @@ class criticalFinder(object):
             context.dropInactiveModifiers()
             context.commit()
             count += 1
-        #context.computeDocumentGraph()    
+        #context.computeDocumentGraph()
 
     def classifyDocumentTargets(self):
         rslts = {}
@@ -152,7 +155,7 @@ class criticalFinder(object):
         g = cntxt.getDocumentGraph()
 
         targets = [n[0] for n in g.nodes(data = True) if n[1].get("category","") == 'target']
-        
+
         if( not targets ):
             return alerts,rslts
         if(self.allow_uncertainty):
@@ -163,7 +166,7 @@ class criticalFinder(object):
             mods = g.predecessors(t)
             rslts[t] = {}
             if( not mods ): # an unmodified target is disease positive,certain, and acute
-                
+
                 rslts[t]['disease'] = 'Pos'
                 rslts[t]['uncertainty'] = 'No'
                 rslts[t]['temporality'] = 'New'
@@ -198,8 +201,8 @@ class criticalFinder(object):
                 alert = 0
             rsum = max(rsum,alert)
             alerts[t.getCategory()] = rsum
-            
-        return alerts, rslts   
+
+        return alerts, rslts
 
     def plotGraph(self):
         cntxt = self.context["disease"]
@@ -210,7 +213,7 @@ class criticalFinder(object):
                                                                 self.allow_uncertainty,
                                                           self.currentCase))
         ag.write(gfile,format="pdf")
-        
+
     def processReports(self):
         """For the selected reports (training or testing) in the database,
         process each report with peFinder
@@ -229,7 +232,7 @@ class criticalFinder(object):
                                           'probable_negated_existence'])
 
             self.recordResults()
-    
+
     def recordResults(self):
 
         alerts, rslts = self.classifyDocumentTargets()
@@ -253,11 +256,11 @@ class criticalFinder(object):
             for c in keys:
                 alert=Alert(reportid=self.currentCase,category=c,alert=alerts[c],report=self.currentText)
                 alert.save()
-        
-    def cleanUp(self):     
+
+    def cleanUp(self):
         self.resultsConn.commit()
 
-        
+
 def modifies(g,n,modifiers):
     pred = g.predecessors(n)
     if( not pred ):
@@ -265,6 +268,7 @@ def modifies(g,n,modifiers):
     pcats = [n.getCategory().lower() for n in pred]
     return bool(set(pcats).intersection([m.lower() for m in modifiers]))
 
+# Add parser options for the label of the lexicon to use in the parsing
 def getParser():
     """Generates command line parser for specifying database and other parameters"""
 
@@ -294,4 +298,4 @@ def getParser():
                       help='report category to analyze')
     parser.add_option("-n","--number",dest="number",default=20,
                       help='number of reports to analyze')
-    return parser    
+    return parser

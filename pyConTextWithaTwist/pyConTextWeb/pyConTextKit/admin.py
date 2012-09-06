@@ -19,7 +19,7 @@ from pyConTextKit.models import *
 from django.contrib import admin
 
 class itemDatumAdmin(admin.ModelAdmin):
-    list_display = ('literal','category','re') 
+    list_display = ('literal','category','re')
     search_fields = ['literal']
     fieldsets = (
         (None, {
@@ -29,18 +29,18 @@ class itemDatumAdmin(admin.ModelAdmin):
 
 class ReportAdmin(admin.ModelAdmin):
     fields = ['dataset','reportid']#also, reportType got rid of dataset from the this field
-    list_display = ('dataset','reportid')#also, reportType got rid of dataset at first position        
-    
+    list_display = ('dataset','reportid')#also, reportType got rid of dataset at first position
+
 class AlertAdmin(admin.ModelAdmin):
     fields = ['reportid','category','alert','report']
-    list_display = ('reportid','category','alert','report') 
+    list_display = ('reportid','category','alert','report')
     list_filter = ['alert']
-    
-class ResultAdmin(admin.ModelAdmin):
-    fields = ['reportid','category','disease','uncertainty','historical','literal','matchedphrase']
-    list_display = ('reportid','category','disease','literal') 
 
-admin.site.register(Lexical, itemDatumAdmin)
+class ResultAdmin(admin.ModelAdmin):
+    fields = ['label','path']
+    list_display = ('label','path')
+
+admin.site.register(Items, itemDatumAdmin)
 admin.site.register(Report, ReportAdmin)
 admin.site.register(Alert, AlertAdmin)
 admin.site.register(Result, ResultAdmin)

@@ -17,11 +17,20 @@ This module contains the forms that are used in the pyConTextKit application.
 from django import forms
 from django.forms import ModelForm
 from django.forms.widgets import RadioSelect, CheckboxSelectMultiple
+from django.utils.safestring import mark_safe
 """
 	**TODO**
 		Eventually remove import of itemDatum
 """
-from pyConTextKit.models import Report, Lexical
+from pyConTextKit.models import Report, Items
+
+class HorizRadioRenderer(forms.RadioSelect.renderer):
+    """ this overrides widget method to put radio buttons horizontally
+        instead of vertically.
+    """
+    def render(self):
+            """Outputs radios"""
+            return mark_safe(u'\n'.join([u'%s\n' % w for w in self]))
 
 UNCERTAINTY_CHOICES = (('separate_uncertainty','distinguish certainty from uncertainty'), ('allow_uncertainty','do not distinguish certainty from uncertainty'), ('no_uncertainty','do not include instances of uncertainty'))
 
@@ -35,14 +44,17 @@ class RunForm(forms.Form):
     """
     This form enables the user to specify settings for Annotate (formerly called "Analyze").
     """
+    outputLabel = forms.CharField(max_length=150,label='Output Label')
     dataset = forms.ChoiceField(label = 'Report dataset', choices=[], required=False)
     #category = forms.CharField(label = 'Target category', required=False)
-    limit = forms.IntegerField(required=False)
-    label = forms.ChoiceField(label = 'Label of lexical', choices=[], required=False)
+    #limit = forms.IntegerField(required=False)
+    label = forms.ChoiceField(label = 'Label of linguistic', choices=[], required=False)
+    labelDomain = forms.ChoiceField(label = 'Label of domain', choices=[], required=False)
     def __init__(self, *args, **kwargs):
         super(RunForm, self).__init__(*args, **kwargs)
         self.fields['dataset'].choices = Report.objects.all().values_list("dataset","dataset").distinct()
-        self.fields['label'].choices = Lexical.objects.all().values_list("label","label").distinct()
+        self.fields['label'].choices = Items.objects.all().filter(lex_type='linguistic').values_list("label","label").distinct()
+        self.fields['labelDomain'].choices = Items.objects.all().filter(lex_type='domain').values_list("label","label").distinct()
 
 class DocClassForm(forms.Form):
     """
@@ -62,8 +74,15 @@ class itemForm(forms.ModelForm):
     """
     This form for the Lexical class employs the default ModelForm.
     """
+    CHOICES = (
+    	('domain','Domain'),
+    	('linguistic','Linguistic')
+    )
+    lex_type = forms.ChoiceField(label="Lexicon Type",choices=CHOICES, widget=forms.RadioSelect(renderer=HorizRadioRenderer))
+    label = forms.CharField(label="Name")
     class Meta:
-        model = Lexical
+        model = Items
+        exclude = ('show',)
 
 class ReportForm(forms.Form):
     """
@@ -91,12 +110,10 @@ class UploadDatabaseReports(forms.Form):
     csvfile  = forms.FileField(label="CSV File", required=True)
 
 class UploadDatabaseLexicon(forms.Form):
-    label = forms.CharField(max_length=250, required=True)
+    label = forms.CharField(label="Name",max_length=250, required=True)
     csvfile  = forms.FileField(label="CSV File", required=True)
-    """
-    options = (
+    CHOICES = (
     	('domain','Domain'),
     	('linguistic','Linguistic')
     )
-    lextype = forms.MultipleChoiceField(label="Lexicon Type", widget=RadioSelect, choices=options)
-    """
+    like = forms.ChoiceField(label="Lexicon Type",choices=CHOICES, widget=forms.RadioSelect())

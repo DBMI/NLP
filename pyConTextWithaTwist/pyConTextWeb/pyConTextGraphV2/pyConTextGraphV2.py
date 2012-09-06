@@ -16,15 +16,15 @@ This module contains three class definitions that are used in the pyConText
 algorithm. The pyConText algorithm relies on regular expressions to identify
 sub-texts of interest
 
-1) termObject: a class that describes terms of interest within the text 
+1) termObject: a class that describes terms of interest within the text
 2) tagObject: a class inherited from termObject that describes modifiers
-3) pyConText: a class that implements the context algorithm 
+3) pyConText: a class that implements the context algorithm
 
 """
 import re
 import copy
 import networkx as nx
-        
+
 class tagObject(object):
     """
     A class that describes terms of interest in the text.
@@ -37,7 +37,7 @@ class tagObject(object):
         """
         item: contextItem used to generate term
         ConTextCategory: category this term is being used for in pyConText
-        
+
         variants
         """
         self.__item = item
@@ -54,12 +54,12 @@ class tagObject(object):
         applies the objects own rule and span to modify the object's scope
         Currently only "forward" and "backward" rules are implemented
         """
-        
+
         if( 'forward' in self.__item.getRule().lower() ):
             self.__scope[0] = self.getSpan()[1]
         elif( 'backward' in self.__item.getRule().lower() ):
             self.__scope[1] = self.getSpan()[0]
-            
+
     def parseRule(self):
         """parse the rule for the associated"""
         pass
@@ -67,12 +67,12 @@ class tagObject(object):
         return self.__scope
     def getRule(self):
         return self.__item.getRule()
- 
+
     def limitScope(self,obj):
         """If self and obj are of the same category or if obj has a rule of
         'terminate', use the span of obj to
         update the scope of self"""
-        if( not self.getRule() or self.getRule()== 'terminate' or 
+        if( not self.getRule() or self.getRule()== 'terminate' or
              (self.getCategory() != obj.getCategory() and obj.getRule() != 'terminate')):
             return
         if( 'forward' in self.getRule().lower() ):
@@ -115,23 +115,23 @@ class tagObject(object):
     def getPhrase(self):
         """return the actual matched phrase used to generate this object"""
         return self.__foundPhrase
-        
+
     def dist(self,obj):
         """returns the minimum distance from the current object and obj.
         Distance is measured as current start to object end or current end to object start"""
         return min(abs(self.__spanEnd-obj.__spanStart),abs(self.__spanStart-obj.__spanEnd))
-                    
+
     def __lt__(self,other): return self.__spanStart < other.__spanStart
     def __le__(self,other): return self.__spanStart <= other.__spanStart
-    def __eq__(self,other): 
-        return (self.__spanStart == other.__spanStart and 
+    def __eq__(self,other):
+        return (self.__spanStart == other.__spanStart and
                 self.__spanEnd == other.__spanEnd)
     def __ne__(self,other): return self.__spanStart != other.__spanStart
     def __gt__(self,other): return self.__spanStart > other.__spanStart
     def __ge__(self,other): return self.__spanStart >= other.__spanStart
     def encompasses(self,other):
         """tests whether other is completely encompassed with the current object"""
-        if( self.__spanStart <= other.__spanStart and 
+        if( self.__spanStart <= other.__spanStart and
             self.__spanEnd >= other.__spanEnd ):
             return True
         else:
@@ -141,6 +141,7 @@ class tagObject(object):
         return txt
     def __rpr__(self):
         return self.getBriefDescription()
+
 class pyConText(object):
     """
     base class for context.
@@ -179,7 +180,7 @@ class pyConText(object):
         self.__archive = {}
         self.__graph = nx.DiGraph()
         self.__scope = None
-        self.__SCOPEUPDATED 
+        self.__SCOPEUPDATED
         self.__currentSentence = 0
         self.__documentGraph = nx.DiGraph()
     def commit(self):
@@ -205,7 +206,7 @@ class pyConText(object):
         self.__scope = self.__archive[num]["scope"]
         self.__SCOPEUPDATED = self.__archive[num]["scopeUpdated"]
 
-                                        
+
     def setTxt(self,txt=''):
         """
         sets the current txt to txt and resets the current attributes to empty
@@ -216,7 +217,7 @@ class pyConText(object):
         self.__graph = nx.DiGraph(sentence=txt)
         self.__scope = None
         self.__SCOPEUPDATED = False
-        
+
     def getText(self):
         return self.__txt
     def getNumberSentences(self):
@@ -234,7 +235,7 @@ class pyConText(object):
         self.__txt = self.r2.sub(" ",self.__txt)
         if( stripNumbers ):
             self.__txt = self.r3.sub("",self.__txt)
-            
+
         self.__scope= (0,len(self.__txt))
     #def __str__(self):
     #    txt = ''
@@ -284,13 +285,13 @@ class pyConText(object):
         #print mode
         #print "self.__graph.node"
         #print self.__graph.node
-                                
+
     def markItem(self,item, ConTextMode="target", ignoreCase=True ):
         """
         markup the current text with the current item.
         If ignoreCase is True (default), the regular expression is compiled with
         IGNORECASE."""
-            
+
         if( not self.__txt ):
             self.getCleanTxt()
 
@@ -317,7 +318,7 @@ class pyConText(object):
             terms.append(tO)
         return terms
 
-    def pruneMarks(self):    
+    def pruneMarks(self):
         """
         prune Marked objects by deleting any objects that lie within the span of
         another object. Currently modifiers and targets are treated separately
@@ -338,7 +339,7 @@ class pyConText(object):
                 edgs = self.__graph.edges(m)
                 edgs.remove((m,minm[1]))
                 self.__graph.remove_edges_from(edgs)
-        
+
     def __prune_marks(self, marks):
         if( len(marks) < 2 ):
             return
@@ -356,16 +357,16 @@ class pyConText(object):
                         nodesToRemove.append(t1)
                         break
         self.__graph.remove_nodes_from(nodesToRemove)
-        
+
     def dropMarks(self,category="exclusion"):
         """Drop any targets that have the category equal to category"""
         dnodes = [n for n in self.__graph.nodes() if n.getCategory().lower() == category.lower()]
-        self.__graph.remove_nodes_from(dnodes)           
+        self.__graph.remove_nodes_from(dnodes)
 
     def applyModifiers(self):
         """
         If the scope has not yet been updated, do this first.
-        
+
         Loop through the marked targets and for each target apply the modifiers
         """
         if( not self.__SCOPEUPDATED ):
@@ -386,7 +387,7 @@ class pyConText(object):
         Return the number of marked targets in the current sentence
         """
         return len(self.getConTextModeNodes("target"))
-           
+
     def getModifiers(self, node, currentGraph = True):
         if( currentGraph ):
             return self.__graph.predecessors(node)
@@ -398,7 +399,7 @@ class pyConText(object):
         for p in pred:
             if( modFilter.lower() == p.getCategory().lower() ):
                 return p
-                 
+
         return None
 
     def computeDocumentGraph(self):
@@ -414,4 +415,4 @@ class pyConText(object):
             #
             #self.__documentGraph.add_edges_from(g.edges())
 
-    
+

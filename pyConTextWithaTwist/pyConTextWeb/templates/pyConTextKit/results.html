@@ -9,23 +9,17 @@
 <table>
 <tr>
 <th>id</th>
-<th>reportid</th>
-<th>category</th>
-<th>disease</th>
-<th>uncertainty</th>
-<th>historical</th>
-<th>literal</th>
+<th>name</th>
+<th>path</th>
+<th>date</th>
 </tr>
 </tr>
 {% for i in result.all %}
 <tr class="{% if forloop.counter|divisibleby:2 %}even{% else %}odd{% endif %}">
 <td>{{ i.id }}</td>
-<td><a href="/pyConTextKit/report/{{i.reportid}}/">{{ i.reportid }}</a></td>
-<td>{{ i.category }}</td>
-<td>{{ i.disease }}</td>
-<td>{{ i.uncertainty }}</td>
-<td>{{ i.historical }}</td>
-<td>{{ i.literal }}</td>
+<td><a href="/pyConTextKit/visualize/{{ i.id }}">{{ i.label }}</a></td>
+<td>{{ i.path }}</td>
+<td>{{ i.date }}</td>
 </tr>
 {% endfor %}
 </table>

@@ -28,12 +28,16 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 #connection for raw sql
 from django.db import connection, transaction
 from pyConTextKit.models import *
-from pyConTextKit.criticalFinderGraph import criticalFinder, modifies, getParser
-from pyConTextGraphV2.itemData import itemData, contextItem
+from pyConTextKit.runTwistedConText import runConText
+#from pyConTextGraphV2.itemData import itemData, contextItem
 from pyConTextKit.forms import *
 from csvparser import csvParser
 from pyConTextKit.models import *
 import re
+import time
+import gzip
+import cPickle
+import datetime
 
 from django.forms.models import modelformset_factory
 
@@ -67,21 +71,19 @@ def run(request):
         rform = RunForm(data = request.POST)
         if rform.is_valid():
             dataset = rform.cleaned_data['dataset']
-            limit = rform.cleaned_data['limit']
+            #limit = rform.cleaned_data['limit']
             label = rform.cleaned_data['label']
-            parser = getParser()
-            (options, args) = parser.parse_args()
-            options.dataset = dataset
-            options.label = label
-            options.number = limit
+            labelDomain = rform.cleaned_data['labelDomain']
+            outputLabel = rform.cleaned_data['outputLabel']
 
-            pec = criticalFinder(options)
-            pec.processReports()
+            filelocation = runConText("/Users/glenndayton/Documents/NLP/pyConTextWithaTwist/pyConTextWeb",dataset,label,labelDomain)
+            s = Result.objects.create(label=outputLabel,path=filelocation,date=int(time.time()))
+            s.save()
+            #populate the database with value and other info
 
             return HttpResponseRedirect(reverse('pyConTextKit.views.complete'))
         else:
-            print rform.errors
-
+            rform=RunForm()
     else:
         rform=RunForm()
 
@@ -99,15 +101,25 @@ def complete(request):
 	names, they did not need modification. (Line 122, Declaration of formset)
 """
 def itemData_view(request):
-    itemFormSet = modelformset_factory(Lexical, fields=('id',), extra=0)
+    itemFormSet = modelformset_factory(Items, fields=('id',), extra=0)
     sform = SearchForm(data = request.POST)
+
+    domain = ""
+    linguistic = ""
+    item_array = Items.objects.all().values_list("lex_type","label").distinct()
+    for i in item_array:
+    	if i[0] == "domain":
+    		domain += "<a style='margin-left:5px;' href='/pyConTextKit/itemData_filter/"+i[1]+"'/>"+i[1]+"</a>"
+    	elif i[0] == "linguistic":
+    		linguistic += "<a style='margin-left:5px;' href='/pyConTextKit/itemData_filter/"+i[1]+"'/>"+i[1]+"</a>"
+
     if request.method == "POST" and sform.is_valid():
         term = sform.cleaned_data['term']
         if term != '':
             #print "non-space"
             #literal__contains looks at field, literal and checks against term
-            formset = itemFormSet(queryset = Lexical.objects.filter(literal__contains=term))
-            return render_to_response('pyConTextKit/itemdata.html',{'formset': formset, 'form': sform,},context_instance=RequestContext(request))
+            formset = itemFormSet(queryset = Items.objects.filter(literal__contains=term))
+            return render_to_response('pyConTextKit/itemdata.html',{'formset': formset, 'form': sform, 'domain': domain, 'linguistic':linguistic},context_instance=RequestContext(request))
         else:
             formset = itemFormSet(request.POST, request.FILES)
             if formset.is_valid():
@@ -115,7 +127,7 @@ def itemData_view(request):
                 return HttpResponseRedirect(reverse('pyConTextKit.views.itemData_complete'))
     formset = itemFormSet()
     return render_to_response("pyConTextKit/itemdata.html", {
-        "formset": formset,'form': sform,}, context_instance=RequestContext(request))
+        "formset": formset,'form': sform,'domain': domain, 'linguistic':linguistic}, context_instance=RequestContext(request))
 
 """
 	UPDATED 7/27/12 G.D.
@@ -126,10 +138,19 @@ def itemData_filter(request, cat):
     This method takes a supercategory name as an argument and renders a view of
     the criteria in this supercategory.
     """
-    itemFormSet = modelformset_factory(Lexical, fields=('id',), extra=0)
+    domain = ""
+    linguistic = ""
+    item_array = Items.objects.all().values_list("lex_type","label").distinct()
+    for i in item_array:
+    	if i[0] == "domain":
+    		domain += "<a style='margin-left:5px;' href='/pyConTextKit/itemData_filter/"+i[1]+"'/>"+i[1]+"</a>"
+    	elif i[0] == "linguistic":
+    		linguistic += "<a style='margin-left:5px;' href='/pyConTextKit/itemData_filter/"+i[1]+"'/>"+i[1]+"</a>"
+
+    itemFormSet = modelformset_factory(Items, fields=('id',), extra=0)
     sform = SearchForm(data = request.POST)
-    formset = itemFormSet(queryset=itemDatum.objects.filter(category=cat))
-    return render_to_response('pyConTextKit/itemdata.html',{'formset': formset,'form': sform,},context_instance=RequestContext(request))
+    formset = itemFormSet(queryset=Items.objects.filter(label=cat))
+    return render_to_response('pyConTextKit/itemdata.html',{'formset': formset,'form': sform,'domain': domain, 'linguistic':linguistic},context_instance=RequestContext(request))
 
 """
 	UPDATED 7/27/12
@@ -157,9 +178,9 @@ def itemData_edit(request, itemData_id=None):
     You can learn more about Python regular expressions at:
     <a href="http://docs.python.org/library/re.html">http://docs.python.org/library/re.html</a>"""
     dup = ""
-    iform = itemForm(request.POST or None,instance=itemData_id and Lexical.objects.get(id=itemData_id))
+    iform = itemForm(request.POST or None,instance=itemData_id and Items.objects.get(id=itemData_id))
     if request.method == "POST" and iform.is_valid():
-    	items = Lexical.objects.filter(literal__contains=iform.cleaned_data['literal'])
+    	items = Items.objects.filter(literal__contains=iform.cleaned_data['literal'])
     	if items.count() > 0 and 'submit2' not in request.POST:
     	    dup = "<span style=\"color:red\"><b>"+str(items.count())+"</b> Duplicate(s) detected</span><br />"
     	    dup += "<div class=\"indent\">"
@@ -170,7 +191,7 @@ def itemData_edit(request, itemData_id=None):
     	    <ul>
     	    <li><input type="submit" name="submit2" value="Ignore, and post item" /></li>
     	    <li>Make edits to item below, and resubmit.</li>
-    	    <li><a href="/edit_itemdata/">Reset form</a></li>
+    	    <li><a href="/pyConTextKit/itemData_edit">Reset form</a></li>
     	    </ul>
     	    </div>
     	    """
@@ -201,10 +222,9 @@ def output_results(request):
 
     writer = csv.writer(response)
     results=Result.objects.all()
-    writer.writerow(['id', 'reportid', 'category', 'disease','uncertainty','historical','literal'])
+    writer.writerow(['id', 'label', 'path', 'date'])
     for r in results:
-        writer.writerow([smart_str(r.id), smart_str(r.reportid), smart_str(r.category),
-                         smart_str(r.disease), smart_str(r.uncertainty), smart_str(r.historical), smart_str(r.literal)])
+        writer.writerow([smart_str(r.id), smart_str(r.label), smart_str(r.path), smart_str(r.date)])
     return response
 
 def reports(request):
@@ -372,3 +392,45 @@ def handle_uploaded_file(f, label, type):
 	c = csvParser(destPath, label, type)
 	c.iterateRows()
 	return c.returnIssues() #updates DB with table information
+
+def hide(request, idp):
+    item = Items.objects.get(id=idp)
+    item.show = '0'
+    item.save()
+    return HttpResponseRedirect('/pyConTextKit/itemData')
+
+def show(request, idp):
+    if idp == "showall":
+        items = Items.objects.all()
+        for i in items:
+            i.show = '1'
+            i.save()
+    elif idp == "hideall":
+        items = Items.objects.all()
+        for i in items:
+            i.show = '0'
+            i.save()
+    else:
+        item = Items.objects.get(id=idp)
+        item.show = '1'
+        item.save()
+
+    return HttpResponseRedirect('/pyConTextKit/itemData')
+
+def resultVisualize(request, idp):
+    result = Result.objects.get(id=idp)
+    fo = gzip.open(result.path,"rb")
+
+    t = datetime.datetime.fromtimestamp(int(result.date))
+    date = t.strftime('%m/%d/%Y at %H:%M')
+
+    output = ""
+    output += str(cPickle.load(fo))
+
+    return render_to_response('pyConTextKit/visualize.html',{ 'output':output,'result':result, 'date':date },context_instance=RequestContext(request))
+
+def reports_index(request):
+	return render_to_response('pyConTextKit/reports_index.html',context_instance=RequestContext(request))
+
+def annotation_index(request):
+	return render_to_response('pyConTextKit/annotation_index.html',context_instance=RequestContext(request))

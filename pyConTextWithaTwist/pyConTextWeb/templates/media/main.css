@@ -11,11 +11,9 @@
 #WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #See the License for the specific language governing permissions and
 #limitations under the License.*/
-<style type="text/css">
-
 body{
 margin:0;
-padding:0;
+padding:10px;
 line-height: 1.5em;
 }
 
@@ -51,7 +49,9 @@ color:white;
 }
 
 .innertube h4{
-    color: #006699;
+	color:#000;
+	font-size:20px;
+    /*color: #006699;*/
 }
 
 #contentwrapper{
@@ -61,37 +61,35 @@ width: 100%;
 }
 
 #contentcolumn{
-margin-left: 200px; /*Set left margin to LeftColumnWidth*/
-
+	margin-left: 200px; /*Set left margin to LeftColumnWidth*/
 }
 
 #leftcolumn{
-float: left;
-width: 200px; /*Width of left column*/
-margin-left: -100%;
-
+	float: left;
+	width: 200px; /*Width of left column*/
+	margin-left: -100%;
 }
 
 #footer{
-clear: left;
-width: 100%;
-background: #006699;
-color: #FFF;
-text-align: center;
-padding: 4px 0;
+	clear: left;
+	width: 100%;
+	background: #006699;
+	color: #FFF;
+	text-align: center;
+	padding: 4px 0;
 }
 
 #footer a{
-color: #FFFF80;
+	color: #FFFF80;
 }
 
 .innertube{
-margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
-margin-top: 0;
+	margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+	margin-top: 0;
 }
 
 th{
-background:#006699; color: white;    
+background:#006699; color: white;
 }
 
 tr.odd td {
@@ -122,5 +120,3 @@ vertical-align:top;
 #nobullet ul li {
     list-style: none;
 }
-
-</style>

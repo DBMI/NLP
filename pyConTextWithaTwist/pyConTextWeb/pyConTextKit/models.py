@@ -36,7 +36,7 @@ from django.contrib.auth.models import User
 import time
 
 # Stores both lexical and Domain data
-class Lexical(models.Model):
+class Items(models.Model):
     creator = models.ForeignKey(User)
     label = models.CharField(max_length=250)
     category = models.CharField(max_length=250)
@@ -50,7 +50,17 @@ class Lexical(models.Model):
         ('terminate','Terminate'),
         ('bidirectional','Bidirectional'),
     )
-    rule = models.CharField(max_length=250, choices=RULE_CHOICES, blank=True) 
+    rule = models.CharField(max_length=250, choices=RULE_CHOICES, blank=True)
+    TYPE_CHOICES = (
+    	('domain','Domain'),
+    	('linguistic','Linguistic')
+    )
+    lex_type = models.CharField(max_length=250, choices=TYPE_CHOICES)
+    SHOW_CHOICES = (
+    	('1','Show'),
+    	('0','Hide')
+    )
+    show = models.CharField(max_length=1, choices=SHOW_CHOICES)
     def __unicode__(self):
         return self.literal
 
@@ -65,8 +75,8 @@ class Report(models.Model):
         """Returns a list of all field names on the instance."""
         fields = ()
         for f in self._meta.fields:
-    
-            fname = f.name        
+
+            fname = f.name
             # resolve picklists/choices, with get_xyz_display() function
             get_choice = 'get_'+fname+'_display'
             if hasattr( self, get_choice):
@@ -76,19 +86,19 @@ class Report(models.Model):
             	    value = getattr(self, fname)
                 except User.DoesNotExist:
                     value = None
-    
+
             # only display fields with values and skip some fields entirely
             if f.editable and value and f.name not in ('id', 'status', 'workshop', 'user', 'complete') :
 
                 fields.append(
                   {
-                   'label':f.verbose_name, 
-                   'name':f.name, 
+                   'label':f.verbose_name,
+                   'name':f.name,
                    'value':value,
                   }
                 )
         return fields
-        
+
 # Can we generalize the Alert class to be an application class that is built by
 # the user?
 class Alert(models.Model):
@@ -102,8 +112,8 @@ class Alert(models.Model):
         """Returns a list of all field names on the instance."""
         fields = ()
         for f in self._meta.fields:
-    
-            fname = f.name        
+
+            fname = f.name
             # resolve picklists/choices, with get_xyz_display() function
             get_choice = 'get_'+fname+'_display'
             if hasattr( self, get_choice):
@@ -113,56 +123,26 @@ class Alert(models.Model):
                     value = getattr(self, fname)
                 except User.DoesNotExist:
                     value = None
-    
+
             # only display fields with values and skip some fields entirely
             if f.editable and value and f.name not in ('id', 'status', 'workshop', 'user', 'complete') :
-    
+
                 fields.append(
                   {
-                   'label':f.verbose_name, 
-                   'name':f.name, 
+                   'label':f.verbose_name,
+                   'name':f.name,
                    'value':value,
                   }
                 )
         return fields
-       
+
 # Don't know that we want to store this back into the database
 # How would we make results general?
 class Result(models.Model):
-    reportid = models.IntegerField()
-    category = models.TextField()
-    disease = models.TextField()
-    uncertainty = models.TextField()
-    historical = models.TextField()
-    literal = models.TextField()
-    matchedphrase = models.TextField()
-	
+    label = models.CharField(max_length=250)
+    date = models.CharField(max_length=35)
+    path = models.CharField(max_length=1000)
+    #Do we want to store information about what domain and lexical were used?
+
     def __unicode__(self):
 	    return str(self.reportid)
-    def get_all_fields(self):
-        """Returns a list of all field names on the instance."""
-        fields = ()
-        for f in self._meta.fields:
-    
-            fname = f.name        
-            # resolve picklists/choices, with get_xyz_display() function
-            get_choice = 'get_'+fname+'_display'
-            if hasattr( self, get_choice):
-                value = getattr( self, get_choice)()
-            else:
-                try :
-                    value = getattr(self, fname)
-                except User.DoesNotExist:
-                    value = None
-    
-            # only display fields with values and skip some fields entirely
-            if f.editable and value and f.name not in ('id', 'status', 'workshop', 'user', 'complete') :
-    
-                fields.append(
-                  {
-                   'label':f.verbose_name, 
-                   'name':f.name, 
-                   'value':value,
-                  }
-                )
-        return fields
