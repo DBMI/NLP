@@ -62,7 +62,7 @@ Search for an existing term: {{ form.term }}
 <th></th>
 </tr>
 {% for f in formset.forms %}
-<tr class="{% if forloop.counter|divisibleby:2 %}even{% else %}odd{% endif %}" style="{% ifequal f.instance.show '0' %} opacity:.6 {% endifequal %}" >
+<tr class="{% if forloop.counter|divisibleby:2 %}even{% else %}odd{% endif %}" style="{% ifequal f.instance.show '0' %} opacity:.6 {% endifequal %}">
 	<td>
 	{% ifequal f.instance.lex_type "domain" %}
 			<span style="width:40px; height:20px; background-color:#0BB5FF; color:white; font-size:10px;">DOM</span>
@@ -72,13 +72,13 @@ Search for an existing term: {{ form.term }}
 	{% endifequal %}
 	</td>
     <td>{{ f.id }}{{ f.instance.category }}</td>
-    <td><a href='/pyConTextKit/itemData_edit/{{f.instance.id}}'>{{ f.instance.literal }}</a></td>
+    <td><a name="{{ forloop.counter }}" href='/pyConTextKit/itemData_edit/{{f.instance.id}}'>{{ f.instance.literal }}</a></td>
     <td>{{ f.instance.label }}</td>
     {% ifequal f.instance.show "1" %}
-    	<td><a style="border:no-style;" href="/pyConTextKit/hide/{{ f.instance.id }}"><img style="margin-top:2px;" width="13" height="13" title="Hide" src="{{ MEDIA_URL }}/add.png" /></a></td>
+    	<td><a style="border:no-style;" href="/pyConTextKit/hide/{{ f.instance.id }}/{{ forloop.counter }}"><img style="margin-top:2px;" width="13" height="13" title="Hide" src="{{ MEDIA_URL }}/add.png" /></a></td>
 	{% endifequal %}
 	{% ifequal f.instance.show "0" %}
-		<td><a style="border:no-style;" href="/pyConTextKit/show/{{ f.instance.id }}"><img style="margin-top:2px;" width="13" height="13" title="Show" src="{{ MEDIA_URL }}/close2.png" /></a></td>
+		<td><a style="border:no-style;" href="/pyConTextKit/show/{{ f.instance.id }}/{{ forloop.counter }}"><img style="margin-top:2px;" width="13" height="13" title="Show" src="{{ MEDIA_URL }}/close2.png" /></a></td>
 	{% endifequal %}
 </tr>
 {% endfor %}

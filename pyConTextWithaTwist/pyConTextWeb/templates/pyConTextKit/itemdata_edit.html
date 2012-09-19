@@ -45,7 +45,22 @@ $( document ).ajaxStart( function() {
 		</table>
 	</td>
 	<td valign="top">
-		Example entry<hr />
+		<script type='text/javascript'>
+		function passCat(){
+			var info = $("#category-items").val();
+			$("#id_category").val(info);
+		}
+		</script>
+		<div style='margin-top:58px;'>
+			OR <select id='category-items'>
+				<option value='---'>---</option>
+			{% for index in cat_items %}
+				<option value="{{ index }}">{{ index }}</option>
+			{% endfor %}
+			</select>
+			<input type='button' id='add-cat' value='&laquo; Add Category' onclick='passCat()' />
+		</div>
+		<br />Example entry<hr />
 		<pre style="margin-top:-25px;">
 		<table border="0" style="background-color:#FFFACD; padding:5px;">
 			<tr><td align="right"><b>Creator</b></td><td>Joe Example</td></tr>

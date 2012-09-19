@@ -157,6 +157,11 @@ def itemData_filter(request, cat):
 	Changed reference from itemDatum to Lexical
 """
 def itemData_edit(request, itemData_id=None):
+    cat_items_temp = Items.objects.all().values_list("category").distinct()
+    cat_items = ()
+    for i in range(0,len(cat_items_temp)):
+        new_string = str(cat_items_temp[i][0])
+        cat_items = cat_items + (new_string,)
     """
     This method takes an Lexical ID as an argument and renders a form for the
     user to edit the specified extraction criterion.  If no argument is supplied,
@@ -195,12 +200,12 @@ def itemData_edit(request, itemData_id=None):
     	    </ul>
     	    </div>
     	    """
-    	    return render_to_response('pyConTextKit/itemdata_edit.html', {'form': iform, 'intro': intro, 'dup':dup}, context_instance=RequestContext(request))
+    	    return render_to_response('pyConTextKit/itemdata_edit.html', {'form': iform, 'intro': intro, 'dup':dup, 'cat_items':cat_items}, context_instance=RequestContext(request))
     	else:
             iform.save()
         return HttpResponseRedirect(reverse('pyConTextKit.views.itemData_complete'))
 
-    return render_to_response('pyConTextKit/itemdata_edit.html', {'form': iform, 'intro': intro, 'dup':dup}, context_instance=RequestContext(request))
+    return render_to_response('pyConTextKit/itemdata_edit.html', {'form': iform, 'intro': intro, 'dup':dup, 'cat_items':cat_items}, context_instance=RequestContext(request))
 
 def itemData_complete(request):
     return render_to_response('pyConTextKit/itemdata_complete.html',context_instance=RequestContext(request))
@@ -393,13 +398,13 @@ def handle_uploaded_file(f, label, type):
 	c.iterateRows()
 	return c.returnIssues() #updates DB with table information
 
-def hide(request, idp):
+def hide(request, idp, idp2):
     item = Items.objects.get(id=idp)
     item.show = '0'
     item.save()
-    return HttpResponseRedirect('/pyConTextKit/itemData')
+    return HttpResponseRedirect('/pyConTextKit/itemData/#'+str(idp2))
 
-def show(request, idp):
+def show(request, idp, idp2):
     if idp == "showall":
         items = Items.objects.all()
         for i in items:
@@ -415,7 +420,7 @@ def show(request, idp):
         item.show = '1'
         item.save()
 
-    return HttpResponseRedirect('/pyConTextKit/itemData')
+    return HttpResponseRedirect('/pyConTextKit/itemData/#'+str(idp2))
 
 def resultVisualize(request, idp):
     result = Result.objects.get(id=idp)
